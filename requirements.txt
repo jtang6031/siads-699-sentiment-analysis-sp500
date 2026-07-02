@@ -1,0 +1,7 @@
+wrds
+psycopg2-binary
+pandas
+numpy
+matplotlib
+seaborn
+pyarrow
