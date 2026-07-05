@@ -5,3 +5,4 @@ numpy
 matplotlib
 seaborn
 pyarrow
+pandas_market_calendars
