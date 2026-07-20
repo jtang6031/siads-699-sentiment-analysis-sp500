@@ -45,6 +45,7 @@ See [Basic_EDA_Data_Model.md](Basic_EDA_Data_Model.md) for a full breakdown of t
 |---|---|
 | `Basic_EDA_Analysis.ipynb` | Initial EDA: RavenPack global macro sentiment aggregated by trading session, joined to sector ETF returns (2020–2025) |
 | `Equity_Sentiment_EDA2.ipynb` | Equity-level EDA: per-company RavenPack sentiment joined to individual S&P 500 stock returns via CUSIP matching (2022–2023) |
+| `05_baseline_model.ipynb` | Simple chronological baseline: market-only versus market-plus-sentiment prediction of next-session sector-ETF direction |
 
 ## Licensing
 
