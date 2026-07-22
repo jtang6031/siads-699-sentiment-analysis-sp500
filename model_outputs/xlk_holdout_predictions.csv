@@ -1,0 +1,3007 @@
+ticker,model,fold,session_date,y_true,y_pred,y_prob
+XLK,Market-only model,2022,2022-01-03,0,0,0.4872757325597166
+XLK,Market-only model,2022,2022-01-04,0,1,0.6125528951294852
+XLK,Market-only model,2022,2022-01-05,0,1,0.5991649955381622
+XLK,Market-only model,2022,2022-01-06,0,1,0.527050324040787
+XLK,Market-only model,2022,2022-01-07,1,1,0.542043606014993
+XLK,Market-only model,2022,2022-01-10,1,1,0.5678827549627935
+XLK,Market-only model,2022,2022-01-11,1,1,0.5578420824282506
+XLK,Market-only model,2022,2022-01-12,0,1,0.5914863440094238
+XLK,Market-only model,2022,2022-01-13,1,1,0.59301784210755
+XLK,Market-only model,2022,2022-01-14,0,0,0.4582746303669955
+XLK,Market-only model,2022,2022-01-18,0,1,0.5434258041102998
+XLK,Market-only model,2022,2022-01-19,0,0,0.47336567742906677
+XLK,Market-only model,2022,2022-01-20,0,1,0.5708768043942896
+XLK,Market-only model,2022,2022-01-21,1,1,0.5944118224626476
+XLK,Market-only model,2022,2022-01-24,0,1,0.512261898617766
+XLK,Market-only model,2022,2022-01-25,1,1,0.6255015441361159
+XLK,Market-only model,2022,2022-01-26,0,1,0.5018442487351217
+XLK,Market-only model,2022,2022-01-27,1,1,0.5528623748762188
+XLK,Market-only model,2022,2022-01-28,1,1,0.5172514622211886
+XLK,Market-only model,2022,2022-01-31,1,1,0.5565021106655165
+XLK,Market-only model,2022,2022-02-01,1,1,0.575631876770375
+XLK,Market-only model,2022,2022-02-02,0,0,0.4465727149561598
+XLK,Market-only model,2022,2022-02-03,1,0,0.4513562235099521
+XLK,Market-only model,2022,2022-02-04,0,0,0.3771824915419523
+XLK,Market-only model,2022,2022-02-07,1,0,0.4821537415666166
+XLK,Market-only model,2022,2022-02-08,1,1,0.5192998750497997
+XLK,Market-only model,2022,2022-02-09,0,1,0.5661386512017209
+XLK,Market-only model,2022,2022-02-10,0,1,0.6122138405122111
+XLK,Market-only model,2022,2022-02-11,0,0,0.4340627939374433
+XLK,Market-only model,2022,2022-02-14,1,1,0.5123943886970135
+XLK,Market-only model,2022,2022-02-15,0,0,0.48722229267775
+XLK,Market-only model,2022,2022-02-16,0,1,0.541779063870429
+XLK,Market-only model,2022,2022-02-17,0,1,0.5766913713767743
+XLK,Market-only model,2022,2022-02-18,0,1,0.5196845287278066
+XLK,Market-only model,2022,2022-02-22,0,1,0.5425876640115006
+XLK,Market-only model,2022,2022-02-23,1,0,0.46856272184846254
+XLK,Market-only model,2022,2022-02-24,1,1,0.5566510983863074
+XLK,Market-only model,2022,2022-02-25,0,1,0.6659661478843371
+XLK,Market-only model,2022,2022-02-28,0,1,0.651879677162392
+XLK,Market-only model,2022,2022-03-01,1,1,0.5780603442315595
+XLK,Market-only model,2022,2022-03-02,0,1,0.5194760576576863
+XLK,Market-only model,2022,2022-03-03,0,0,0.49864719923318634
+XLK,Market-only model,2022,2022-03-04,0,0,0.43330667188670663
+XLK,Market-only model,2022,2022-03-07,0,1,0.5192730021967277
+XLK,Market-only model,2022,2022-03-08,1,1,0.5016059795154237
+XLK,Market-only model,2022,2022-03-09,0,1,0.52307579903104
+XLK,Market-only model,2022,2022-03-10,0,1,0.6532102325221446
+XLK,Market-only model,2022,2022-03-11,0,0,0.4775842112809097
+XLK,Market-only model,2022,2022-03-14,1,0,0.496373468578124
+XLK,Market-only model,2022,2022-03-15,1,0,0.49451861595825214
+XLK,Market-only model,2022,2022-03-16,1,1,0.5534286267325532
+XLK,Market-only model,2022,2022-03-17,1,1,0.5945582553201618
+XLK,Market-only model,2022,2022-03-18,0,0,0.49100710362944305
+XLK,Market-only model,2022,2022-03-21,1,1,0.547118348392016
+XLK,Market-only model,2022,2022-03-22,0,0,0.4315304380976852
+XLK,Market-only model,2022,2022-03-23,1,0,0.45814764377852574
+XLK,Market-only model,2022,2022-03-24,0,1,0.5570213913885669
+XLK,Market-only model,2022,2022-03-25,1,1,0.5675983996416468
+XLK,Market-only model,2022,2022-03-28,1,1,0.5362972798490524
+XLK,Market-only model,2022,2022-03-29,0,1,0.5103246382104466
+XLK,Market-only model,2022,2022-03-30,0,1,0.636796742741066
+XLK,Market-only model,2022,2022-03-31,0,0,0.45982933696884587
+XLK,Market-only model,2022,2022-04-01,1,1,0.5100328572509559
+XLK,Market-only model,2022,2022-04-04,0,0,0.49991650724615166
+XLK,Market-only model,2022,2022-04-05,0,1,0.5893053162394537
+XLK,Market-only model,2022,2022-04-06,1,1,0.6468075120518876
+XLK,Market-only model,2022,2022-04-07,0,1,0.5488260803478656
+XLK,Market-only model,2022,2022-04-08,0,1,0.5695317499704737
+XLK,Market-only model,2022,2022-04-11,0,1,0.5235467043275776
+XLK,Market-only model,2022,2022-04-12,1,1,0.6512012264383371
+XLK,Market-only model,2022,2022-04-13,0,1,0.660791146621964
+XLK,Market-only model,2022,2022-04-14,1,1,0.592138274352925
+XLK,Market-only model,2022,2022-04-18,1,1,0.5674568745066292
+XLK,Market-only model,2022,2022-04-19,0,1,0.5754971707074976
+XLK,Market-only model,2022,2022-04-20,0,1,0.5786025933526211
+XLK,Market-only model,2022,2022-04-21,0,0,0.46737162590772013
+XLK,Market-only model,2022,2022-04-22,1,1,0.5753408674521548
+XLK,Market-only model,2022,2022-04-25,0,0,0.46278744466302835
+XLK,Market-only model,2022,2022-04-26,1,1,0.5386517503325623
+XLK,Market-only model,2022,2022-04-27,1,1,0.500405833545275
+XLK,Market-only model,2022,2022-04-28,0,1,0.5542444579978475
+XLK,Market-only model,2022,2022-04-29,1,1,0.5902119283938599
+XLK,Market-only model,2022,2022-05-02,1,0,0.40821980247534306
+XLK,Market-only model,2022,2022-05-03,1,1,0.6157843640711165
+XLK,Market-only model,2022,2022-05-04,0,0,0.4307550684892122
+XLK,Market-only model,2022,2022-05-05,0,0,0.4640913040010653
+XLK,Market-only model,2022,2022-05-06,0,1,0.5123848029572954
+XLK,Market-only model,2022,2022-05-09,1,0,0.45859458792295654
+XLK,Market-only model,2022,2022-05-10,0,0,0.43335044289613506
+XLK,Market-only model,2022,2022-05-11,0,1,0.5218034965249186
+XLK,Market-only model,2022,2022-05-12,1,1,0.6081055923167814
+XLK,Market-only model,2022,2022-05-13,0,0,0.49957538547877645
+XLK,Market-only model,2022,2022-05-16,1,1,0.6444089696906049
+XLK,Market-only model,2022,2022-05-17,0,0,0.4973955689990867
+XLK,Market-only model,2022,2022-05-18,0,1,0.5908972984881309
+XLK,Market-only model,2022,2022-05-19,1,0,0.4035873007480121
+XLK,Market-only model,2022,2022-05-20,1,0,0.39364357022044794
+XLK,Market-only model,2022,2022-05-23,0,1,0.5662550214408635
+XLK,Market-only model,2022,2022-05-24,1,0,0.4575213538728658
+XLK,Market-only model,2022,2022-05-25,1,1,0.6023941505065228
+XLK,Market-only model,2022,2022-05-26,1,1,0.5978304762256769
+XLK,Market-only model,2022,2022-05-27,0,0,0.45559272775349513
+XLK,Market-only model,2022,2022-05-31,0,1,0.542016846288075
+XLK,Market-only model,2022,2022-06-01,1,1,0.5123532490554581
+XLK,Market-only model,2022,2022-06-02,0,1,0.518810674787472
+XLK,Market-only model,2022,2022-06-03,1,0,0.4168761413421319
+XLK,Market-only model,2022,2022-06-06,1,0,0.4186041927788851
+XLK,Market-only model,2022,2022-06-07,0,0,0.49611392641763175
+XLK,Market-only model,2022,2022-06-08,0,1,0.5974418760906631
+XLK,Market-only model,2022,2022-06-09,0,0,0.44506737622321335
+XLK,Market-only model,2022,2022-06-10,0,1,0.549030502114992
+XLK,Market-only model,2022,2022-06-13,1,1,0.5678535881531037
+XLK,Market-only model,2022,2022-06-14,1,0,0.483439168676979
+XLK,Market-only model,2022,2022-06-15,0,1,0.6537512744956444
+XLK,Market-only model,2022,2022-06-16,1,1,0.5742008888905924
+XLK,Market-only model,2022,2022-06-17,1,1,0.5476975619699568
+XLK,Market-only model,2022,2022-06-21,0,1,0.6337399461192345
+XLK,Market-only model,2022,2022-06-22,1,1,0.5863564623208583
+XLK,Market-only model,2022,2022-06-23,1,0,0.45415730125835674
+XLK,Market-only model,2022,2022-06-24,0,1,0.6224819260297514
+XLK,Market-only model,2022,2022-06-27,0,1,0.5799504469364738
+XLK,Market-only model,2022,2022-06-28,1,0,0.4878785287484413
+XLK,Market-only model,2022,2022-06-29,0,0,0.436015446956695
+XLK,Market-only model,2022,2022-06-30,1,0,0.4711707592274047
+XLK,Market-only model,2022,2022-07-01,1,0,0.47296888864204895
+XLK,Market-only model,2022,2022-07-05,1,0,0.4967081452634707
+XLK,Market-only model,2022,2022-07-06,1,1,0.5830062533566017
+XLK,Market-only model,2022,2022-07-07,1,1,0.532169753351058
+XLK,Market-only model,2022,2022-07-08,0,1,0.5278898847601337
+XLK,Market-only model,2022,2022-07-11,0,0,0.4453700368464431
+XLK,Market-only model,2022,2022-07-12,0,0,0.40604388043043366
+XLK,Market-only model,2022,2022-07-13,1,0,0.4358320101376692
+XLK,Market-only model,2022,2022-07-14,1,1,0.5384168553576835
+XLK,Market-only model,2022,2022-07-15,0,1,0.6127525616187173
+XLK,Market-only model,2022,2022-07-18,1,1,0.5443202647405464
+XLK,Market-only model,2022,2022-07-19,1,1,0.5760978286255709
+XLK,Market-only model,2022,2022-07-20,1,1,0.6358153102058896
+XLK,Market-only model,2022,2022-07-21,0,1,0.5382069282725539
+XLK,Market-only model,2022,2022-07-22,0,1,0.5577313208932102
+XLK,Market-only model,2022,2022-07-25,0,1,0.5799927896783296
+XLK,Market-only model,2022,2022-07-26,1,0,0.46199706948079555
+XLK,Market-only model,2022,2022-07-27,1,0,0.4528959960569009
+XLK,Market-only model,2022,2022-07-28,1,1,0.6238270749415924
+XLK,Market-only model,2022,2022-07-29,0,1,0.5912702988588419
+XLK,Market-only model,2022,2022-08-01,0,1,0.595215301582765
+XLK,Market-only model,2022,2022-08-02,1,1,0.5905775530209989
+XLK,Market-only model,2022,2022-08-03,1,0,0.4884447626546269
+XLK,Market-only model,2022,2022-08-04,0,1,0.6165257392574452
+XLK,Market-only model,2022,2022-08-05,0,1,0.5475257394988082
+XLK,Market-only model,2022,2022-08-08,0,1,0.5428047399682561
+XLK,Market-only model,2022,2022-08-09,1,1,0.5496753122774998
+XLK,Market-only model,2022,2022-08-10,0,1,0.5196034663921707
+XLK,Market-only model,2022,2022-08-11,1,1,0.6499165660005107
+XLK,Market-only model,2022,2022-08-12,1,1,0.6116249765067815
+XLK,Market-only model,2022,2022-08-15,0,1,0.6039125866736468
+XLK,Market-only model,2022,2022-08-16,0,1,0.6345917814238243
+XLK,Market-only model,2022,2022-08-17,1,1,0.5379517351217205
+XLK,Market-only model,2022,2022-08-18,0,1,0.5825622739448183
+XLK,Market-only model,2022,2022-08-19,0,1,0.5199862304071093
+XLK,Market-only model,2022,2022-08-22,0,1,0.5313141447478305
+XLK,Market-only model,2022,2022-08-23,1,1,0.5254061237912258
+XLK,Market-only model,2022,2022-08-24,1,1,0.6659398665248611
+XLK,Market-only model,2022,2022-08-25,0,1,0.5900565448283493
+XLK,Market-only model,2022,2022-08-26,0,1,0.6364071673960503
+XLK,Market-only model,2022,2022-08-29,0,1,0.5220080039914506
+XLK,Market-only model,2022,2022-08-30,0,1,0.5177663499206677
+XLK,Market-only model,2022,2022-08-31,0,1,0.5709510420007323
+XLK,Market-only model,2022,2022-09-01,0,1,0.5110349577330761
+XLK,Market-only model,2022,2022-09-02,0,1,0.5977846039774993
+XLK,Market-only model,2022,2022-09-06,1,1,0.5132580660817985
+XLK,Market-only model,2022,2022-09-07,1,1,0.5136330860952982
+XLK,Market-only model,2022,2022-09-08,1,1,0.5961966997320843
+XLK,Market-only model,2022,2022-09-09,1,1,0.5036558193019994
+XLK,Market-only model,2022,2022-09-12,0,1,0.5714096106041456
+XLK,Market-only model,2022,2022-09-13,1,1,0.5144983546632911
+XLK,Market-only model,2022,2022-09-14,0,0,0.36728254484742545
+XLK,Market-only model,2022,2022-09-15,0,0,0.4787063445006517
+XLK,Market-only model,2022,2022-09-16,1,0,0.44117784696489987
+XLK,Market-only model,2022,2022-09-19,0,0,0.45894734341030313
+XLK,Market-only model,2022,2022-09-20,0,1,0.5713016654727315
+XLK,Market-only model,2022,2022-09-21,0,0,0.48524340175774244
+XLK,Market-only model,2022,2022-09-22,0,1,0.5190878527572577
+XLK,Market-only model,2022,2022-09-23,0,1,0.5156791793498867
+XLK,Market-only model,2022,2022-09-26,1,0,0.40122545010091143
+XLK,Market-only model,2022,2022-09-27,1,0,0.4967061389563221
+XLK,Market-only model,2022,2022-09-28,0,1,0.5307339504874468
+XLK,Market-only model,2022,2022-09-29,0,1,0.5328779476700202
+XLK,Market-only model,2022,2022-09-30,1,0,0.4895288301443518
+XLK,Market-only model,2022,2022-10-03,1,0,0.47315358073299146
+XLK,Market-only model,2022,2022-10-04,1,1,0.5518341888201211
+XLK,Market-only model,2022,2022-10-05,0,1,0.5734903809322418
+XLK,Market-only model,2022,2022-10-06,0,1,0.5467461922048837
+XLK,Market-only model,2022,2022-10-07,0,1,0.5242411793116951
+XLK,Market-only model,2022,2022-10-10,0,0,0.3864620334904917
+XLK,Market-only model,2022,2022-10-11,0,0,0.3459593896359571
+XLK,Market-only model,2022,2022-10-12,1,1,0.51877313311588
+XLK,Market-only model,2022,2022-10-13,0,1,0.5121376814027309
+XLK,Market-only model,2022,2022-10-14,1,1,0.6469961935728942
+XLK,Market-only model,2022,2022-10-17,1,1,0.5101190645490691
+XLK,Market-only model,2022,2022-10-18,0,1,0.5624397883383672
+XLK,Market-only model,2022,2022-10-19,1,0,0.4839025350842228
+XLK,Market-only model,2022,2022-10-20,1,0,0.43030165448038193
+XLK,Market-only model,2022,2022-10-21,1,1,0.5354859380971473
+XLK,Market-only model,2022,2022-10-24,1,0,0.499448931426647
+XLK,Market-only model,2022,2022-10-25,0,1,0.5345173510434151
+XLK,Market-only model,2022,2022-10-26,0,1,0.5689295776937813
+XLK,Market-only model,2022,2022-10-27,1,0,0.44250908473682066
+XLK,Market-only model,2022,2022-10-28,0,0,0.4486821815991971
+XLK,Market-only model,2022,2022-10-31,0,1,0.6499617127618278
+XLK,Market-only model,2022,2022-11-01,0,1,0.5489623742666879
+XLK,Market-only model,2022,2022-11-02,0,1,0.5620282276429589
+XLK,Market-only model,2022,2022-11-03,1,0,0.48541767627652194
+XLK,Market-only model,2022,2022-11-04,1,0,0.3781702438193883
+XLK,Market-only model,2022,2022-11-07,1,1,0.6117160909325564
+XLK,Market-only model,2022,2022-11-08,0,1,0.593358674315226
+XLK,Market-only model,2022,2022-11-09,1,1,0.6325857256227596
+XLK,Market-only model,2022,2022-11-10,1,1,0.5984612055021039
+XLK,Market-only model,2022,2022-11-11,0,1,0.5983372126893866
+XLK,Market-only model,2022,2022-11-14,1,1,0.5860609864865705
+XLK,Market-only model,2022,2022-11-15,0,1,0.5172025006318576
+XLK,Market-only model,2022,2022-11-16,1,1,0.5805943494482785
+XLK,Market-only model,2022,2022-11-17,1,0,0.3861760336992076
+XLK,Market-only model,2022,2022-11-18,0,1,0.5840982214580985
+XLK,Market-only model,2022,2022-11-21,1,1,0.6021006567901861
+XLK,Market-only model,2022,2022-11-22,1,1,0.5490907111479
+XLK,Market-only model,2022,2022-11-23,0,1,0.5708963410904422
+XLK,Market-only model,2022,2022-11-25,0,1,0.5487913067370387
+XLK,Market-only model,2022,2022-11-28,0,1,0.5953880558876485
+XLK,Market-only model,2022,2022-11-29,1,1,0.506731105277744
+XLK,Market-only model,2022,2022-11-30,1,0,0.49426007138252376
+XLK,Market-only model,2022,2022-12-01,0,1,0.5885344234983851
+XLK,Market-only model,2022,2022-12-02,0,1,0.5458291279293956
+XLK,Market-only model,2022,2022-12-05,0,1,0.6242794768727213
+XLK,Market-only model,2022,2022-12-06,0,1,0.5746073318594146
+XLK,Market-only model,2022,2022-12-07,1,0,0.4693608128579479
+XLK,Market-only model,2022,2022-12-08,0,1,0.538066062915994
+XLK,Market-only model,2022,2022-12-09,1,1,0.7312932387270557
+XLK,Market-only model,2022,2022-12-12,1,1,0.5926189409686525
+XLK,Market-only model,2022,2022-12-13,0,1,0.5915106199283504
+XLK,Market-only model,2022,2022-12-14,0,1,0.5733695374671296
+XLK,Market-only model,2022,2022-12-15,0,0,0.46658721489848026
+XLK,Market-only model,2022,2022-12-16,0,0,0.49184589866474704
+XLK,Market-only model,2022,2022-12-19,1,0,0.4987761004220366
+XLK,Market-only model,2022,2022-12-20,1,1,0.504377418074588
+XLK,Market-only model,2022,2022-12-21,0,1,0.6096089143037557
+XLK,Market-only model,2022,2022-12-22,1,1,0.6403467211609264
+XLK,Market-only model,2022,2022-12-23,0,0,0.4952476167574515
+XLK,Market-only model,2022,2022-12-27,0,1,0.5036518201387381
+XLK,Market-only model,2022,2022-12-28,1,0,0.4877601623983667
+XLK,Market-only model,2022,2022-12-29,0,1,0.5541413824099607
+XLK,Market-only model,2022,2022-12-30,0,1,0.5943372772046392
+XLK,Market + news sentiment model,2022,2022-01-03,0,0,0.4315492683268517
+XLK,Market + news sentiment model,2022,2022-01-04,0,1,0.5762191972464965
+XLK,Market + news sentiment model,2022,2022-01-05,0,1,0.6021714823779856
+XLK,Market + news sentiment model,2022,2022-01-06,0,1,0.5568186110396617
+XLK,Market + news sentiment model,2022,2022-01-07,1,1,0.5539198839177678
+XLK,Market + news sentiment model,2022,2022-01-10,1,1,0.5496162954379122
+XLK,Market + news sentiment model,2022,2022-01-11,1,1,0.522746021928268
+XLK,Market + news sentiment model,2022,2022-01-12,0,1,0.552382105186956
+XLK,Market + news sentiment model,2022,2022-01-13,1,1,0.5624562503058538
+XLK,Market + news sentiment model,2022,2022-01-14,0,1,0.5019023155684311
+XLK,Market + news sentiment model,2022,2022-01-18,0,1,0.5396001817364383
+XLK,Market + news sentiment model,2022,2022-01-19,0,0,0.4724036193457713
+XLK,Market + news sentiment model,2022,2022-01-20,0,1,0.6026189101986285
+XLK,Market + news sentiment model,2022,2022-01-21,1,1,0.621926888517417
+XLK,Market + news sentiment model,2022,2022-01-24,0,1,0.5764140928348745
+XLK,Market + news sentiment model,2022,2022-01-25,1,1,0.5921676128918657
+XLK,Market + news sentiment model,2022,2022-01-26,0,1,0.535740881048071
+XLK,Market + news sentiment model,2022,2022-01-27,1,1,0.5760196524872866
+XLK,Market + news sentiment model,2022,2022-01-28,1,1,0.5200730782194921
+XLK,Market + news sentiment model,2022,2022-01-31,1,1,0.5571540726169644
+XLK,Market + news sentiment model,2022,2022-02-01,1,1,0.5708357857110539
+XLK,Market + news sentiment model,2022,2022-02-02,0,0,0.4611705981408077
+XLK,Market + news sentiment model,2022,2022-02-03,1,0,0.485819058457184
+XLK,Market + news sentiment model,2022,2022-02-04,0,0,0.38360917116044313
+XLK,Market + news sentiment model,2022,2022-02-07,1,0,0.45837061819557295
+XLK,Market + news sentiment model,2022,2022-02-08,1,1,0.5416017058076092
+XLK,Market + news sentiment model,2022,2022-02-09,0,1,0.5105064794256777
+XLK,Market + news sentiment model,2022,2022-02-10,0,1,0.657901565533577
+XLK,Market + news sentiment model,2022,2022-02-11,0,0,0.43345536034547494
+XLK,Market + news sentiment model,2022,2022-02-14,1,1,0.5119501810141711
+XLK,Market + news sentiment model,2022,2022-02-15,0,0,0.4842817757046314
+XLK,Market + news sentiment model,2022,2022-02-16,0,0,0.4906232252768228
+XLK,Market + news sentiment model,2022,2022-02-17,0,1,0.5807528685514455
+XLK,Market + news sentiment model,2022,2022-02-18,0,0,0.4937570047271069
+XLK,Market + news sentiment model,2022,2022-02-22,0,1,0.5612540571374183
+XLK,Market + news sentiment model,2022,2022-02-23,1,0,0.4724176993600058
+XLK,Market + news sentiment model,2022,2022-02-24,1,1,0.5724492108417918
+XLK,Market + news sentiment model,2022,2022-02-25,0,1,0.6820594079827973
+XLK,Market + news sentiment model,2022,2022-02-28,0,1,0.6598695763289877
+XLK,Market + news sentiment model,2022,2022-03-01,1,1,0.5598399796697612
+XLK,Market + news sentiment model,2022,2022-03-02,0,0,0.49945734421215626
+XLK,Market + news sentiment model,2022,2022-03-03,0,1,0.5184619431458893
+XLK,Market + news sentiment model,2022,2022-03-04,0,0,0.44367251358444004
+XLK,Market + news sentiment model,2022,2022-03-07,0,1,0.5153578055842435
+XLK,Market + news sentiment model,2022,2022-03-08,1,1,0.5205688971137907
+XLK,Market + news sentiment model,2022,2022-03-09,0,1,0.5353180896169425
+XLK,Market + news sentiment model,2022,2022-03-10,0,1,0.6771172693842644
+XLK,Market + news sentiment model,2022,2022-03-11,0,1,0.5248993742888134
+XLK,Market + news sentiment model,2022,2022-03-14,1,1,0.5422617442289164
+XLK,Market + news sentiment model,2022,2022-03-15,1,1,0.5245817928850123
+XLK,Market + news sentiment model,2022,2022-03-16,1,1,0.6007209815433001
+XLK,Market + news sentiment model,2022,2022-03-17,1,1,0.6366280207768701
+XLK,Market + news sentiment model,2022,2022-03-18,0,0,0.4951192052845343
+XLK,Market + news sentiment model,2022,2022-03-21,1,1,0.5296985508163305
+XLK,Market + news sentiment model,2022,2022-03-22,0,0,0.4239334200666476
+XLK,Market + news sentiment model,2022,2022-03-23,1,0,0.3957655475468881
+XLK,Market + news sentiment model,2022,2022-03-24,0,1,0.5745123802210446
+XLK,Market + news sentiment model,2022,2022-03-25,1,1,0.5548065032237482
+XLK,Market + news sentiment model,2022,2022-03-28,1,1,0.551334542070731
+XLK,Market + news sentiment model,2022,2022-03-29,0,0,0.49426872374123454
+XLK,Market + news sentiment model,2022,2022-03-30,0,1,0.6074206227777711
+XLK,Market + news sentiment model,2022,2022-03-31,0,0,0.4172149213198851
+XLK,Market + news sentiment model,2022,2022-04-01,1,1,0.5054835665292361
+XLK,Market + news sentiment model,2022,2022-04-04,0,0,0.44786776631906844
+XLK,Market + news sentiment model,2022,2022-04-05,0,1,0.5693437364145386
+XLK,Market + news sentiment model,2022,2022-04-06,1,1,0.6203182997777157
+XLK,Market + news sentiment model,2022,2022-04-07,0,1,0.502606981764351
+XLK,Market + news sentiment model,2022,2022-04-08,0,1,0.5035119328949471
+XLK,Market + news sentiment model,2022,2022-04-11,0,0,0.4992114856427667
+XLK,Market + news sentiment model,2022,2022-04-12,1,1,0.6778640423421656
+XLK,Market + news sentiment model,2022,2022-04-13,0,1,0.6960642831957966
+XLK,Market + news sentiment model,2022,2022-04-14,1,1,0.6103189494041928
+XLK,Market + news sentiment model,2022,2022-04-18,1,1,0.5481360897756027
+XLK,Market + news sentiment model,2022,2022-04-19,0,1,0.5848114537089113
+XLK,Market + news sentiment model,2022,2022-04-20,0,1,0.5889454784694687
+XLK,Market + news sentiment model,2022,2022-04-21,0,0,0.4512699605456835
+XLK,Market + news sentiment model,2022,2022-04-22,1,1,0.6376967837925248
+XLK,Market + news sentiment model,2022,2022-04-25,0,0,0.49525132884555456
+XLK,Market + news sentiment model,2022,2022-04-26,1,0,0.49375649503769264
+XLK,Market + news sentiment model,2022,2022-04-27,1,1,0.5214377988964438
+XLK,Market + news sentiment model,2022,2022-04-28,0,1,0.5619936756104168
+XLK,Market + news sentiment model,2022,2022-04-29,1,1,0.5826009353405593
+XLK,Market + news sentiment model,2022,2022-05-02,1,0,0.4057260766494702
+XLK,Market + news sentiment model,2022,2022-05-03,1,1,0.639926053498175
+XLK,Market + news sentiment model,2022,2022-05-04,0,0,0.46680823932670634
+XLK,Market + news sentiment model,2022,2022-05-05,0,1,0.5025374324159124
+XLK,Market + news sentiment model,2022,2022-05-06,0,1,0.502453522943835
+XLK,Market + news sentiment model,2022,2022-05-09,1,0,0.46378939750033266
+XLK,Market + news sentiment model,2022,2022-05-10,0,0,0.42751041853647803
+XLK,Market + news sentiment model,2022,2022-05-11,0,0,0.44515225659905255
+XLK,Market + news sentiment model,2022,2022-05-12,1,1,0.6285175435272391
+XLK,Market + news sentiment model,2022,2022-05-13,0,0,0.4531549967347806
+XLK,Market + news sentiment model,2022,2022-05-16,1,1,0.6554438375568005
+XLK,Market + news sentiment model,2022,2022-05-17,0,0,0.40555764253907484
+XLK,Market + news sentiment model,2022,2022-05-18,0,1,0.6080074406399993
+XLK,Market + news sentiment model,2022,2022-05-19,1,0,0.3949597681033833
+XLK,Market + news sentiment model,2022,2022-05-20,1,0,0.3486895496076125
+XLK,Market + news sentiment model,2022,2022-05-23,0,0,0.49177250444298826
+XLK,Market + news sentiment model,2022,2022-05-24,1,0,0.44424513310717817
+XLK,Market + news sentiment model,2022,2022-05-25,1,1,0.6088381215346098
+XLK,Market + news sentiment model,2022,2022-05-26,1,1,0.587015250573585
+XLK,Market + news sentiment model,2022,2022-05-27,0,0,0.38960755602964176
+XLK,Market + news sentiment model,2022,2022-05-31,0,1,0.5705171641838286
+XLK,Market + news sentiment model,2022,2022-06-01,1,0,0.45124093186026665
+XLK,Market + news sentiment model,2022,2022-06-02,0,1,0.5060483146871071
+XLK,Market + news sentiment model,2022,2022-06-03,1,0,0.36816930066277526
+XLK,Market + news sentiment model,2022,2022-06-06,1,0,0.37196168818980735
+XLK,Market + news sentiment model,2022,2022-06-07,0,0,0.4837468143237637
+XLK,Market + news sentiment model,2022,2022-06-08,0,1,0.5955553288160825
+XLK,Market + news sentiment model,2022,2022-06-09,0,0,0.45728626556297197
+XLK,Market + news sentiment model,2022,2022-06-10,0,1,0.560289822198274
+XLK,Market + news sentiment model,2022,2022-06-13,1,1,0.5791411338563288
+XLK,Market + news sentiment model,2022,2022-06-14,1,0,0.49416043298165446
+XLK,Market + news sentiment model,2022,2022-06-15,0,1,0.7006383167475618
+XLK,Market + news sentiment model,2022,2022-06-16,1,1,0.6226162587657588
+XLK,Market + news sentiment model,2022,2022-06-17,1,1,0.5545820566584635
+XLK,Market + news sentiment model,2022,2022-06-21,0,1,0.6668601733398473
+XLK,Market + news sentiment model,2022,2022-06-22,1,1,0.6161381387037685
+XLK,Market + news sentiment model,2022,2022-06-23,1,1,0.5296552927470269
+XLK,Market + news sentiment model,2022,2022-06-24,0,1,0.5900161678787236
+XLK,Market + news sentiment model,2022,2022-06-27,0,1,0.5357163380077574
+XLK,Market + news sentiment model,2022,2022-06-28,1,0,0.43744601949933903
+XLK,Market + news sentiment model,2022,2022-06-29,0,0,0.42360017707907766
+XLK,Market + news sentiment model,2022,2022-06-30,1,0,0.4495993053242616
+XLK,Market + news sentiment model,2022,2022-07-01,1,0,0.4978525546768032
+XLK,Market + news sentiment model,2022,2022-07-05,1,1,0.5423576988576816
+XLK,Market + news sentiment model,2022,2022-07-06,1,1,0.6093094965383049
+XLK,Market + news sentiment model,2022,2022-07-07,1,1,0.5495394749678945
+XLK,Market + news sentiment model,2022,2022-07-08,0,0,0.4974011065648528
+XLK,Market + news sentiment model,2022,2022-07-11,0,0,0.4369251273033321
+XLK,Market + news sentiment model,2022,2022-07-12,0,0,0.46461454653851375
+XLK,Market + news sentiment model,2022,2022-07-13,1,0,0.4671033586206454
+XLK,Market + news sentiment model,2022,2022-07-14,1,1,0.550035862176088
+XLK,Market + news sentiment model,2022,2022-07-15,0,1,0.6102324520750361
+XLK,Market + news sentiment model,2022,2022-07-18,1,1,0.5084746153664916
+XLK,Market + news sentiment model,2022,2022-07-19,1,1,0.5494774271129
+XLK,Market + news sentiment model,2022,2022-07-20,1,1,0.6673505703662082
+XLK,Market + news sentiment model,2022,2022-07-21,0,1,0.5887300829705696
+XLK,Market + news sentiment model,2022,2022-07-22,0,1,0.5666913901883647
+XLK,Market + news sentiment model,2022,2022-07-25,0,1,0.5866792867360513
+XLK,Market + news sentiment model,2022,2022-07-26,1,0,0.47320053566911047
+XLK,Market + news sentiment model,2022,2022-07-27,1,0,0.4982464646027737
+XLK,Market + news sentiment model,2022,2022-07-28,1,1,0.6233007886579061
+XLK,Market + news sentiment model,2022,2022-07-29,0,1,0.5896943470161502
+XLK,Market + news sentiment model,2022,2022-08-01,0,1,0.6530019090094024
+XLK,Market + news sentiment model,2022,2022-08-02,1,1,0.6077549000682202
+XLK,Market + news sentiment model,2022,2022-08-03,1,0,0.4943331988967686
+XLK,Market + news sentiment model,2022,2022-08-04,0,1,0.6668500006220628
+XLK,Market + news sentiment model,2022,2022-08-05,0,1,0.5902296192812225
+XLK,Market + news sentiment model,2022,2022-08-08,0,1,0.5337512519734824
+XLK,Market + news sentiment model,2022,2022-08-09,1,1,0.5135503438649107
+XLK,Market + news sentiment model,2022,2022-08-10,0,1,0.5640509264025237
+XLK,Market + news sentiment model,2022,2022-08-11,1,1,0.6361679854963448
+XLK,Market + news sentiment model,2022,2022-08-12,1,1,0.6146382134492087
+XLK,Market + news sentiment model,2022,2022-08-15,0,1,0.6388046431587948
+XLK,Market + news sentiment model,2022,2022-08-16,0,1,0.6505816073081842
+XLK,Market + news sentiment model,2022,2022-08-17,1,1,0.5832236825945055
+XLK,Market + news sentiment model,2022,2022-08-18,0,1,0.5646809438023385
+XLK,Market + news sentiment model,2022,2022-08-19,0,1,0.5461302528049875
+XLK,Market + news sentiment model,2022,2022-08-22,0,1,0.5156523852382853
+XLK,Market + news sentiment model,2022,2022-08-23,1,1,0.529843373605643
+XLK,Market + news sentiment model,2022,2022-08-24,1,1,0.6285451670133391
+XLK,Market + news sentiment model,2022,2022-08-25,0,1,0.5987322511806322
+XLK,Market + news sentiment model,2022,2022-08-26,0,1,0.6392446968282365
+XLK,Market + news sentiment model,2022,2022-08-29,0,0,0.47636790048628197
+XLK,Market + news sentiment model,2022,2022-08-30,0,1,0.5029968381098613
+XLK,Market + news sentiment model,2022,2022-08-31,0,1,0.5836303587088718
+XLK,Market + news sentiment model,2022,2022-09-01,0,1,0.5377566146258322
+XLK,Market + news sentiment model,2022,2022-09-02,0,1,0.5585850572774811
+XLK,Market + news sentiment model,2022,2022-09-06,1,1,0.5541999932364348
+XLK,Market + news sentiment model,2022,2022-09-07,1,1,0.539906207228754
+XLK,Market + news sentiment model,2022,2022-09-08,1,1,0.6414000585886644
+XLK,Market + news sentiment model,2022,2022-09-09,1,1,0.5152473978841384
+XLK,Market + news sentiment model,2022,2022-09-12,0,1,0.5716587113575182
+XLK,Market + news sentiment model,2022,2022-09-13,1,1,0.5495424738582835
+XLK,Market + news sentiment model,2022,2022-09-14,0,0,0.40335564498138815
+XLK,Market + news sentiment model,2022,2022-09-15,0,1,0.5073709196569642
+XLK,Market + news sentiment model,2022,2022-09-16,1,0,0.42955618242119226
+XLK,Market + news sentiment model,2022,2022-09-19,0,0,0.4579687856882018
+XLK,Market + news sentiment model,2022,2022-09-20,0,1,0.5244277132839898
+XLK,Market + news sentiment model,2022,2022-09-21,0,1,0.5590339984152536
+XLK,Market + news sentiment model,2022,2022-09-22,0,1,0.5929503416560128
+XLK,Market + news sentiment model,2022,2022-09-23,0,1,0.6086329529177621
+XLK,Market + news sentiment model,2022,2022-09-26,1,0,0.46588307834118925
+XLK,Market + news sentiment model,2022,2022-09-27,1,0,0.47223842386017023
+XLK,Market + news sentiment model,2022,2022-09-28,0,1,0.548942308013565
+XLK,Market + news sentiment model,2022,2022-09-29,0,1,0.586321911711013
+XLK,Market + news sentiment model,2022,2022-09-30,1,1,0.5023237810251049
+XLK,Market + news sentiment model,2022,2022-10-03,1,0,0.492576040583023
+XLK,Market + news sentiment model,2022,2022-10-04,1,1,0.5007161055228304
+XLK,Market + news sentiment model,2022,2022-10-05,0,1,0.6138468603069912
+XLK,Market + news sentiment model,2022,2022-10-06,0,1,0.5287631804706737
+XLK,Market + news sentiment model,2022,2022-10-07,0,0,0.49525930556475
+XLK,Market + news sentiment model,2022,2022-10-10,0,0,0.44110098187497904
+XLK,Market + news sentiment model,2022,2022-10-11,0,0,0.31933635052171333
+XLK,Market + news sentiment model,2022,2022-10-12,1,1,0.5744101235903556
+XLK,Market + news sentiment model,2022,2022-10-13,0,1,0.5391878287667147
+XLK,Market + news sentiment model,2022,2022-10-14,1,1,0.6456404764707028
+XLK,Market + news sentiment model,2022,2022-10-17,1,0,0.4879462497666861
+XLK,Market + news sentiment model,2022,2022-10-18,0,1,0.5427909746660676
+XLK,Market + news sentiment model,2022,2022-10-19,1,0,0.4614448766408505
+XLK,Market + news sentiment model,2022,2022-10-20,1,0,0.48005924480793855
+XLK,Market + news sentiment model,2022,2022-10-21,1,1,0.5283204162199826
+XLK,Market + news sentiment model,2022,2022-10-24,1,1,0.5098351741436149
+XLK,Market + news sentiment model,2022,2022-10-25,0,0,0.47874304034853965
+XLK,Market + news sentiment model,2022,2022-10-26,0,1,0.5466359928234172
+XLK,Market + news sentiment model,2022,2022-10-27,1,0,0.44449998551444564
+XLK,Market + news sentiment model,2022,2022-10-28,0,0,0.4667663301966743
+XLK,Market + news sentiment model,2022,2022-10-31,0,1,0.6962103225719032
+XLK,Market + news sentiment model,2022,2022-11-01,0,1,0.5228534658578718
+XLK,Market + news sentiment model,2022,2022-11-02,0,1,0.607644960709162
+XLK,Market + news sentiment model,2022,2022-11-03,1,1,0.5458024410259177
+XLK,Market + news sentiment model,2022,2022-11-04,1,0,0.3525566920905361
+XLK,Market + news sentiment model,2022,2022-11-07,1,1,0.5558364962548149
+XLK,Market + news sentiment model,2022,2022-11-08,0,1,0.5688372447077261
+XLK,Market + news sentiment model,2022,2022-11-09,1,1,0.6183354623915498
+XLK,Market + news sentiment model,2022,2022-11-10,1,1,0.611829214142612
+XLK,Market + news sentiment model,2022,2022-11-11,0,1,0.6534405718505684
+XLK,Market + news sentiment model,2022,2022-11-14,1,1,0.5308594172156101
+XLK,Market + news sentiment model,2022,2022-11-15,0,1,0.5297100167490435
+XLK,Market + news sentiment model,2022,2022-11-16,1,1,0.6150350650021065
+XLK,Market + news sentiment model,2022,2022-11-17,1,0,0.37337323723278487
+XLK,Market + news sentiment model,2022,2022-11-18,0,1,0.576460988930726
+XLK,Market + news sentiment model,2022,2022-11-21,1,1,0.5679098165830766
+XLK,Market + news sentiment model,2022,2022-11-22,1,1,0.5106822497652377
+XLK,Market + news sentiment model,2022,2022-11-23,0,1,0.6419494704024221
+XLK,Market + news sentiment model,2022,2022-11-25,0,1,0.5557147045819539
+XLK,Market + news sentiment model,2022,2022-11-28,0,1,0.5630497747960487
+XLK,Market + news sentiment model,2022,2022-11-29,1,0,0.4487084546540245
+XLK,Market + news sentiment model,2022,2022-11-30,1,0,0.4943775806220548
+XLK,Market + news sentiment model,2022,2022-12-01,0,1,0.5877675057252736
+XLK,Market + news sentiment model,2022,2022-12-02,0,0,0.48347334755691057
+XLK,Market + news sentiment model,2022,2022-12-05,0,1,0.6076215816676384
+XLK,Market + news sentiment model,2022,2022-12-06,0,1,0.5987004492117698
+XLK,Market + news sentiment model,2022,2022-12-07,1,1,0.5132222010485403
+XLK,Market + news sentiment model,2022,2022-12-08,0,1,0.5146372213360983
+XLK,Market + news sentiment model,2022,2022-12-09,1,1,0.6900649294274385
+XLK,Market + news sentiment model,2022,2022-12-12,1,1,0.5320704326254818
+XLK,Market + news sentiment model,2022,2022-12-13,0,1,0.6203768917391768
+XLK,Market + news sentiment model,2022,2022-12-14,0,1,0.6073852534241511
+XLK,Market + news sentiment model,2022,2022-12-15,0,1,0.5432863627697812
+XLK,Market + news sentiment model,2022,2022-12-16,0,0,0.4781649696968181
+XLK,Market + news sentiment model,2022,2022-12-19,1,0,0.464083095224467
+XLK,Market + news sentiment model,2022,2022-12-20,1,1,0.5076003953968043
+XLK,Market + news sentiment model,2022,2022-12-21,0,1,0.5845381967642381
+XLK,Market + news sentiment model,2022,2022-12-22,1,1,0.6491753753572375
+XLK,Market + news sentiment model,2022,2022-12-23,0,0,0.42816929417246224
+XLK,Market + news sentiment model,2022,2022-12-27,0,0,0.48466777477765677
+XLK,Market + news sentiment model,2022,2022-12-28,1,0,0.471486993821523
+XLK,Market + news sentiment model,2022,2022-12-29,0,1,0.5922021767919068
+XLK,Market + news sentiment model,2022,2022-12-30,0,0,0.4678494575614786
+XLK,Always-up reference,2022,2022-01-03,0,1,1.0
+XLK,Always-up reference,2022,2022-01-04,0,1,1.0
+XLK,Always-up reference,2022,2022-01-05,0,1,1.0
+XLK,Always-up reference,2022,2022-01-06,0,1,1.0
+XLK,Always-up reference,2022,2022-01-07,1,1,1.0
+XLK,Always-up reference,2022,2022-01-10,1,1,1.0
+XLK,Always-up reference,2022,2022-01-11,1,1,1.0
+XLK,Always-up reference,2022,2022-01-12,0,1,1.0
+XLK,Always-up reference,2022,2022-01-13,1,1,1.0
+XLK,Always-up reference,2022,2022-01-14,0,1,1.0
+XLK,Always-up reference,2022,2022-01-18,0,1,1.0
+XLK,Always-up reference,2022,2022-01-19,0,1,1.0
+XLK,Always-up reference,2022,2022-01-20,0,1,1.0
+XLK,Always-up reference,2022,2022-01-21,1,1,1.0
+XLK,Always-up reference,2022,2022-01-24,0,1,1.0
+XLK,Always-up reference,2022,2022-01-25,1,1,1.0
+XLK,Always-up reference,2022,2022-01-26,0,1,1.0
+XLK,Always-up reference,2022,2022-01-27,1,1,1.0
+XLK,Always-up reference,2022,2022-01-28,1,1,1.0
+XLK,Always-up reference,2022,2022-01-31,1,1,1.0
+XLK,Always-up reference,2022,2022-02-01,1,1,1.0
+XLK,Always-up reference,2022,2022-02-02,0,1,1.0
+XLK,Always-up reference,2022,2022-02-03,1,1,1.0
+XLK,Always-up reference,2022,2022-02-04,0,1,1.0
+XLK,Always-up reference,2022,2022-02-07,1,1,1.0
+XLK,Always-up reference,2022,2022-02-08,1,1,1.0
+XLK,Always-up reference,2022,2022-02-09,0,1,1.0
+XLK,Always-up reference,2022,2022-02-10,0,1,1.0
+XLK,Always-up reference,2022,2022-02-11,0,1,1.0
+XLK,Always-up reference,2022,2022-02-14,1,1,1.0
+XLK,Always-up reference,2022,2022-02-15,0,1,1.0
+XLK,Always-up reference,2022,2022-02-16,0,1,1.0
+XLK,Always-up reference,2022,2022-02-17,0,1,1.0
+XLK,Always-up reference,2022,2022-02-18,0,1,1.0
+XLK,Always-up reference,2022,2022-02-22,0,1,1.0
+XLK,Always-up reference,2022,2022-02-23,1,1,1.0
+XLK,Always-up reference,2022,2022-02-24,1,1,1.0
+XLK,Always-up reference,2022,2022-02-25,0,1,1.0
+XLK,Always-up reference,2022,2022-02-28,0,1,1.0
+XLK,Always-up reference,2022,2022-03-01,1,1,1.0
+XLK,Always-up reference,2022,2022-03-02,0,1,1.0
+XLK,Always-up reference,2022,2022-03-03,0,1,1.0
+XLK,Always-up reference,2022,2022-03-04,0,1,1.0
+XLK,Always-up reference,2022,2022-03-07,0,1,1.0
+XLK,Always-up reference,2022,2022-03-08,1,1,1.0
+XLK,Always-up reference,2022,2022-03-09,0,1,1.0
+XLK,Always-up reference,2022,2022-03-10,0,1,1.0
+XLK,Always-up reference,2022,2022-03-11,0,1,1.0
+XLK,Always-up reference,2022,2022-03-14,1,1,1.0
+XLK,Always-up reference,2022,2022-03-15,1,1,1.0
+XLK,Always-up reference,2022,2022-03-16,1,1,1.0
+XLK,Always-up reference,2022,2022-03-17,1,1,1.0
+XLK,Always-up reference,2022,2022-03-18,0,1,1.0
+XLK,Always-up reference,2022,2022-03-21,1,1,1.0
+XLK,Always-up reference,2022,2022-03-22,0,1,1.0
+XLK,Always-up reference,2022,2022-03-23,1,1,1.0
+XLK,Always-up reference,2022,2022-03-24,0,1,1.0
+XLK,Always-up reference,2022,2022-03-25,1,1,1.0
+XLK,Always-up reference,2022,2022-03-28,1,1,1.0
+XLK,Always-up reference,2022,2022-03-29,0,1,1.0
+XLK,Always-up reference,2022,2022-03-30,0,1,1.0
+XLK,Always-up reference,2022,2022-03-31,0,1,1.0
+XLK,Always-up reference,2022,2022-04-01,1,1,1.0
+XLK,Always-up reference,2022,2022-04-04,0,1,1.0
+XLK,Always-up reference,2022,2022-04-05,0,1,1.0
+XLK,Always-up reference,2022,2022-04-06,1,1,1.0
+XLK,Always-up reference,2022,2022-04-07,0,1,1.0
+XLK,Always-up reference,2022,2022-04-08,0,1,1.0
+XLK,Always-up reference,2022,2022-04-11,0,1,1.0
+XLK,Always-up reference,2022,2022-04-12,1,1,1.0
+XLK,Always-up reference,2022,2022-04-13,0,1,1.0
+XLK,Always-up reference,2022,2022-04-14,1,1,1.0
+XLK,Always-up reference,2022,2022-04-18,1,1,1.0
+XLK,Always-up reference,2022,2022-04-19,0,1,1.0
+XLK,Always-up reference,2022,2022-04-20,0,1,1.0
+XLK,Always-up reference,2022,2022-04-21,0,1,1.0
+XLK,Always-up reference,2022,2022-04-22,1,1,1.0
+XLK,Always-up reference,2022,2022-04-25,0,1,1.0
+XLK,Always-up reference,2022,2022-04-26,1,1,1.0
+XLK,Always-up reference,2022,2022-04-27,1,1,1.0
+XLK,Always-up reference,2022,2022-04-28,0,1,1.0
+XLK,Always-up reference,2022,2022-04-29,1,1,1.0
+XLK,Always-up reference,2022,2022-05-02,1,1,1.0
+XLK,Always-up reference,2022,2022-05-03,1,1,1.0
+XLK,Always-up reference,2022,2022-05-04,0,1,1.0
+XLK,Always-up reference,2022,2022-05-05,0,1,1.0
+XLK,Always-up reference,2022,2022-05-06,0,1,1.0
+XLK,Always-up reference,2022,2022-05-09,1,1,1.0
+XLK,Always-up reference,2022,2022-05-10,0,1,1.0
+XLK,Always-up reference,2022,2022-05-11,0,1,1.0
+XLK,Always-up reference,2022,2022-05-12,1,1,1.0
+XLK,Always-up reference,2022,2022-05-13,0,1,1.0
+XLK,Always-up reference,2022,2022-05-16,1,1,1.0
+XLK,Always-up reference,2022,2022-05-17,0,1,1.0
+XLK,Always-up reference,2022,2022-05-18,0,1,1.0
+XLK,Always-up reference,2022,2022-05-19,1,1,1.0
+XLK,Always-up reference,2022,2022-05-20,1,1,1.0
+XLK,Always-up reference,2022,2022-05-23,0,1,1.0
+XLK,Always-up reference,2022,2022-05-24,1,1,1.0
+XLK,Always-up reference,2022,2022-05-25,1,1,1.0
+XLK,Always-up reference,2022,2022-05-26,1,1,1.0
+XLK,Always-up reference,2022,2022-05-27,0,1,1.0
+XLK,Always-up reference,2022,2022-05-31,0,1,1.0
+XLK,Always-up reference,2022,2022-06-01,1,1,1.0
+XLK,Always-up reference,2022,2022-06-02,0,1,1.0
+XLK,Always-up reference,2022,2022-06-03,1,1,1.0
+XLK,Always-up reference,2022,2022-06-06,1,1,1.0
+XLK,Always-up reference,2022,2022-06-07,0,1,1.0
+XLK,Always-up reference,2022,2022-06-08,0,1,1.0
+XLK,Always-up reference,2022,2022-06-09,0,1,1.0
+XLK,Always-up reference,2022,2022-06-10,0,1,1.0
+XLK,Always-up reference,2022,2022-06-13,1,1,1.0
+XLK,Always-up reference,2022,2022-06-14,1,1,1.0
+XLK,Always-up reference,2022,2022-06-15,0,1,1.0
+XLK,Always-up reference,2022,2022-06-16,1,1,1.0
+XLK,Always-up reference,2022,2022-06-17,1,1,1.0
+XLK,Always-up reference,2022,2022-06-21,0,1,1.0
+XLK,Always-up reference,2022,2022-06-22,1,1,1.0
+XLK,Always-up reference,2022,2022-06-23,1,1,1.0
+XLK,Always-up reference,2022,2022-06-24,0,1,1.0
+XLK,Always-up reference,2022,2022-06-27,0,1,1.0
+XLK,Always-up reference,2022,2022-06-28,1,1,1.0
+XLK,Always-up reference,2022,2022-06-29,0,1,1.0
+XLK,Always-up reference,2022,2022-06-30,1,1,1.0
+XLK,Always-up reference,2022,2022-07-01,1,1,1.0
+XLK,Always-up reference,2022,2022-07-05,1,1,1.0
+XLK,Always-up reference,2022,2022-07-06,1,1,1.0
+XLK,Always-up reference,2022,2022-07-07,1,1,1.0
+XLK,Always-up reference,2022,2022-07-08,0,1,1.0
+XLK,Always-up reference,2022,2022-07-11,0,1,1.0
+XLK,Always-up reference,2022,2022-07-12,0,1,1.0
+XLK,Always-up reference,2022,2022-07-13,1,1,1.0
+XLK,Always-up reference,2022,2022-07-14,1,1,1.0
+XLK,Always-up reference,2022,2022-07-15,0,1,1.0
+XLK,Always-up reference,2022,2022-07-18,1,1,1.0
+XLK,Always-up reference,2022,2022-07-19,1,1,1.0
+XLK,Always-up reference,2022,2022-07-20,1,1,1.0
+XLK,Always-up reference,2022,2022-07-21,0,1,1.0
+XLK,Always-up reference,2022,2022-07-22,0,1,1.0
+XLK,Always-up reference,2022,2022-07-25,0,1,1.0
+XLK,Always-up reference,2022,2022-07-26,1,1,1.0
+XLK,Always-up reference,2022,2022-07-27,1,1,1.0
+XLK,Always-up reference,2022,2022-07-28,1,1,1.0
+XLK,Always-up reference,2022,2022-07-29,0,1,1.0
+XLK,Always-up reference,2022,2022-08-01,0,1,1.0
+XLK,Always-up reference,2022,2022-08-02,1,1,1.0
+XLK,Always-up reference,2022,2022-08-03,1,1,1.0
+XLK,Always-up reference,2022,2022-08-04,0,1,1.0
+XLK,Always-up reference,2022,2022-08-05,0,1,1.0
+XLK,Always-up reference,2022,2022-08-08,0,1,1.0
+XLK,Always-up reference,2022,2022-08-09,1,1,1.0
+XLK,Always-up reference,2022,2022-08-10,0,1,1.0
+XLK,Always-up reference,2022,2022-08-11,1,1,1.0
+XLK,Always-up reference,2022,2022-08-12,1,1,1.0
+XLK,Always-up reference,2022,2022-08-15,0,1,1.0
+XLK,Always-up reference,2022,2022-08-16,0,1,1.0
+XLK,Always-up reference,2022,2022-08-17,1,1,1.0
+XLK,Always-up reference,2022,2022-08-18,0,1,1.0
+XLK,Always-up reference,2022,2022-08-19,0,1,1.0
+XLK,Always-up reference,2022,2022-08-22,0,1,1.0
+XLK,Always-up reference,2022,2022-08-23,1,1,1.0
+XLK,Always-up reference,2022,2022-08-24,1,1,1.0
+XLK,Always-up reference,2022,2022-08-25,0,1,1.0
+XLK,Always-up reference,2022,2022-08-26,0,1,1.0
+XLK,Always-up reference,2022,2022-08-29,0,1,1.0
+XLK,Always-up reference,2022,2022-08-30,0,1,1.0
+XLK,Always-up reference,2022,2022-08-31,0,1,1.0
+XLK,Always-up reference,2022,2022-09-01,0,1,1.0
+XLK,Always-up reference,2022,2022-09-02,0,1,1.0
+XLK,Always-up reference,2022,2022-09-06,1,1,1.0
+XLK,Always-up reference,2022,2022-09-07,1,1,1.0
+XLK,Always-up reference,2022,2022-09-08,1,1,1.0
+XLK,Always-up reference,2022,2022-09-09,1,1,1.0
+XLK,Always-up reference,2022,2022-09-12,0,1,1.0
+XLK,Always-up reference,2022,2022-09-13,1,1,1.0
+XLK,Always-up reference,2022,2022-09-14,0,1,1.0
+XLK,Always-up reference,2022,2022-09-15,0,1,1.0
+XLK,Always-up reference,2022,2022-09-16,1,1,1.0
+XLK,Always-up reference,2022,2022-09-19,0,1,1.0
+XLK,Always-up reference,2022,2022-09-20,0,1,1.0
+XLK,Always-up reference,2022,2022-09-21,0,1,1.0
+XLK,Always-up reference,2022,2022-09-22,0,1,1.0
+XLK,Always-up reference,2022,2022-09-23,0,1,1.0
+XLK,Always-up reference,2022,2022-09-26,1,1,1.0
+XLK,Always-up reference,2022,2022-09-27,1,1,1.0
+XLK,Always-up reference,2022,2022-09-28,0,1,1.0
+XLK,Always-up reference,2022,2022-09-29,0,1,1.0
+XLK,Always-up reference,2022,2022-09-30,1,1,1.0
+XLK,Always-up reference,2022,2022-10-03,1,1,1.0
+XLK,Always-up reference,2022,2022-10-04,1,1,1.0
+XLK,Always-up reference,2022,2022-10-05,0,1,1.0
+XLK,Always-up reference,2022,2022-10-06,0,1,1.0
+XLK,Always-up reference,2022,2022-10-07,0,1,1.0
+XLK,Always-up reference,2022,2022-10-10,0,1,1.0
+XLK,Always-up reference,2022,2022-10-11,0,1,1.0
+XLK,Always-up reference,2022,2022-10-12,1,1,1.0
+XLK,Always-up reference,2022,2022-10-13,0,1,1.0
+XLK,Always-up reference,2022,2022-10-14,1,1,1.0
+XLK,Always-up reference,2022,2022-10-17,1,1,1.0
+XLK,Always-up reference,2022,2022-10-18,0,1,1.0
+XLK,Always-up reference,2022,2022-10-19,1,1,1.0
+XLK,Always-up reference,2022,2022-10-20,1,1,1.0
+XLK,Always-up reference,2022,2022-10-21,1,1,1.0
+XLK,Always-up reference,2022,2022-10-24,1,1,1.0
+XLK,Always-up reference,2022,2022-10-25,0,1,1.0
+XLK,Always-up reference,2022,2022-10-26,0,1,1.0
+XLK,Always-up reference,2022,2022-10-27,1,1,1.0
+XLK,Always-up reference,2022,2022-10-28,0,1,1.0
+XLK,Always-up reference,2022,2022-10-31,0,1,1.0
+XLK,Always-up reference,2022,2022-11-01,0,1,1.0
+XLK,Always-up reference,2022,2022-11-02,0,1,1.0
+XLK,Always-up reference,2022,2022-11-03,1,1,1.0
+XLK,Always-up reference,2022,2022-11-04,1,1,1.0
+XLK,Always-up reference,2022,2022-11-07,1,1,1.0
+XLK,Always-up reference,2022,2022-11-08,0,1,1.0
+XLK,Always-up reference,2022,2022-11-09,1,1,1.0
+XLK,Always-up reference,2022,2022-11-10,1,1,1.0
+XLK,Always-up reference,2022,2022-11-11,0,1,1.0
+XLK,Always-up reference,2022,2022-11-14,1,1,1.0
+XLK,Always-up reference,2022,2022-11-15,0,1,1.0
+XLK,Always-up reference,2022,2022-11-16,1,1,1.0
+XLK,Always-up reference,2022,2022-11-17,1,1,1.0
+XLK,Always-up reference,2022,2022-11-18,0,1,1.0
+XLK,Always-up reference,2022,2022-11-21,1,1,1.0
+XLK,Always-up reference,2022,2022-11-22,1,1,1.0
+XLK,Always-up reference,2022,2022-11-23,0,1,1.0
+XLK,Always-up reference,2022,2022-11-25,0,1,1.0
+XLK,Always-up reference,2022,2022-11-28,0,1,1.0
+XLK,Always-up reference,2022,2022-11-29,1,1,1.0
+XLK,Always-up reference,2022,2022-11-30,1,1,1.0
+XLK,Always-up reference,2022,2022-12-01,0,1,1.0
+XLK,Always-up reference,2022,2022-12-02,0,1,1.0
+XLK,Always-up reference,2022,2022-12-05,0,1,1.0
+XLK,Always-up reference,2022,2022-12-06,0,1,1.0
+XLK,Always-up reference,2022,2022-12-07,1,1,1.0
+XLK,Always-up reference,2022,2022-12-08,0,1,1.0
+XLK,Always-up reference,2022,2022-12-09,1,1,1.0
+XLK,Always-up reference,2022,2022-12-12,1,1,1.0
+XLK,Always-up reference,2022,2022-12-13,0,1,1.0
+XLK,Always-up reference,2022,2022-12-14,0,1,1.0
+XLK,Always-up reference,2022,2022-12-15,0,1,1.0
+XLK,Always-up reference,2022,2022-12-16,0,1,1.0
+XLK,Always-up reference,2022,2022-12-19,1,1,1.0
+XLK,Always-up reference,2022,2022-12-20,1,1,1.0
+XLK,Always-up reference,2022,2022-12-21,0,1,1.0
+XLK,Always-up reference,2022,2022-12-22,1,1,1.0
+XLK,Always-up reference,2022,2022-12-23,0,1,1.0
+XLK,Always-up reference,2022,2022-12-27,0,1,1.0
+XLK,Always-up reference,2022,2022-12-28,1,1,1.0
+XLK,Always-up reference,2022,2022-12-29,0,1,1.0
+XLK,Always-up reference,2022,2022-12-30,0,1,1.0
+XLK,Market-only model,2023,2023-01-03,1,0,0.4557775022923539
+XLK,Market-only model,2023,2023-01-04,0,0,0.46837208018217963
+XLK,Market-only model,2023,2023-01-05,1,0,0.4648065496270225
+XLK,Market-only model,2023,2023-01-06,1,0,0.4426112758027543
+XLK,Market-only model,2023,2023-01-09,1,1,0.5409057617480423
+XLK,Market-only model,2023,2023-01-10,1,1,0.5150623710343881
+XLK,Market-only model,2023,2023-01-11,1,1,0.5275438514745205
+XLK,Market-only model,2023,2023-01-12,1,1,0.5203796714856007
+XLK,Market-only model,2023,2023-01-13,1,0,0.4468889768733475
+XLK,Market-only model,2023,2023-01-17,0,0,0.4123217885840166
+XLK,Market-only model,2023,2023-01-18,0,0,0.46658756865931944
+XLK,Market-only model,2023,2023-01-19,1,0,0.4664073949966822
+XLK,Market-only model,2023,2023-01-20,1,1,0.5083455166846194
+XLK,Market-only model,2023,2023-01-23,0,1,0.5567853604604993
+XLK,Market-only model,2023,2023-01-24,0,1,0.5114684448301556
+XLK,Market-only model,2023,2023-01-25,1,1,0.5227852001236072
+XLK,Market-only model,2023,2023-01-26,1,1,0.5070003190205337
+XLK,Market-only model,2023,2023-01-27,0,0,0.47127341880066226
+XLK,Market-only model,2023,2023-01-30,1,1,0.545828377593231
+XLK,Market-only model,2023,2023-01-31,1,0,0.49678363762624195
+XLK,Market-only model,2023,2023-02-01,1,1,0.5065564780209952
+XLK,Market-only model,2023,2023-02-02,0,1,0.5488384956514167
+XLK,Market-only model,2023,2023-02-03,0,1,0.5304549614200068
+XLK,Market-only model,2023,2023-02-06,1,1,0.5848202758641605
+XLK,Market-only model,2023,2023-02-07,0,1,0.5148959449133084
+XLK,Market-only model,2023,2023-02-08,0,1,0.5367156626198539
+XLK,Market-only model,2023,2023-02-09,0,1,0.5200105966359089
+XLK,Market-only model,2023,2023-02-10,1,1,0.5428976318569909
+XLK,Market-only model,2023,2023-02-13,1,1,0.5244760208643854
+XLK,Market-only model,2023,2023-02-14,1,1,0.5038632453745382
+XLK,Market-only model,2023,2023-02-15,0,1,0.5205262756246278
+XLK,Market-only model,2023,2023-02-16,0,1,0.5084350734703716
+XLK,Market-only model,2023,2023-02-17,0,1,0.5547940400098877
+XLK,Market-only model,2023,2023-02-21,0,1,0.5237558754401366
+XLK,Market-only model,2023,2023-02-22,1,1,0.5033357974214774
+XLK,Market-only model,2023,2023-02-23,0,1,0.5271554563586709
+XLK,Market-only model,2023,2023-02-24,1,1,0.5746343998013336
+XLK,Market-only model,2023,2023-02-27,0,1,0.5245759231193802
+XLK,Market-only model,2023,2023-02-28,0,0,0.4930284637230192
+XLK,Market-only model,2023,2023-03-01,1,1,0.5181214305633619
+XLK,Market-only model,2023,2023-03-02,1,1,0.528473149437797
+XLK,Market-only model,2023,2023-03-03,1,1,0.5569945740164747
+XLK,Market-only model,2023,2023-03-06,0,0,0.4964702789780893
+XLK,Market-only model,2023,2023-03-07,1,0,0.4912112537432081
+XLK,Market-only model,2023,2023-03-08,0,1,0.5297517190803673
+XLK,Market-only model,2023,2023-03-09,0,0,0.4715523391865519
+XLK,Market-only model,2023,2023-03-10,1,0,0.4742963712652157
+XLK,Market-only model,2023,2023-03-13,1,1,0.5255639790094548
+XLK,Market-only model,2023,2023-03-14,1,1,0.5905606563067431
+XLK,Market-only model,2023,2023-03-15,1,1,0.5392019039204767
+XLK,Market-only model,2023,2023-03-16,0,1,0.5427683840869901
+XLK,Market-only model,2023,2023-03-17,1,1,0.5285754713466438
+XLK,Market-only model,2023,2023-03-20,1,0,0.48991079780953006
+XLK,Market-only model,2023,2023-03-21,0,0,0.4436073488916773
+XLK,Market-only model,2023,2023-03-22,1,1,0.5118491969301454
+XLK,Market-only model,2023,2023-03-23,1,1,0.5097585687145787
+XLK,Market-only model,2023,2023-03-24,0,1,0.5171996314018406
+XLK,Market-only model,2023,2023-03-27,0,1,0.5225901413376579
+XLK,Market-only model,2023,2023-03-28,1,0,0.49743420008974215
+XLK,Market-only model,2023,2023-03-29,1,1,0.5056275332691451
+XLK,Market-only model,2023,2023-03-30,1,1,0.5444543418495553
+XLK,Market-only model,2023,2023-03-31,0,1,0.5495344912824323
+XLK,Market-only model,2023,2023-04-03,0,1,0.5427579107623512
+XLK,Market-only model,2023,2023-04-04,0,1,0.5158940504459908
+XLK,Market-only model,2023,2023-04-05,1,1,0.5139746996367108
+XLK,Market-only model,2023,2023-04-06,0,0,0.49268064931746536
+XLK,Market-only model,2023,2023-04-10,0,1,0.5082324027080266
+XLK,Market-only model,2023,2023-04-11,0,1,0.5345898285481137
+XLK,Market-only model,2023,2023-04-12,1,1,0.565235604404515
+XLK,Market-only model,2023,2023-04-13,0,1,0.5374152949535085
+XLK,Market-only model,2023,2023-04-14,1,1,0.5744601661903799
+XLK,Market-only model,2023,2023-04-17,1,1,0.5165543128023856
+XLK,Market-only model,2023,2023-04-18,0,1,0.5149288244213189
+XLK,Market-only model,2023,2023-04-19,0,1,0.5187897992723989
+XLK,Market-only model,2023,2023-04-20,0,0,0.4674501976078585
+XLK,Market-only model,2023,2023-04-21,0,1,0.5391250126949699
+XLK,Market-only model,2023,2023-04-24,0,1,0.5154107676654004
+XLK,Market-only model,2023,2023-04-25,1,0,0.48938585601691353
+XLK,Market-only model,2023,2023-04-26,1,0,0.49781629108843095
+XLK,Market-only model,2023,2023-04-27,1,1,0.5686701130948576
+XLK,Market-only model,2023,2023-04-28,1,1,0.5425925027261059
+XLK,Market-only model,2023,2023-05-01,0,1,0.5318560260594257
+XLK,Market-only model,2023,2023-05-02,0,0,0.49269158938131624
+XLK,Market-only model,2023,2023-05-03,0,0,0.46593465772876813
+XLK,Market-only model,2023,2023-05-04,1,0,0.4618502463045227
+XLK,Market-only model,2023,2023-05-05,0,1,0.5041003125796262
+XLK,Market-only model,2023,2023-05-08,0,1,0.5280214365899538
+XLK,Market-only model,2023,2023-05-09,1,0,0.4773679222391778
+XLK,Market-only model,2023,2023-05-10,0,1,0.5025493239951816
+XLK,Market-only model,2023,2023-05-11,0,1,0.5367437895529312
+XLK,Market-only model,2023,2023-05-12,1,0,0.4597720178023783
+XLK,Market-only model,2023,2023-05-15,1,0,0.4977734643461986
+XLK,Market-only model,2023,2023-05-16,1,0,0.4999151204663657
+XLK,Market-only model,2023,2023-05-17,1,0,0.4834461090716542
+XLK,Market-only model,2023,2023-05-18,0,1,0.5124809770054891
+XLK,Market-only model,2023,2023-05-19,1,1,0.5276854606182639
+XLK,Market-only model,2023,2023-05-22,0,0,0.4840332695360977
+XLK,Market-only model,2023,2023-05-23,0,0,0.47641168006696705
+XLK,Market-only model,2023,2023-05-24,1,1,0.516686072318512
+XLK,Market-only model,2023,2023-05-25,1,1,0.5264419936165193
+XLK,Market-only model,2023,2023-05-26,1,1,0.5774073689128802
+XLK,Market-only model,2023,2023-05-30,0,1,0.5382064690127979
+XLK,Market-only model,2023,2023-05-31,1,1,0.5253005322496285
+XLK,Market-only model,2023,2023-06-01,1,1,0.5114616006850716
+XLK,Market-only model,2023,2023-06-02,0,0,0.49460273874646465
+XLK,Market-only model,2023,2023-06-05,0,1,0.5453995427191933
+XLK,Market-only model,2023,2023-06-06,0,1,0.5168808366191103
+XLK,Market-only model,2023,2023-06-07,1,1,0.5144299773143738
+XLK,Market-only model,2023,2023-06-08,1,1,0.5317962112030876
+XLK,Market-only model,2023,2023-06-09,1,1,0.5209115187884719
+XLK,Market-only model,2023,2023-06-12,1,1,0.5439854219623511
+XLK,Market-only model,2023,2023-06-13,1,1,0.5581853985260492
+XLK,Market-only model,2023,2023-06-14,1,1,0.5507577190475813
+XLK,Market-only model,2023,2023-06-15,0,1,0.5462460505905239
+XLK,Market-only model,2023,2023-06-16,0,1,0.5629389530211817
+XLK,Market-only model,2023,2023-06-20,0,1,0.5051893918575188
+XLK,Market-only model,2023,2023-06-21,1,1,0.5206287247609633
+XLK,Market-only model,2023,2023-06-22,0,0,0.48578827444474315
+XLK,Market-only model,2023,2023-06-23,0,1,0.529790067332091
+XLK,Market-only model,2023,2023-06-26,1,1,0.5961069902981184
+XLK,Market-only model,2023,2023-06-27,1,1,0.5633475878428169
+XLK,Market-only model,2023,2023-06-28,1,1,0.5571396090076967
+XLK,Market-only model,2023,2023-06-29,1,0,0.49309549668102715
+XLK,Market-only model,2023,2023-06-30,0,1,0.5271020630541197
+XLK,Market-only model,2023,2023-07-03,0,1,0.5294439166802779
+XLK,Market-only model,2023,2023-07-05,0,0,0.45186303813122525
+XLK,Market-only model,2023,2023-07-06,0,0,0.49726287404469105
+XLK,Market-only model,2023,2023-07-07,1,0,0.4912727234404471
+XLK,Market-only model,2023,2023-07-10,1,1,0.5196719531117807
+XLK,Market-only model,2023,2023-07-11,1,1,0.5487601758916822
+XLK,Market-only model,2023,2023-07-12,1,1,0.5482111104460982
+XLK,Market-only model,2023,2023-07-13,0,1,0.5441583683316193
+XLK,Market-only model,2023,2023-07-14,1,1,0.5234414613084405
+XLK,Market-only model,2023,2023-07-17,1,1,0.516315905123623
+XLK,Market-only model,2023,2023-07-18,0,0,0.4963371311516785
+XLK,Market-only model,2023,2023-07-19,0,1,0.5066259548469955
+XLK,Market-only model,2023,2023-07-20,0,1,0.5017051761565257
+XLK,Market-only model,2023,2023-07-21,1,1,0.5463192787513843
+XLK,Market-only model,2023,2023-07-24,1,1,0.5028349199080693
+XLK,Market-only model,2023,2023-07-25,0,1,0.5069018952822975
+XLK,Market-only model,2023,2023-07-26,0,1,0.5619897421863896
+XLK,Market-only model,2023,2023-07-27,1,1,0.5405060906460083
+XLK,Market-only model,2023,2023-07-28,1,1,0.5248511929262432
+XLK,Market-only model,2023,2023-07-31,1,1,0.5428264081584779
+XLK,Market-only model,2023,2023-08-01,0,0,0.49602694042949097
+XLK,Market-only model,2023,2023-08-02,0,1,0.5053454709554069
+XLK,Market-only model,2023,2023-08-03,0,1,0.5057377371204193
+XLK,Market-only model,2023,2023-08-04,1,0,0.49437382921237355
+XLK,Market-only model,2023,2023-08-07,0,1,0.5226343299734997
+XLK,Market-only model,2023,2023-08-08,0,1,0.5169481627527949
+XLK,Market-only model,2023,2023-08-09,1,1,0.5473299489856
+XLK,Market-only model,2023,2023-08-10,0,1,0.5309362085608479
+XLK,Market-only model,2023,2023-08-11,1,1,0.5184305106844618
+XLK,Market-only model,2023,2023-08-14,0,1,0.5096598902396784
+XLK,Market-only model,2023,2023-08-15,0,1,0.5258491357771135
+XLK,Market-only model,2023,2023-08-16,0,0,0.48231159880388624
+XLK,Market-only model,2023,2023-08-17,1,0,0.4493993494243727
+XLK,Market-only model,2023,2023-08-18,1,0,0.4988266890197932
+XLK,Market-only model,2023,2023-08-21,0,0,0.49563879389999327
+XLK,Market-only model,2023,2023-08-22,1,1,0.5388310540700094
+XLK,Market-only model,2023,2023-08-23,0,0,0.4769761933094659
+XLK,Market-only model,2023,2023-08-24,1,0,0.4966091291031879
+XLK,Market-only model,2023,2023-08-25,1,0,0.49272978397432304
+XLK,Market-only model,2023,2023-08-28,1,0,0.49313154470979276
+XLK,Market-only model,2023,2023-08-29,1,0,0.48512701019617666
+XLK,Market-only model,2023,2023-08-30,1,0,0.45970750153225454
+XLK,Market-only model,2023,2023-08-31,1,1,0.5133374092437442
+XLK,Market-only model,2023,2023-09-01,1,0,0.4665626377796616
+XLK,Market-only model,2023,2023-09-05,0,0,0.48499485104866424
+XLK,Market-only model,2023,2023-09-06,0,0,0.4694304059813962
+XLK,Market-only model,2023,2023-09-07,1,0,0.49698500078035573
+XLK,Market-only model,2023,2023-09-08,1,1,0.5055777609724023
+XLK,Market-only model,2023,2023-09-11,0,0,0.4947756237248298
+XLK,Market-only model,2023,2023-09-12,1,1,0.5290799330088991
+XLK,Market-only model,2023,2023-09-13,1,1,0.5024339301773413
+XLK,Market-only model,2023,2023-09-14,0,1,0.5107188614244728
+XLK,Market-only model,2023,2023-09-15,1,0,0.4968315441112669
+XLK,Market-only model,2023,2023-09-18,0,1,0.5086304253273708
+XLK,Market-only model,2023,2023-09-19,0,1,0.5547729963061129
+XLK,Market-only model,2023,2023-09-20,0,0,0.490724614048695
+XLK,Market-only model,2023,2023-09-21,1,1,0.5163954071159117
+XLK,Market-only model,2023,2023-09-22,1,0,0.49382063147756233
+XLK,Market-only model,2023,2023-09-25,0,1,0.5283495430380157
+XLK,Market-only model,2023,2023-09-26,1,1,0.5217850885941677
+XLK,Market-only model,2023,2023-09-27,1,1,0.5459700421477446
+XLK,Market-only model,2023,2023-09-28,1,1,0.5233446995194888
+XLK,Market-only model,2023,2023-09-29,1,1,0.5076335821613897
+XLK,Market-only model,2023,2023-10-02,0,1,0.5101765694556653
+XLK,Market-only model,2023,2023-10-03,1,1,0.5219549902323339
+XLK,Market-only model,2023,2023-10-04,1,0,0.4662383963129852
+XLK,Market-only model,2023,2023-10-05,1,0,0.48204807341197203
+XLK,Market-only model,2023,2023-10-06,1,0,0.4945441897147157
+XLK,Market-only model,2023,2023-10-09,1,1,0.5183295757748488
+XLK,Market-only model,2023,2023-10-10,1,0,0.48633275150125604
+XLK,Market-only model,2023,2023-10-11,1,1,0.5096976619561038
+XLK,Market-only model,2023,2023-10-12,0,1,0.50257423611645
+XLK,Market-only model,2023,2023-10-13,1,0,0.46524832181497844
+XLK,Market-only model,2023,2023-10-16,0,1,0.5092040855718835
+XLK,Market-only model,2023,2023-10-17,0,1,0.5203285616156786
+XLK,Market-only model,2023,2023-10-18,0,0,0.48751359772296754
+XLK,Market-only model,2023,2023-10-19,0,0,0.4914851176856783
+XLK,Market-only model,2023,2023-10-20,1,1,0.5532640382608885
+XLK,Market-only model,2023,2023-10-23,1,1,0.5143670129742856
+XLK,Market-only model,2023,2023-10-24,0,1,0.5116497085586833
+XLK,Market-only model,2023,2023-10-25,0,1,0.5352371209669317
+XLK,Market-only model,2023,2023-10-26,1,1,0.5362076857893447
+XLK,Market-only model,2023,2023-10-27,1,1,0.5431376007126653
+XLK,Market-only model,2023,2023-10-30,1,1,0.5413043497726339
+XLK,Market-only model,2023,2023-10-31,1,0,0.494447106391796
+XLK,Market-only model,2023,2023-11-01,1,1,0.5384058871833483
+XLK,Market-only model,2023,2023-11-02,1,1,0.5542716308607819
+XLK,Market-only model,2023,2023-11-03,1,1,0.5367174937513717
+XLK,Market-only model,2023,2023-11-06,1,1,0.5054588032232044
+XLK,Market-only model,2023,2023-11-07,1,0,0.4870013216312747
+XLK,Market-only model,2023,2023-11-08,0,1,0.5004095358884423
+XLK,Market-only model,2023,2023-11-09,1,0,0.48302932252041514
+XLK,Market-only model,2023,2023-11-10,0,0,0.47900530884277126
+XLK,Market-only model,2023,2023-11-13,1,1,0.5370582034125764
+XLK,Market-only model,2023,2023-11-14,1,0,0.48567025256202473
+XLK,Market-only model,2023,2023-11-15,1,1,0.5184729398748821
+XLK,Market-only model,2023,2023-11-16,0,1,0.5119926728089917
+XLK,Market-only model,2023,2023-11-17,1,0,0.47333812876053316
+XLK,Market-only model,2023,2023-11-20,0,1,0.5356226026474141
+XLK,Market-only model,2023,2023-11-21,1,1,0.5265657261262932
+XLK,Market-only model,2023,2023-11-22,0,1,0.5112199280930398
+XLK,Market-only model,2023,2023-11-24,0,1,0.504956092087986
+XLK,Market-only model,2023,2023-11-27,1,1,0.5043525531973745
+XLK,Market-only model,2023,2023-11-28,1,1,0.529659762449789
+XLK,Market-only model,2023,2023-11-29,1,1,0.5554623228390463
+XLK,Market-only model,2023,2023-11-30,1,1,0.5564508000885565
+XLK,Market-only model,2023,2023-12-01,0,1,0.5658429014954292
+XLK,Market-only model,2023,2023-12-04,1,1,0.552420514507556
+XLK,Market-only model,2023,2023-12-05,0,1,0.5449626151581237
+XLK,Market-only model,2023,2023-12-06,1,1,0.5412447388419975
+XLK,Market-only model,2023,2023-12-07,1,1,0.5345385560071559
+XLK,Market-only model,2023,2023-12-08,1,1,0.5306872917472736
+XLK,Market-only model,2023,2023-12-11,1,1,0.5752361973982099
+XLK,Market-only model,2023,2023-12-12,1,1,0.557280390648817
+XLK,Market-only model,2023,2023-12-13,0,1,0.5625916861049077
+XLK,Market-only model,2023,2023-12-14,1,1,0.5464900723041866
+XLK,Market-only model,2023,2023-12-15,1,1,0.5219701960379697
+XLK,Market-only model,2023,2023-12-18,1,1,0.5267135673301705
+XLK,Market-only model,2023,2023-12-19,0,1,0.5270927511877287
+XLK,Market-only model,2023,2023-12-20,1,0,0.4900893200993488
+XLK,Market-only model,2023,2023-12-21,1,1,0.5250374651874192
+XLK,Market-only model,2023,2023-12-22,1,1,0.5194043063120588
+XLK,Market-only model,2023,2023-12-26,0,1,0.5134252862603029
+XLK,Market-only model,2023,2023-12-27,1,0,0.4965674872837949
+XLK,Market-only model,2023,2023-12-28,0,1,0.532967527089464
+XLK,Market-only model,2023,2023-12-29,0,1,0.502405548720193
+XLK,Market + news sentiment model,2023,2023-01-03,1,0,0.4805512216020777
+XLK,Market + news sentiment model,2023,2023-01-04,0,0,0.49091981805076046
+XLK,Market + news sentiment model,2023,2023-01-05,1,0,0.48751467674062277
+XLK,Market + news sentiment model,2023,2023-01-06,1,0,0.4529763976009359
+XLK,Market + news sentiment model,2023,2023-01-09,1,1,0.5122190405667402
+XLK,Market + news sentiment model,2023,2023-01-10,1,1,0.5104884135775888
+XLK,Market + news sentiment model,2023,2023-01-11,1,1,0.5033473664092255
+XLK,Market + news sentiment model,2023,2023-01-12,1,1,0.5107655458947938
+XLK,Market + news sentiment model,2023,2023-01-13,1,0,0.3942899749161637
+XLK,Market + news sentiment model,2023,2023-01-17,0,0,0.40385460215589486
+XLK,Market + news sentiment model,2023,2023-01-18,0,0,0.48145208175501375
+XLK,Market + news sentiment model,2023,2023-01-19,1,1,0.504071173276859
+XLK,Market + news sentiment model,2023,2023-01-20,1,1,0.5293284660921326
+XLK,Market + news sentiment model,2023,2023-01-23,0,1,0.5484395441773489
+XLK,Market + news sentiment model,2023,2023-01-24,0,1,0.5739403359757971
+XLK,Market + news sentiment model,2023,2023-01-25,1,1,0.5009703235501501
+XLK,Market + news sentiment model,2023,2023-01-26,1,0,0.48989591649278474
+XLK,Market + news sentiment model,2023,2023-01-27,0,0,0.4210353170833042
+XLK,Market + news sentiment model,2023,2023-01-30,1,1,0.5677587686500186
+XLK,Market + news sentiment model,2023,2023-01-31,1,0,0.4844007831687253
+XLK,Market + news sentiment model,2023,2023-02-01,1,1,0.543765873912567
+XLK,Market + news sentiment model,2023,2023-02-02,0,1,0.5423744617001796
+XLK,Market + news sentiment model,2023,2023-02-03,0,1,0.5435919845653686
+XLK,Market + news sentiment model,2023,2023-02-06,1,1,0.5702262423725015
+XLK,Market + news sentiment model,2023,2023-02-07,0,1,0.5294313729237142
+XLK,Market + news sentiment model,2023,2023-02-08,0,1,0.5021492048502223
+XLK,Market + news sentiment model,2023,2023-02-09,0,1,0.5401623984971858
+XLK,Market + news sentiment model,2023,2023-02-10,1,1,0.5498878731482112
+XLK,Market + news sentiment model,2023,2023-02-13,1,1,0.5312809578612734
+XLK,Market + news sentiment model,2023,2023-02-14,1,1,0.5408439134932332
+XLK,Market + news sentiment model,2023,2023-02-15,0,1,0.5576564292977527
+XLK,Market + news sentiment model,2023,2023-02-16,0,0,0.4908554866249092
+XLK,Market + news sentiment model,2023,2023-02-17,0,1,0.5352872843052745
+XLK,Market + news sentiment model,2023,2023-02-21,0,1,0.5135691116000274
+XLK,Market + news sentiment model,2023,2023-02-22,1,1,0.5137350818227651
+XLK,Market + news sentiment model,2023,2023-02-23,0,1,0.5490485288897096
+XLK,Market + news sentiment model,2023,2023-02-24,1,1,0.5879708208180637
+XLK,Market + news sentiment model,2023,2023-02-27,0,1,0.5205882052609504
+XLK,Market + news sentiment model,2023,2023-02-28,0,0,0.4835494965704923
+XLK,Market + news sentiment model,2023,2023-03-01,1,1,0.5052051290571327
+XLK,Market + news sentiment model,2023,2023-03-02,1,1,0.522258862436289
+XLK,Market + news sentiment model,2023,2023-03-03,1,1,0.5848829177776254
+XLK,Market + news sentiment model,2023,2023-03-06,0,1,0.5049755980110826
+XLK,Market + news sentiment model,2023,2023-03-07,1,1,0.5001234302758771
+XLK,Market + news sentiment model,2023,2023-03-08,0,1,0.5364446002897102
+XLK,Market + news sentiment model,2023,2023-03-09,0,0,0.4949782086794054
+XLK,Market + news sentiment model,2023,2023-03-10,1,1,0.5231809338731052
+XLK,Market + news sentiment model,2023,2023-03-13,1,1,0.5542665382503118
+XLK,Market + news sentiment model,2023,2023-03-14,1,1,0.612020115978591
+XLK,Market + news sentiment model,2023,2023-03-15,1,1,0.5701625100260098
+XLK,Market + news sentiment model,2023,2023-03-16,0,1,0.5758468318171027
+XLK,Market + news sentiment model,2023,2023-03-17,1,1,0.5058591749374826
+XLK,Market + news sentiment model,2023,2023-03-20,1,0,0.4474796241164631
+XLK,Market + news sentiment model,2023,2023-03-21,0,0,0.4077282162175747
+XLK,Market + news sentiment model,2023,2023-03-22,1,1,0.5544451138504813
+XLK,Market + news sentiment model,2023,2023-03-23,1,1,0.5331522703815875
+XLK,Market + news sentiment model,2023,2023-03-24,0,0,0.48523984545036375
+XLK,Market + news sentiment model,2023,2023-03-27,0,0,0.493389571255277
+XLK,Market + news sentiment model,2023,2023-03-28,1,0,0.4792103368826022
+XLK,Market + news sentiment model,2023,2023-03-29,1,0,0.49565133096113245
+XLK,Market + news sentiment model,2023,2023-03-30,1,1,0.541512188729305
+XLK,Market + news sentiment model,2023,2023-03-31,0,1,0.5114060185101563
+XLK,Market + news sentiment model,2023,2023-04-03,0,1,0.5238876338060053
+XLK,Market + news sentiment model,2023,2023-04-04,0,1,0.5058671956897751
+XLK,Market + news sentiment model,2023,2023-04-05,1,1,0.5069324548766263
+XLK,Market + news sentiment model,2023,2023-04-06,0,0,0.475621143623012
+XLK,Market + news sentiment model,2023,2023-04-10,0,0,0.4851722945103231
+XLK,Market + news sentiment model,2023,2023-04-11,0,1,0.5124599904491645
+XLK,Market + news sentiment model,2023,2023-04-12,1,1,0.5496119748496023
+XLK,Market + news sentiment model,2023,2023-04-13,0,1,0.5627467360013828
+XLK,Market + news sentiment model,2023,2023-04-14,1,1,0.5528021959056727
+XLK,Market + news sentiment model,2023,2023-04-17,1,1,0.5379722574331463
+XLK,Market + news sentiment model,2023,2023-04-18,0,1,0.518171293009401
+XLK,Market + news sentiment model,2023,2023-04-19,0,1,0.553010040478112
+XLK,Market + news sentiment model,2023,2023-04-20,0,0,0.49399496539205723
+XLK,Market + news sentiment model,2023,2023-04-21,0,1,0.5470444270098639
+XLK,Market + news sentiment model,2023,2023-04-24,0,0,0.4791951066657468
+XLK,Market + news sentiment model,2023,2023-04-25,1,0,0.4576800681001033
+XLK,Market + news sentiment model,2023,2023-04-26,1,0,0.48116909670398034
+XLK,Market + news sentiment model,2023,2023-04-27,1,1,0.5804027264627076
+XLK,Market + news sentiment model,2023,2023-04-28,1,1,0.5460253020045404
+XLK,Market + news sentiment model,2023,2023-05-01,0,1,0.5389731074180609
+XLK,Market + news sentiment model,2023,2023-05-02,0,1,0.5240988177183895
+XLK,Market + news sentiment model,2023,2023-05-03,0,1,0.5051968097221868
+XLK,Market + news sentiment model,2023,2023-05-04,1,1,0.5177797945666115
+XLK,Market + news sentiment model,2023,2023-05-05,0,1,0.5024259115485842
+XLK,Market + news sentiment model,2023,2023-05-08,0,1,0.5175066208859551
+XLK,Market + news sentiment model,2023,2023-05-09,1,0,0.43135180012788393
+XLK,Market + news sentiment model,2023,2023-05-10,0,1,0.5067476615365298
+XLK,Market + news sentiment model,2023,2023-05-11,0,1,0.5892260966273256
+XLK,Market + news sentiment model,2023,2023-05-12,1,0,0.45322723422192224
+XLK,Market + news sentiment model,2023,2023-05-15,1,0,0.4771926197436877
+XLK,Market + news sentiment model,2023,2023-05-16,1,0,0.46738246423234037
+XLK,Market + news sentiment model,2023,2023-05-17,1,0,0.4733174499811334
+XLK,Market + news sentiment model,2023,2023-05-18,0,0,0.49846390805661617
+XLK,Market + news sentiment model,2023,2023-05-19,1,1,0.5694597891194705
+XLK,Market + news sentiment model,2023,2023-05-22,0,0,0.49607062692107673
+XLK,Market + news sentiment model,2023,2023-05-23,0,0,0.46248743578916185
+XLK,Market + news sentiment model,2023,2023-05-24,1,0,0.4974825861951669
+XLK,Market + news sentiment model,2023,2023-05-25,1,1,0.5399376715050386
+XLK,Market + news sentiment model,2023,2023-05-26,1,1,0.5569776227760266
+XLK,Market + news sentiment model,2023,2023-05-30,0,1,0.5656877504779538
+XLK,Market + news sentiment model,2023,2023-05-31,1,0,0.4884382925403308
+XLK,Market + news sentiment model,2023,2023-06-01,1,0,0.4788656654968732
+XLK,Market + news sentiment model,2023,2023-06-02,0,0,0.45061474906362586
+XLK,Market + news sentiment model,2023,2023-06-05,0,1,0.5138452136418908
+XLK,Market + news sentiment model,2023,2023-06-06,0,1,0.5392344118430791
+XLK,Market + news sentiment model,2023,2023-06-07,1,1,0.5404639670861664
+XLK,Market + news sentiment model,2023,2023-06-08,1,1,0.5580799520842638
+XLK,Market + news sentiment model,2023,2023-06-09,1,1,0.5224199266444886
+XLK,Market + news sentiment model,2023,2023-06-12,1,1,0.5847508752263709
+XLK,Market + news sentiment model,2023,2023-06-13,1,1,0.56535879339179
+XLK,Market + news sentiment model,2023,2023-06-14,1,1,0.5661212222834446
+XLK,Market + news sentiment model,2023,2023-06-15,0,1,0.583961667541004
+XLK,Market + news sentiment model,2023,2023-06-16,0,1,0.5729069670250586
+XLK,Market + news sentiment model,2023,2023-06-20,0,0,0.4883236254238562
+XLK,Market + news sentiment model,2023,2023-06-21,1,1,0.502857932913116
+XLK,Market + news sentiment model,2023,2023-06-22,0,1,0.5000476391360584
+XLK,Market + news sentiment model,2023,2023-06-23,0,1,0.5231264886344862
+XLK,Market + news sentiment model,2023,2023-06-26,1,1,0.5757120405443851
+XLK,Market + news sentiment model,2023,2023-06-27,1,1,0.5374481672059742
+XLK,Market + news sentiment model,2023,2023-06-28,1,1,0.5349047080522079
+XLK,Market + news sentiment model,2023,2023-06-29,1,0,0.4833334841728215
+XLK,Market + news sentiment model,2023,2023-06-30,0,1,0.5082614119734574
+XLK,Market + news sentiment model,2023,2023-07-03,0,1,0.555472649899868
+XLK,Market + news sentiment model,2023,2023-07-05,0,0,0.46717094572402523
+XLK,Market + news sentiment model,2023,2023-07-06,0,0,0.46418509972063277
+XLK,Market + news sentiment model,2023,2023-07-07,1,0,0.4843877584886033
+XLK,Market + news sentiment model,2023,2023-07-10,1,1,0.5495236389514914
+XLK,Market + news sentiment model,2023,2023-07-11,1,1,0.5070625111281318
+XLK,Market + news sentiment model,2023,2023-07-12,1,1,0.5589745896431929
+XLK,Market + news sentiment model,2023,2023-07-13,0,1,0.5463980267086141
+XLK,Market + news sentiment model,2023,2023-07-14,1,1,0.5052018509723236
+XLK,Market + news sentiment model,2023,2023-07-17,1,1,0.5491783302424433
+XLK,Market + news sentiment model,2023,2023-07-18,0,0,0.43295728673508316
+XLK,Market + news sentiment model,2023,2023-07-19,0,0,0.4712462710251899
+XLK,Market + news sentiment model,2023,2023-07-20,0,1,0.5180452741988419
+XLK,Market + news sentiment model,2023,2023-07-21,1,1,0.5083894322165607
+XLK,Market + news sentiment model,2023,2023-07-24,1,1,0.5485064206982536
+XLK,Market + news sentiment model,2023,2023-07-25,0,0,0.48383251728652754
+XLK,Market + news sentiment model,2023,2023-07-26,0,1,0.5980813369937923
+XLK,Market + news sentiment model,2023,2023-07-27,1,1,0.5275929114346353
+XLK,Market + news sentiment model,2023,2023-07-28,1,1,0.5628356677584286
+XLK,Market + news sentiment model,2023,2023-07-31,1,1,0.557917940224993
+XLK,Market + news sentiment model,2023,2023-08-01,0,1,0.5179487878096662
+XLK,Market + news sentiment model,2023,2023-08-02,0,1,0.5225797560569636
+XLK,Market + news sentiment model,2023,2023-08-03,0,1,0.5373910092725454
+XLK,Market + news sentiment model,2023,2023-08-04,1,1,0.5388717485624137
+XLK,Market + news sentiment model,2023,2023-08-07,0,1,0.5632725107701001
+XLK,Market + news sentiment model,2023,2023-08-08,0,1,0.504381509931844
+XLK,Market + news sentiment model,2023,2023-08-09,1,1,0.5117882472885873
+XLK,Market + news sentiment model,2023,2023-08-10,0,1,0.5763955369562107
+XLK,Market + news sentiment model,2023,2023-08-11,1,0,0.4810858019515461
+XLK,Market + news sentiment model,2023,2023-08-14,0,1,0.553973302006813
+XLK,Market + news sentiment model,2023,2023-08-15,0,1,0.5193839418920668
+XLK,Market + news sentiment model,2023,2023-08-16,0,0,0.4724483845612724
+XLK,Market + news sentiment model,2023,2023-08-17,1,0,0.45428649081738137
+XLK,Market + news sentiment model,2023,2023-08-18,1,0,0.49833481749397324
+XLK,Market + news sentiment model,2023,2023-08-21,0,1,0.5180660861316891
+XLK,Market + news sentiment model,2023,2023-08-22,1,1,0.5199110542128814
+XLK,Market + news sentiment model,2023,2023-08-23,0,1,0.5125711625171802
+XLK,Market + news sentiment model,2023,2023-08-24,1,1,0.5121670499071755
+XLK,Market + news sentiment model,2023,2023-08-25,1,0,0.4828830393625173
+XLK,Market + news sentiment model,2023,2023-08-28,1,0,0.4722783692846006
+XLK,Market + news sentiment model,2023,2023-08-29,1,0,0.483009030670821
+XLK,Market + news sentiment model,2023,2023-08-30,1,0,0.45315595847707774
+XLK,Market + news sentiment model,2023,2023-08-31,1,1,0.5167227763061429
+XLK,Market + news sentiment model,2023,2023-09-01,1,0,0.45357315494577327
+XLK,Market + news sentiment model,2023,2023-09-05,0,1,0.5103655252415815
+XLK,Market + news sentiment model,2023,2023-09-06,0,0,0.48794666408742
+XLK,Market + news sentiment model,2023,2023-09-07,1,0,0.49702682963894784
+XLK,Market + news sentiment model,2023,2023-09-08,1,0,0.4954849624413235
+XLK,Market + news sentiment model,2023,2023-09-11,0,1,0.5047952683530649
+XLK,Market + news sentiment model,2023,2023-09-12,1,1,0.5143923877768469
+XLK,Market + news sentiment model,2023,2023-09-13,1,1,0.5164580473453178
+XLK,Market + news sentiment model,2023,2023-09-14,0,1,0.5216267212103932
+XLK,Market + news sentiment model,2023,2023-09-15,1,0,0.4312820448218744
+XLK,Market + news sentiment model,2023,2023-09-18,0,1,0.5187009358029965
+XLK,Market + news sentiment model,2023,2023-09-19,0,1,0.5715662048047123
+XLK,Market + news sentiment model,2023,2023-09-20,0,0,0.4882892229757891
+XLK,Market + news sentiment model,2023,2023-09-21,1,1,0.5411979694968703
+XLK,Market + news sentiment model,2023,2023-09-22,1,1,0.510197012679459
+XLK,Market + news sentiment model,2023,2023-09-25,0,1,0.5513233451472441
+XLK,Market + news sentiment model,2023,2023-09-26,1,0,0.4950364371922501
+XLK,Market + news sentiment model,2023,2023-09-27,1,1,0.5534611907623177
+XLK,Market + news sentiment model,2023,2023-09-28,1,0,0.4875525688650855
+XLK,Market + news sentiment model,2023,2023-09-29,1,1,0.5355513247278476
+XLK,Market + news sentiment model,2023,2023-10-02,0,1,0.5335416997857004
+XLK,Market + news sentiment model,2023,2023-10-03,1,0,0.49488955016707514
+XLK,Market + news sentiment model,2023,2023-10-04,1,0,0.49444874163708324
+XLK,Market + news sentiment model,2023,2023-10-05,1,1,0.5255730420905597
+XLK,Market + news sentiment model,2023,2023-10-06,1,1,0.5312439583627011
+XLK,Market + news sentiment model,2023,2023-10-09,1,1,0.5062659117319175
+XLK,Market + news sentiment model,2023,2023-10-10,1,0,0.48842768446096413
+XLK,Market + news sentiment model,2023,2023-10-11,1,1,0.5273491608900852
+XLK,Market + news sentiment model,2023,2023-10-12,0,1,0.5183331105965924
+XLK,Market + news sentiment model,2023,2023-10-13,1,0,0.44602799888228783
+XLK,Market + news sentiment model,2023,2023-10-16,0,0,0.48328269879513663
+XLK,Market + news sentiment model,2023,2023-10-17,0,0,0.4975205627900996
+XLK,Market + news sentiment model,2023,2023-10-18,0,0,0.4679779092184224
+XLK,Market + news sentiment model,2023,2023-10-19,0,0,0.46968701474157776
+XLK,Market + news sentiment model,2023,2023-10-20,1,1,0.5646714715809271
+XLK,Market + news sentiment model,2023,2023-10-23,1,1,0.5199983869475463
+XLK,Market + news sentiment model,2023,2023-10-24,0,1,0.5139998212963459
+XLK,Market + news sentiment model,2023,2023-10-25,0,1,0.5019729473398434
+XLK,Market + news sentiment model,2023,2023-10-26,1,1,0.517085555727109
+XLK,Market + news sentiment model,2023,2023-10-27,1,1,0.5693576203794639
+XLK,Market + news sentiment model,2023,2023-10-30,1,1,0.5362942734246497
+XLK,Market + news sentiment model,2023,2023-10-31,1,1,0.5234584477936362
+XLK,Market + news sentiment model,2023,2023-11-01,1,1,0.563434021217345
+XLK,Market + news sentiment model,2023,2023-11-02,1,1,0.5691836227917836
+XLK,Market + news sentiment model,2023,2023-11-03,1,1,0.5244363210119322
+XLK,Market + news sentiment model,2023,2023-11-06,1,0,0.46780873257067473
+XLK,Market + news sentiment model,2023,2023-11-07,1,0,0.4695112767852456
+XLK,Market + news sentiment model,2023,2023-11-08,0,1,0.5110330646688653
+XLK,Market + news sentiment model,2023,2023-11-09,1,0,0.45196044644400457
+XLK,Market + news sentiment model,2023,2023-11-10,0,1,0.5010862956636699
+XLK,Market + news sentiment model,2023,2023-11-13,1,0,0.4699443577801919
+XLK,Market + news sentiment model,2023,2023-11-14,1,0,0.4731932865323708
+XLK,Market + news sentiment model,2023,2023-11-15,1,1,0.5645437207043907
+XLK,Market + news sentiment model,2023,2023-11-16,0,1,0.5144379609009776
+XLK,Market + news sentiment model,2023,2023-11-17,1,0,0.44692927054889725
+XLK,Market + news sentiment model,2023,2023-11-20,0,0,0.4894107967538694
+XLK,Market + news sentiment model,2023,2023-11-21,1,1,0.5585822913557965
+XLK,Market + news sentiment model,2023,2023-11-22,0,1,0.5552867889249008
+XLK,Market + news sentiment model,2023,2023-11-24,0,1,0.5351546915224186
+XLK,Market + news sentiment model,2023,2023-11-27,1,0,0.4789688487089917
+XLK,Market + news sentiment model,2023,2023-11-28,1,1,0.5089033968690352
+XLK,Market + news sentiment model,2023,2023-11-29,1,0,0.4848283961863936
+XLK,Market + news sentiment model,2023,2023-11-30,1,1,0.5661920889343226
+XLK,Market + news sentiment model,2023,2023-12-01,0,1,0.5331772862941889
+XLK,Market + news sentiment model,2023,2023-12-04,1,1,0.5704883977831082
+XLK,Market + news sentiment model,2023,2023-12-05,0,1,0.5531750815971401
+XLK,Market + news sentiment model,2023,2023-12-06,1,1,0.5518709413720064
+XLK,Market + news sentiment model,2023,2023-12-07,1,1,0.5372950030997814
+XLK,Market + news sentiment model,2023,2023-12-08,1,1,0.554807517729436
+XLK,Market + news sentiment model,2023,2023-12-11,1,1,0.579859679585587
+XLK,Market + news sentiment model,2023,2023-12-12,1,1,0.5480606667433322
+XLK,Market + news sentiment model,2023,2023-12-13,0,1,0.5399817647337355
+XLK,Market + news sentiment model,2023,2023-12-14,1,0,0.4845495515772407
+XLK,Market + news sentiment model,2023,2023-12-15,1,1,0.5464481786522711
+XLK,Market + news sentiment model,2023,2023-12-18,1,1,0.5186108769878448
+XLK,Market + news sentiment model,2023,2023-12-19,0,0,0.49571722490496123
+XLK,Market + news sentiment model,2023,2023-12-20,1,0,0.47262313521677324
+XLK,Market + news sentiment model,2023,2023-12-21,1,1,0.5327093328923659
+XLK,Market + news sentiment model,2023,2023-12-22,1,1,0.5033090847475248
+XLK,Market + news sentiment model,2023,2023-12-26,0,0,0.49348876985240975
+XLK,Market + news sentiment model,2023,2023-12-27,1,1,0.5325555851782986
+XLK,Market + news sentiment model,2023,2023-12-28,0,1,0.5616621367367882
+XLK,Market + news sentiment model,2023,2023-12-29,0,1,0.5624867653555468
+XLK,Always-up reference,2023,2023-01-03,1,1,1.0
+XLK,Always-up reference,2023,2023-01-04,0,1,1.0
+XLK,Always-up reference,2023,2023-01-05,1,1,1.0
+XLK,Always-up reference,2023,2023-01-06,1,1,1.0
+XLK,Always-up reference,2023,2023-01-09,1,1,1.0
+XLK,Always-up reference,2023,2023-01-10,1,1,1.0
+XLK,Always-up reference,2023,2023-01-11,1,1,1.0
+XLK,Always-up reference,2023,2023-01-12,1,1,1.0
+XLK,Always-up reference,2023,2023-01-13,1,1,1.0
+XLK,Always-up reference,2023,2023-01-17,0,1,1.0
+XLK,Always-up reference,2023,2023-01-18,0,1,1.0
+XLK,Always-up reference,2023,2023-01-19,1,1,1.0
+XLK,Always-up reference,2023,2023-01-20,1,1,1.0
+XLK,Always-up reference,2023,2023-01-23,0,1,1.0
+XLK,Always-up reference,2023,2023-01-24,0,1,1.0
+XLK,Always-up reference,2023,2023-01-25,1,1,1.0
+XLK,Always-up reference,2023,2023-01-26,1,1,1.0
+XLK,Always-up reference,2023,2023-01-27,0,1,1.0
+XLK,Always-up reference,2023,2023-01-30,1,1,1.0
+XLK,Always-up reference,2023,2023-01-31,1,1,1.0
+XLK,Always-up reference,2023,2023-02-01,1,1,1.0
+XLK,Always-up reference,2023,2023-02-02,0,1,1.0
+XLK,Always-up reference,2023,2023-02-03,0,1,1.0
+XLK,Always-up reference,2023,2023-02-06,1,1,1.0
+XLK,Always-up reference,2023,2023-02-07,0,1,1.0
+XLK,Always-up reference,2023,2023-02-08,0,1,1.0
+XLK,Always-up reference,2023,2023-02-09,0,1,1.0
+XLK,Always-up reference,2023,2023-02-10,1,1,1.0
+XLK,Always-up reference,2023,2023-02-13,1,1,1.0
+XLK,Always-up reference,2023,2023-02-14,1,1,1.0
+XLK,Always-up reference,2023,2023-02-15,0,1,1.0
+XLK,Always-up reference,2023,2023-02-16,0,1,1.0
+XLK,Always-up reference,2023,2023-02-17,0,1,1.0
+XLK,Always-up reference,2023,2023-02-21,0,1,1.0
+XLK,Always-up reference,2023,2023-02-22,1,1,1.0
+XLK,Always-up reference,2023,2023-02-23,0,1,1.0
+XLK,Always-up reference,2023,2023-02-24,1,1,1.0
+XLK,Always-up reference,2023,2023-02-27,0,1,1.0
+XLK,Always-up reference,2023,2023-02-28,0,1,1.0
+XLK,Always-up reference,2023,2023-03-01,1,1,1.0
+XLK,Always-up reference,2023,2023-03-02,1,1,1.0
+XLK,Always-up reference,2023,2023-03-03,1,1,1.0
+XLK,Always-up reference,2023,2023-03-06,0,1,1.0
+XLK,Always-up reference,2023,2023-03-07,1,1,1.0
+XLK,Always-up reference,2023,2023-03-08,0,1,1.0
+XLK,Always-up reference,2023,2023-03-09,0,1,1.0
+XLK,Always-up reference,2023,2023-03-10,1,1,1.0
+XLK,Always-up reference,2023,2023-03-13,1,1,1.0
+XLK,Always-up reference,2023,2023-03-14,1,1,1.0
+XLK,Always-up reference,2023,2023-03-15,1,1,1.0
+XLK,Always-up reference,2023,2023-03-16,0,1,1.0
+XLK,Always-up reference,2023,2023-03-17,1,1,1.0
+XLK,Always-up reference,2023,2023-03-20,1,1,1.0
+XLK,Always-up reference,2023,2023-03-21,0,1,1.0
+XLK,Always-up reference,2023,2023-03-22,1,1,1.0
+XLK,Always-up reference,2023,2023-03-23,1,1,1.0
+XLK,Always-up reference,2023,2023-03-24,0,1,1.0
+XLK,Always-up reference,2023,2023-03-27,0,1,1.0
+XLK,Always-up reference,2023,2023-03-28,1,1,1.0
+XLK,Always-up reference,2023,2023-03-29,1,1,1.0
+XLK,Always-up reference,2023,2023-03-30,1,1,1.0
+XLK,Always-up reference,2023,2023-03-31,0,1,1.0
+XLK,Always-up reference,2023,2023-04-03,0,1,1.0
+XLK,Always-up reference,2023,2023-04-04,0,1,1.0
+XLK,Always-up reference,2023,2023-04-05,1,1,1.0
+XLK,Always-up reference,2023,2023-04-06,0,1,1.0
+XLK,Always-up reference,2023,2023-04-10,0,1,1.0
+XLK,Always-up reference,2023,2023-04-11,0,1,1.0
+XLK,Always-up reference,2023,2023-04-12,1,1,1.0
+XLK,Always-up reference,2023,2023-04-13,0,1,1.0
+XLK,Always-up reference,2023,2023-04-14,1,1,1.0
+XLK,Always-up reference,2023,2023-04-17,1,1,1.0
+XLK,Always-up reference,2023,2023-04-18,0,1,1.0
+XLK,Always-up reference,2023,2023-04-19,0,1,1.0
+XLK,Always-up reference,2023,2023-04-20,0,1,1.0
+XLK,Always-up reference,2023,2023-04-21,0,1,1.0
+XLK,Always-up reference,2023,2023-04-24,0,1,1.0
+XLK,Always-up reference,2023,2023-04-25,1,1,1.0
+XLK,Always-up reference,2023,2023-04-26,1,1,1.0
+XLK,Always-up reference,2023,2023-04-27,1,1,1.0
+XLK,Always-up reference,2023,2023-04-28,1,1,1.0
+XLK,Always-up reference,2023,2023-05-01,0,1,1.0
+XLK,Always-up reference,2023,2023-05-02,0,1,1.0
+XLK,Always-up reference,2023,2023-05-03,0,1,1.0
+XLK,Always-up reference,2023,2023-05-04,1,1,1.0
+XLK,Always-up reference,2023,2023-05-05,0,1,1.0
+XLK,Always-up reference,2023,2023-05-08,0,1,1.0
+XLK,Always-up reference,2023,2023-05-09,1,1,1.0
+XLK,Always-up reference,2023,2023-05-10,0,1,1.0
+XLK,Always-up reference,2023,2023-05-11,0,1,1.0
+XLK,Always-up reference,2023,2023-05-12,1,1,1.0
+XLK,Always-up reference,2023,2023-05-15,1,1,1.0
+XLK,Always-up reference,2023,2023-05-16,1,1,1.0
+XLK,Always-up reference,2023,2023-05-17,1,1,1.0
+XLK,Always-up reference,2023,2023-05-18,0,1,1.0
+XLK,Always-up reference,2023,2023-05-19,1,1,1.0
+XLK,Always-up reference,2023,2023-05-22,0,1,1.0
+XLK,Always-up reference,2023,2023-05-23,0,1,1.0
+XLK,Always-up reference,2023,2023-05-24,1,1,1.0
+XLK,Always-up reference,2023,2023-05-25,1,1,1.0
+XLK,Always-up reference,2023,2023-05-26,1,1,1.0
+XLK,Always-up reference,2023,2023-05-30,0,1,1.0
+XLK,Always-up reference,2023,2023-05-31,1,1,1.0
+XLK,Always-up reference,2023,2023-06-01,1,1,1.0
+XLK,Always-up reference,2023,2023-06-02,0,1,1.0
+XLK,Always-up reference,2023,2023-06-05,0,1,1.0
+XLK,Always-up reference,2023,2023-06-06,0,1,1.0
+XLK,Always-up reference,2023,2023-06-07,1,1,1.0
+XLK,Always-up reference,2023,2023-06-08,1,1,1.0
+XLK,Always-up reference,2023,2023-06-09,1,1,1.0
+XLK,Always-up reference,2023,2023-06-12,1,1,1.0
+XLK,Always-up reference,2023,2023-06-13,1,1,1.0
+XLK,Always-up reference,2023,2023-06-14,1,1,1.0
+XLK,Always-up reference,2023,2023-06-15,0,1,1.0
+XLK,Always-up reference,2023,2023-06-16,0,1,1.0
+XLK,Always-up reference,2023,2023-06-20,0,1,1.0
+XLK,Always-up reference,2023,2023-06-21,1,1,1.0
+XLK,Always-up reference,2023,2023-06-22,0,1,1.0
+XLK,Always-up reference,2023,2023-06-23,0,1,1.0
+XLK,Always-up reference,2023,2023-06-26,1,1,1.0
+XLK,Always-up reference,2023,2023-06-27,1,1,1.0
+XLK,Always-up reference,2023,2023-06-28,1,1,1.0
+XLK,Always-up reference,2023,2023-06-29,1,1,1.0
+XLK,Always-up reference,2023,2023-06-30,0,1,1.0
+XLK,Always-up reference,2023,2023-07-03,0,1,1.0
+XLK,Always-up reference,2023,2023-07-05,0,1,1.0
+XLK,Always-up reference,2023,2023-07-06,0,1,1.0
+XLK,Always-up reference,2023,2023-07-07,1,1,1.0
+XLK,Always-up reference,2023,2023-07-10,1,1,1.0
+XLK,Always-up reference,2023,2023-07-11,1,1,1.0
+XLK,Always-up reference,2023,2023-07-12,1,1,1.0
+XLK,Always-up reference,2023,2023-07-13,0,1,1.0
+XLK,Always-up reference,2023,2023-07-14,1,1,1.0
+XLK,Always-up reference,2023,2023-07-17,1,1,1.0
+XLK,Always-up reference,2023,2023-07-18,0,1,1.0
+XLK,Always-up reference,2023,2023-07-19,0,1,1.0
+XLK,Always-up reference,2023,2023-07-20,0,1,1.0
+XLK,Always-up reference,2023,2023-07-21,1,1,1.0
+XLK,Always-up reference,2023,2023-07-24,1,1,1.0
+XLK,Always-up reference,2023,2023-07-25,0,1,1.0
+XLK,Always-up reference,2023,2023-07-26,0,1,1.0
+XLK,Always-up reference,2023,2023-07-27,1,1,1.0
+XLK,Always-up reference,2023,2023-07-28,1,1,1.0
+XLK,Always-up reference,2023,2023-07-31,1,1,1.0
+XLK,Always-up reference,2023,2023-08-01,0,1,1.0
+XLK,Always-up reference,2023,2023-08-02,0,1,1.0
+XLK,Always-up reference,2023,2023-08-03,0,1,1.0
+XLK,Always-up reference,2023,2023-08-04,1,1,1.0
+XLK,Always-up reference,2023,2023-08-07,0,1,1.0
+XLK,Always-up reference,2023,2023-08-08,0,1,1.0
+XLK,Always-up reference,2023,2023-08-09,1,1,1.0
+XLK,Always-up reference,2023,2023-08-10,0,1,1.0
+XLK,Always-up reference,2023,2023-08-11,1,1,1.0
+XLK,Always-up reference,2023,2023-08-14,0,1,1.0
+XLK,Always-up reference,2023,2023-08-15,0,1,1.0
+XLK,Always-up reference,2023,2023-08-16,0,1,1.0
+XLK,Always-up reference,2023,2023-08-17,1,1,1.0
+XLK,Always-up reference,2023,2023-08-18,1,1,1.0
+XLK,Always-up reference,2023,2023-08-21,0,1,1.0
+XLK,Always-up reference,2023,2023-08-22,1,1,1.0
+XLK,Always-up reference,2023,2023-08-23,0,1,1.0
+XLK,Always-up reference,2023,2023-08-24,1,1,1.0
+XLK,Always-up reference,2023,2023-08-25,1,1,1.0
+XLK,Always-up reference,2023,2023-08-28,1,1,1.0
+XLK,Always-up reference,2023,2023-08-29,1,1,1.0
+XLK,Always-up reference,2023,2023-08-30,1,1,1.0
+XLK,Always-up reference,2023,2023-08-31,1,1,1.0
+XLK,Always-up reference,2023,2023-09-01,1,1,1.0
+XLK,Always-up reference,2023,2023-09-05,0,1,1.0
+XLK,Always-up reference,2023,2023-09-06,0,1,1.0
+XLK,Always-up reference,2023,2023-09-07,1,1,1.0
+XLK,Always-up reference,2023,2023-09-08,1,1,1.0
+XLK,Always-up reference,2023,2023-09-11,0,1,1.0
+XLK,Always-up reference,2023,2023-09-12,1,1,1.0
+XLK,Always-up reference,2023,2023-09-13,1,1,1.0
+XLK,Always-up reference,2023,2023-09-14,0,1,1.0
+XLK,Always-up reference,2023,2023-09-15,1,1,1.0
+XLK,Always-up reference,2023,2023-09-18,0,1,1.0
+XLK,Always-up reference,2023,2023-09-19,0,1,1.0
+XLK,Always-up reference,2023,2023-09-20,0,1,1.0
+XLK,Always-up reference,2023,2023-09-21,1,1,1.0
+XLK,Always-up reference,2023,2023-09-22,1,1,1.0
+XLK,Always-up reference,2023,2023-09-25,0,1,1.0
+XLK,Always-up reference,2023,2023-09-26,1,1,1.0
+XLK,Always-up reference,2023,2023-09-27,1,1,1.0
+XLK,Always-up reference,2023,2023-09-28,1,1,1.0
+XLK,Always-up reference,2023,2023-09-29,1,1,1.0
+XLK,Always-up reference,2023,2023-10-02,0,1,1.0
+XLK,Always-up reference,2023,2023-10-03,1,1,1.0
+XLK,Always-up reference,2023,2023-10-04,1,1,1.0
+XLK,Always-up reference,2023,2023-10-05,1,1,1.0
+XLK,Always-up reference,2023,2023-10-06,1,1,1.0
+XLK,Always-up reference,2023,2023-10-09,1,1,1.0
+XLK,Always-up reference,2023,2023-10-10,1,1,1.0
+XLK,Always-up reference,2023,2023-10-11,1,1,1.0
+XLK,Always-up reference,2023,2023-10-12,0,1,1.0
+XLK,Always-up reference,2023,2023-10-13,1,1,1.0
+XLK,Always-up reference,2023,2023-10-16,0,1,1.0
+XLK,Always-up reference,2023,2023-10-17,0,1,1.0
+XLK,Always-up reference,2023,2023-10-18,0,1,1.0
+XLK,Always-up reference,2023,2023-10-19,0,1,1.0
+XLK,Always-up reference,2023,2023-10-20,1,1,1.0
+XLK,Always-up reference,2023,2023-10-23,1,1,1.0
+XLK,Always-up reference,2023,2023-10-24,0,1,1.0
+XLK,Always-up reference,2023,2023-10-25,0,1,1.0
+XLK,Always-up reference,2023,2023-10-26,1,1,1.0
+XLK,Always-up reference,2023,2023-10-27,1,1,1.0
+XLK,Always-up reference,2023,2023-10-30,1,1,1.0
+XLK,Always-up reference,2023,2023-10-31,1,1,1.0
+XLK,Always-up reference,2023,2023-11-01,1,1,1.0
+XLK,Always-up reference,2023,2023-11-02,1,1,1.0
+XLK,Always-up reference,2023,2023-11-03,1,1,1.0
+XLK,Always-up reference,2023,2023-11-06,1,1,1.0
+XLK,Always-up reference,2023,2023-11-07,1,1,1.0
+XLK,Always-up reference,2023,2023-11-08,0,1,1.0
+XLK,Always-up reference,2023,2023-11-09,1,1,1.0
+XLK,Always-up reference,2023,2023-11-10,0,1,1.0
+XLK,Always-up reference,2023,2023-11-13,1,1,1.0
+XLK,Always-up reference,2023,2023-11-14,1,1,1.0
+XLK,Always-up reference,2023,2023-11-15,1,1,1.0
+XLK,Always-up reference,2023,2023-11-16,0,1,1.0
+XLK,Always-up reference,2023,2023-11-17,1,1,1.0
+XLK,Always-up reference,2023,2023-11-20,0,1,1.0
+XLK,Always-up reference,2023,2023-11-21,1,1,1.0
+XLK,Always-up reference,2023,2023-11-22,0,1,1.0
+XLK,Always-up reference,2023,2023-11-24,0,1,1.0
+XLK,Always-up reference,2023,2023-11-27,1,1,1.0
+XLK,Always-up reference,2023,2023-11-28,1,1,1.0
+XLK,Always-up reference,2023,2023-11-29,1,1,1.0
+XLK,Always-up reference,2023,2023-11-30,1,1,1.0
+XLK,Always-up reference,2023,2023-12-01,0,1,1.0
+XLK,Always-up reference,2023,2023-12-04,1,1,1.0
+XLK,Always-up reference,2023,2023-12-05,0,1,1.0
+XLK,Always-up reference,2023,2023-12-06,1,1,1.0
+XLK,Always-up reference,2023,2023-12-07,1,1,1.0
+XLK,Always-up reference,2023,2023-12-08,1,1,1.0
+XLK,Always-up reference,2023,2023-12-11,1,1,1.0
+XLK,Always-up reference,2023,2023-12-12,1,1,1.0
+XLK,Always-up reference,2023,2023-12-13,0,1,1.0
+XLK,Always-up reference,2023,2023-12-14,1,1,1.0
+XLK,Always-up reference,2023,2023-12-15,1,1,1.0
+XLK,Always-up reference,2023,2023-12-18,1,1,1.0
+XLK,Always-up reference,2023,2023-12-19,0,1,1.0
+XLK,Always-up reference,2023,2023-12-20,1,1,1.0
+XLK,Always-up reference,2023,2023-12-21,1,1,1.0
+XLK,Always-up reference,2023,2023-12-22,1,1,1.0
+XLK,Always-up reference,2023,2023-12-26,0,1,1.0
+XLK,Always-up reference,2023,2023-12-27,1,1,1.0
+XLK,Always-up reference,2023,2023-12-28,0,1,1.0
+XLK,Always-up reference,2023,2023-12-29,0,1,1.0
+XLK,Market-only model,2024,2024-01-02,0,1,0.5425509080685867
+XLK,Market-only model,2024,2024-01-03,0,1,0.5228329967897597
+XLK,Market-only model,2024,2024-01-04,0,1,0.5662847550879825
+XLK,Market-only model,2024,2024-01-05,1,1,0.5304211746411002
+XLK,Market-only model,2024,2024-01-08,1,1,0.5859003256815912
+XLK,Market-only model,2024,2024-01-09,1,1,0.6033636175029119
+XLK,Market-only model,2024,2024-01-10,1,1,0.552098841927385
+XLK,Market-only model,2024,2024-01-11,1,1,0.5428034647005701
+XLK,Market-only model,2024,2024-01-12,1,1,0.5453755352546058
+XLK,Market-only model,2024,2024-01-16,0,0,0.4910434976127788
+XLK,Market-only model,2024,2024-01-17,1,1,0.5378265360658239
+XLK,Market-only model,2024,2024-01-18,1,1,0.5316026556296092
+XLK,Market-only model,2024,2024-01-19,1,1,0.5588166442624245
+XLK,Market-only model,2024,2024-01-22,1,1,0.519970922456506
+XLK,Market-only model,2024,2024-01-23,1,1,0.5476543528544815
+XLK,Market-only model,2024,2024-01-24,1,1,0.5307906368807509
+XLK,Market-only model,2024,2024-01-25,0,1,0.5257843667916924
+XLK,Market-only model,2024,2024-01-26,1,1,0.5183298842974066
+XLK,Market-only model,2024,2024-01-29,0,1,0.5158293952841361
+XLK,Market-only model,2024,2024-01-30,0,1,0.5117060100943328
+XLK,Market-only model,2024,2024-01-31,1,0,0.4746875131856966
+XLK,Market-only model,2024,2024-02-01,1,1,0.515502736122681
+XLK,Market-only model,2024,2024-02-02,1,1,0.5509851400306411
+XLK,Market-only model,2024,2024-02-05,0,1,0.5371990647629867
+XLK,Market-only model,2024,2024-02-06,1,1,0.5822192681472284
+XLK,Market-only model,2024,2024-02-07,1,1,0.5529223411567514
+XLK,Market-only model,2024,2024-02-08,1,1,0.5396594397552421
+XLK,Market-only model,2024,2024-02-09,0,1,0.5261425998707603
+XLK,Market-only model,2024,2024-02-12,0,1,0.540300630967165
+XLK,Market-only model,2024,2024-02-13,1,1,0.5276821354283275
+XLK,Market-only model,2024,2024-02-14,0,1,0.5162495815613259
+XLK,Market-only model,2024,2024-02-15,0,1,0.5730105978185814
+XLK,Market-only model,2024,2024-02-16,0,1,0.5609502110812228
+XLK,Market-only model,2024,2024-02-20,0,1,0.547299550740697
+XLK,Market-only model,2024,2024-02-21,1,1,0.5677918738294963
+XLK,Market-only model,2024,2024-02-22,0,1,0.5496371214491907
+XLK,Market-only model,2024,2024-02-23,1,1,0.5763125741878495
+XLK,Market-only model,2024,2024-02-26,1,1,0.5135356677851284
+XLK,Market-only model,2024,2024-02-27,0,1,0.5641080803683483
+XLK,Market-only model,2024,2024-02-28,1,1,0.5067657889676801
+XLK,Market-only model,2024,2024-02-29,1,0,0.4455959525817061
+XLK,Market-only model,2024,2024-03-01,0,1,0.5640326650426042
+XLK,Market-only model,2024,2024-03-04,0,1,0.5589086249239222
+XLK,Market-only model,2024,2024-03-05,1,1,0.5462621223858521
+XLK,Market-only model,2024,2024-03-06,1,1,0.5198911520345854
+XLK,Market-only model,2024,2024-03-07,0,1,0.5529466778635057
+XLK,Market-only model,2024,2024-03-08,0,1,0.5286045195328614
+XLK,Market-only model,2024,2024-03-11,1,1,0.5530441652893635
+XLK,Market-only model,2024,2024-03-12,0,1,0.5454982912160729
+XLK,Market-only model,2024,2024-03-13,1,1,0.5112004943256059
+XLK,Market-only model,2024,2024-03-14,0,1,0.5271994371841716
+XLK,Market-only model,2024,2024-03-15,1,1,0.5479522179217653
+XLK,Market-only model,2024,2024-03-18,1,1,0.5208150503382185
+XLK,Market-only model,2024,2024-03-19,1,1,0.5046300729490781
+XLK,Market-only model,2024,2024-03-20,1,1,0.5380178006855914
+XLK,Market-only model,2024,2024-03-21,1,1,0.5960538511045473
+XLK,Market-only model,2024,2024-03-22,0,1,0.5387090540658384
+XLK,Market-only model,2024,2024-03-25,0,1,0.5227908633275286
+XLK,Market-only model,2024,2024-03-26,1,1,0.5112998407895069
+XLK,Market-only model,2024,2024-03-27,0,1,0.5008096426767301
+XLK,Market-only model,2024,2024-03-28,1,1,0.5584217755629193
+XLK,Market-only model,2024,2024-04-01,0,1,0.5554618249781331
+XLK,Market-only model,2024,2024-04-02,1,1,0.5417810784690509
+XLK,Market-only model,2024,2024-04-03,0,0,0.4865488556138802
+XLK,Market-only model,2024,2024-04-04,1,1,0.5463327085030728
+XLK,Market-only model,2024,2024-04-05,0,1,0.5711083403828344
+XLK,Market-only model,2024,2024-04-08,1,1,0.5219390530378212
+XLK,Market-only model,2024,2024-04-09,0,1,0.5302194393147652
+XLK,Market-only model,2024,2024-04-10,1,1,0.567336978242128
+XLK,Market-only model,2024,2024-04-11,0,1,0.5315621144118089
+XLK,Market-only model,2024,2024-04-12,0,1,0.5336020179360276
+XLK,Market-only model,2024,2024-04-15,1,1,0.5095904574151153
+XLK,Market-only model,2024,2024-04-16,0,1,0.5455016189213926
+XLK,Market-only model,2024,2024-04-17,0,1,0.5700256287831387
+XLK,Market-only model,2024,2024-04-18,0,1,0.5412988690222112
+XLK,Market-only model,2024,2024-04-19,1,1,0.5663683456422898
+XLK,Market-only model,2024,2024-04-22,1,1,0.5723547168298505
+XLK,Market-only model,2024,2024-04-23,1,1,0.541756820045863
+XLK,Market-only model,2024,2024-04-24,0,1,0.5530944874017198
+XLK,Market-only model,2024,2024-04-25,1,1,0.5438321824136886
+XLK,Market-only model,2024,2024-04-26,1,1,0.537491520622626
+XLK,Market-only model,2024,2024-04-29,0,1,0.5197290741309984
+XLK,Market-only model,2024,2024-04-30,0,0,0.47942983335761746
+XLK,Market-only model,2024,2024-05-01,1,1,0.5221530374192842
+XLK,Market-only model,2024,2024-05-02,1,1,0.5182115006890265
+XLK,Market-only model,2024,2024-05-03,1,1,0.5558275718300586
+XLK,Market-only model,2024,2024-05-06,0,1,0.540679214207633
+XLK,Market-only model,2024,2024-05-07,1,1,0.5384730925523462
+XLK,Market-only model,2024,2024-05-08,0,0,0.48923170255809956
+XLK,Market-only model,2024,2024-05-09,1,1,0.5187780395195745
+XLK,Market-only model,2024,2024-05-10,1,0,0.4583637132081304
+XLK,Market-only model,2024,2024-05-13,1,0,0.47400883645220765
+XLK,Market-only model,2024,2024-05-14,1,1,0.5161751286890938
+XLK,Market-only model,2024,2024-05-15,0,0,0.4966142209152334
+XLK,Market-only model,2024,2024-05-16,0,1,0.5210346519835158
+XLK,Market-only model,2024,2024-05-17,1,0,0.4782442252522052
+XLK,Market-only model,2024,2024-05-20,1,1,0.5205569676032589
+XLK,Market-only model,2024,2024-05-21,1,1,0.5297394273558886
+XLK,Market-only model,2024,2024-05-22,0,0,0.4958557712759476
+XLK,Market-only model,2024,2024-05-23,1,1,0.5315460547303301
+XLK,Market-only model,2024,2024-05-24,1,1,0.5398768998883551
+XLK,Market-only model,2024,2024-05-28,0,1,0.5110324081906789
+XLK,Market-only model,2024,2024-05-29,0,0,0.48410421475447474
+XLK,Market-only model,2024,2024-05-30,1,1,0.5017802078075678
+XLK,Market-only model,2024,2024-05-31,1,1,0.5521979898593046
+XLK,Market-only model,2024,2024-06-03,1,1,0.5842914292628069
+XLK,Market-only model,2024,2024-06-04,1,1,0.5574424527158318
+XLK,Market-only model,2024,2024-06-05,0,1,0.525591236375832
+XLK,Market-only model,2024,2024-06-06,1,1,0.5628730718665768
+XLK,Market-only model,2024,2024-06-07,1,1,0.5065797877829196
+XLK,Market-only model,2024,2024-06-10,1,1,0.5138609225887049
+XLK,Market-only model,2024,2024-06-11,1,1,0.5178522451102692
+XLK,Market-only model,2024,2024-06-12,1,1,0.5378977919757763
+XLK,Market-only model,2024,2024-06-13,1,1,0.5922643640475689
+XLK,Market-only model,2024,2024-06-14,1,1,0.5185988724123874
+XLK,Market-only model,2024,2024-06-17,1,1,0.5012325575382144
+XLK,Market-only model,2024,2024-06-18,0,1,0.5320715080404752
+XLK,Market-only model,2024,2024-06-20,0,0,0.49687472528701326
+XLK,Market-only model,2024,2024-06-21,0,1,0.522411360935163
+XLK,Market-only model,2024,2024-06-24,1,1,0.5179130929658665
+XLK,Market-only model,2024,2024-06-25,0,1,0.5282093216644926
+XLK,Market-only model,2024,2024-06-26,1,1,0.5474666072191011
+XLK,Market-only model,2024,2024-06-27,0,1,0.5247666770561787
+XLK,Market-only model,2024,2024-06-28,1,0,0.4805086340353059
+XLK,Market-only model,2024,2024-07-01,1,1,0.5578525027383475
+XLK,Market-only model,2024,2024-07-02,1,1,0.5147706386269583
+XLK,Market-only model,2024,2024-07-03,1,1,0.5212711460603616
+XLK,Market-only model,2024,2024-07-05,1,1,0.5530754570203636
+XLK,Market-only model,2024,2024-07-08,0,1,0.5032773441353484
+XLK,Market-only model,2024,2024-07-09,1,1,0.5131734190447667
+XLK,Market-only model,2024,2024-07-10,0,1,0.5163425985310174
+XLK,Market-only model,2024,2024-07-11,1,1,0.5471932576544581
+XLK,Market-only model,2024,2024-07-12,1,1,0.5556989139169589
+XLK,Market-only model,2024,2024-07-15,0,1,0.5407917216227999
+XLK,Market-only model,2024,2024-07-16,0,1,0.5310128325585819
+XLK,Market-only model,2024,2024-07-17,1,1,0.5329425463112101
+XLK,Market-only model,2024,2024-07-18,0,1,0.5366434740064743
+XLK,Market-only model,2024,2024-07-19,1,1,0.5068634418881436
+XLK,Market-only model,2024,2024-07-22,0,1,0.5160668178284451
+XLK,Market-only model,2024,2024-07-23,0,1,0.5077227534241506
+XLK,Market-only model,2024,2024-07-24,0,1,0.5689273115145768
+XLK,Market-only model,2024,2024-07-25,1,1,0.5053174618823975
+XLK,Market-only model,2024,2024-07-26,0,1,0.5590019984691931
+XLK,Market-only model,2024,2024-07-29,0,1,0.5171481818672872
+XLK,Market-only model,2024,2024-07-30,1,1,0.5316919987123491
+XLK,Market-only model,2024,2024-07-31,0,1,0.5559475890069265
+XLK,Market-only model,2024,2024-08-01,0,1,0.5778102711639774
+XLK,Market-only model,2024,2024-08-02,0,0,0.49294170832714634
+XLK,Market-only model,2024,2024-08-05,1,1,0.5335827802215826
+XLK,Market-only model,2024,2024-08-06,0,1,0.5558987292845283
+XLK,Market-only model,2024,2024-08-07,1,1,0.5487046087303881
+XLK,Market-only model,2024,2024-08-08,1,1,0.5215224285732722
+XLK,Market-only model,2024,2024-08-09,1,1,0.5812233291409299
+XLK,Market-only model,2024,2024-08-12,1,1,0.5235449771245144
+XLK,Market-only model,2024,2024-08-13,1,0,0.4662610879117162
+XLK,Market-only model,2024,2024-08-14,1,0,0.43898434795963925
+XLK,Market-only model,2024,2024-08-15,1,0,0.44323951760057223
+XLK,Market-only model,2024,2024-08-16,1,0,0.4596287890003641
+XLK,Market-only model,2024,2024-08-19,0,0,0.4963528113480146
+XLK,Market-only model,2024,2024-08-20,1,0,0.46245060454749815
+XLK,Market-only model,2024,2024-08-21,0,0,0.3916666489713825
+XLK,Market-only model,2024,2024-08-22,1,0,0.4416726819234177
+XLK,Market-only model,2024,2024-08-23,0,1,0.5023129423692263
+XLK,Market-only model,2024,2024-08-26,1,0,0.4915859941243322
+XLK,Market-only model,2024,2024-08-27,0,0,0.4384122550914802
+XLK,Market-only model,2024,2024-08-28,0,1,0.5712110006091219
+XLK,Market-only model,2024,2024-08-29,1,0,0.4503614825836602
+XLK,Market-only model,2024,2024-08-30,0,0,0.45509612545467176
+XLK,Market-only model,2024,2024-09-03,0,0,0.47813608496871646
+XLK,Market-only model,2024,2024-09-04,0,1,0.5235262680382133
+XLK,Market-only model,2024,2024-09-05,0,1,0.5144566794339542
+XLK,Market-only model,2024,2024-09-06,1,1,0.592285922514177
+XLK,Market-only model,2024,2024-09-09,1,1,0.5177371842314932
+XLK,Market-only model,2024,2024-09-10,1,1,0.5920779329199751
+XLK,Market-only model,2024,2024-09-11,1,1,0.5777323964060662
+XLK,Market-only model,2024,2024-09-12,1,1,0.5424811031234903
+XLK,Market-only model,2024,2024-09-13,0,1,0.5719476463642242
+XLK,Market-only model,2024,2024-09-16,0,0,0.4739214315238154
+XLK,Market-only model,2024,2024-09-17,0,0,0.49580279408473604
+XLK,Market-only model,2024,2024-09-18,1,0,0.4545125024662372
+XLK,Market-only model,2024,2024-09-19,0,1,0.5183478226317085
+XLK,Market-only model,2024,2024-09-20,0,0,0.4924439879882731
+XLK,Market-only model,2024,2024-09-23,1,1,0.5485770839381657
+XLK,Market-only model,2024,2024-09-24,1,0,0.4768183248422002
+XLK,Market-only model,2024,2024-09-25,1,1,0.5161261112927608
+XLK,Market-only model,2024,2024-09-26,0,0,0.44147792429948657
+XLK,Market-only model,2024,2024-09-27,1,1,0.502543312873419
+XLK,Market-only model,2024,2024-09-30,0,1,0.5090546632848251
+XLK,Market-only model,2024,2024-10-01,1,0,0.404812870217661
+XLK,Market-only model,2024,2024-10-02,1,1,0.5035082334754353
+XLK,Market-only model,2024,2024-10-03,1,0,0.4898780681847892
+XLK,Market-only model,2024,2024-10-04,0,0,0.4715724912346678
+XLK,Market-only model,2024,2024-10-07,1,1,0.5360270568520228
+XLK,Market-only model,2024,2024-10-08,1,1,0.5380750261687147
+XLK,Market-only model,2024,2024-10-09,0,1,0.573470324220699
+XLK,Market-only model,2024,2024-10-10,1,1,0.525777609145958
+XLK,Market-only model,2024,2024-10-11,1,0,0.4979608982287364
+XLK,Market-only model,2024,2024-10-14,0,1,0.5146692258369787
+XLK,Market-only model,2024,2024-10-15,1,1,0.5051790435438654
+XLK,Market-only model,2024,2024-10-16,1,0,0.4937017689892126
+XLK,Market-only model,2024,2024-10-17,1,1,0.5628051472770359
+XLK,Market-only model,2024,2024-10-18,1,1,0.5039602610920279
+XLK,Market-only model,2024,2024-10-21,0,0,0.494578003601487
+XLK,Market-only model,2024,2024-10-22,0,1,0.547026450957861
+XLK,Market-only model,2024,2024-10-23,1,1,0.5099934448396642
+XLK,Market-only model,2024,2024-10-24,1,1,0.5220285174225351
+XLK,Market-only model,2024,2024-10-25,0,0,0.4874694936193294
+XLK,Market-only model,2024,2024-10-28,1,1,0.5287051492506971
+XLK,Market-only model,2024,2024-10-29,0,0,0.4700361526878274
+XLK,Market-only model,2024,2024-10-30,0,1,0.5534350302383595
+XLK,Market-only model,2024,2024-10-31,1,1,0.5152135941928712
+XLK,Market-only model,2024,2024-11-01,0,1,0.5316304307884695
+XLK,Market-only model,2024,2024-11-04,1,1,0.5315971933074086
+XLK,Market-only model,2024,2024-11-05,1,1,0.5408404141880565
+XLK,Market-only model,2024,2024-11-06,1,1,0.5648793812684886
+XLK,Market-only model,2024,2024-11-07,0,1,0.5638359667740033
+XLK,Market-only model,2024,2024-11-08,0,1,0.5123415941119932
+XLK,Market-only model,2024,2024-11-11,1,1,0.514568215224056
+XLK,Market-only model,2024,2024-11-12,0,0,0.44024626575399045
+XLK,Market-only model,2024,2024-11-13,0,0,0.48751286574045904
+XLK,Market-only model,2024,2024-11-14,0,0,0.49602070370229057
+XLK,Market-only model,2024,2024-11-15,1,1,0.5183241001752683
+XLK,Market-only model,2024,2024-11-18,1,1,0.5297160734063807
+XLK,Market-only model,2024,2024-11-19,0,1,0.5129636294138838
+XLK,Market-only model,2024,2024-11-20,1,0,0.49789455384886827
+XLK,Market-only model,2024,2024-11-21,1,1,0.5303911358825923
+XLK,Market-only model,2024,2024-11-22,0,1,0.5593386277931018
+XLK,Market-only model,2024,2024-11-25,1,1,0.5004985892413424
+XLK,Market-only model,2024,2024-11-26,0,1,0.5373125380632016
+XLK,Market-only model,2024,2024-11-27,1,0,0.47730770650831034
+XLK,Market-only model,2024,2024-11-29,1,0,0.43200746522839395
+XLK,Market-only model,2024,2024-12-02,1,1,0.5180875430606813
+XLK,Market-only model,2024,2024-12-03,1,1,0.5284001349576645
+XLK,Market-only model,2024,2024-12-04,0,1,0.527991746209725
+XLK,Market-only model,2024,2024-12-05,1,1,0.5947222845596999
+XLK,Market-only model,2024,2024-12-06,0,1,0.5200512373700535
+XLK,Market-only model,2024,2024-12-09,0,1,0.5024124543928936
+XLK,Market-only model,2024,2024-12-10,1,1,0.5020322272863206
+XLK,Market-only model,2024,2024-12-11,0,1,0.5138510591224945
+XLK,Market-only model,2024,2024-12-12,1,1,0.5353394924141512
+XLK,Market-only model,2024,2024-12-13,1,1,0.5075461736817884
+XLK,Market-only model,2024,2024-12-16,0,0,0.4906459795061637
+XLK,Market-only model,2024,2024-12-17,0,1,0.5520809470138597
+XLK,Market-only model,2024,2024-12-18,1,1,0.520286328141817
+XLK,Market-only model,2024,2024-12-19,1,1,0.5317887032569798
+XLK,Market-only model,2024,2024-12-20,1,1,0.5593790918805595
+XLK,Market-only model,2024,2024-12-23,1,1,0.5484769068862815
+XLK,Market-only model,2024,2024-12-24,1,1,0.5341187384431177
+XLK,Market-only model,2024,2024-12-26,0,1,0.5380229542688416
+XLK,Market-only model,2024,2024-12-27,0,0,0.47756465905852435
+XLK,Market-only model,2024,2024-12-30,0,1,0.5090643877837797
+XLK,Market-only model,2024,2024-12-31,0,1,0.5179399833979381
+XLK,Market + news sentiment model,2024,2024-01-02,0,1,0.5800124790234316
+XLK,Market + news sentiment model,2024,2024-01-03,0,1,0.556186391896859
+XLK,Market + news sentiment model,2024,2024-01-04,0,1,0.6221655173057953
+XLK,Market + news sentiment model,2024,2024-01-05,1,1,0.5471877819941701
+XLK,Market + news sentiment model,2024,2024-01-08,1,1,0.6106991549883086
+XLK,Market + news sentiment model,2024,2024-01-09,1,1,0.608279939048098
+XLK,Market + news sentiment model,2024,2024-01-10,1,1,0.5977899936343466
+XLK,Market + news sentiment model,2024,2024-01-11,1,1,0.5569790134252914
+XLK,Market + news sentiment model,2024,2024-01-12,1,1,0.5560387916181638
+XLK,Market + news sentiment model,2024,2024-01-16,0,1,0.5269104513758552
+XLK,Market + news sentiment model,2024,2024-01-17,1,1,0.5253182133038969
+XLK,Market + news sentiment model,2024,2024-01-18,1,1,0.531167944206434
+XLK,Market + news sentiment model,2024,2024-01-19,1,1,0.5597953102066382
+XLK,Market + news sentiment model,2024,2024-01-22,1,1,0.5566278739260337
+XLK,Market + news sentiment model,2024,2024-01-23,1,1,0.5660485467534678
+XLK,Market + news sentiment model,2024,2024-01-24,1,1,0.5421326225777786
+XLK,Market + news sentiment model,2024,2024-01-25,0,1,0.5544518012512317
+XLK,Market + news sentiment model,2024,2024-01-26,1,0,0.4933286477134014
+XLK,Market + news sentiment model,2024,2024-01-29,0,1,0.5268822405719679
+XLK,Market + news sentiment model,2024,2024-01-30,0,1,0.5259600616438787
+XLK,Market + news sentiment model,2024,2024-01-31,1,0,0.490535285907725
+XLK,Market + news sentiment model,2024,2024-02-01,1,1,0.5355243604598942
+XLK,Market + news sentiment model,2024,2024-02-02,1,1,0.6087629979567205
+XLK,Market + news sentiment model,2024,2024-02-05,0,1,0.5524277349010674
+XLK,Market + news sentiment model,2024,2024-02-06,1,1,0.5702766578139883
+XLK,Market + news sentiment model,2024,2024-02-07,1,1,0.5726425214868692
+XLK,Market + news sentiment model,2024,2024-02-08,1,1,0.5106957191884586
+XLK,Market + news sentiment model,2024,2024-02-09,0,0,0.4743699261543082
+XLK,Market + news sentiment model,2024,2024-02-12,0,1,0.5500098631771017
+XLK,Market + news sentiment model,2024,2024-02-13,1,1,0.541945473736262
+XLK,Market + news sentiment model,2024,2024-02-14,0,1,0.5321370318617007
+XLK,Market + news sentiment model,2024,2024-02-15,0,1,0.5786675873969198
+XLK,Market + news sentiment model,2024,2024-02-16,0,1,0.5618001525972242
+XLK,Market + news sentiment model,2024,2024-02-20,0,1,0.5867913089928021
+XLK,Market + news sentiment model,2024,2024-02-21,1,1,0.5391930145913644
+XLK,Market + news sentiment model,2024,2024-02-22,0,1,0.5650369696401563
+XLK,Market + news sentiment model,2024,2024-02-23,1,1,0.5984800032082459
+XLK,Market + news sentiment model,2024,2024-02-26,1,1,0.5342290996114172
+XLK,Market + news sentiment model,2024,2024-02-27,0,1,0.602468620203962
+XLK,Market + news sentiment model,2024,2024-02-28,1,0,0.4889575149443674
+XLK,Market + news sentiment model,2024,2024-02-29,1,0,0.4846859145071497
+XLK,Market + news sentiment model,2024,2024-03-01,0,1,0.6017466326225109
+XLK,Market + news sentiment model,2024,2024-03-04,0,1,0.5599441734609522
+XLK,Market + news sentiment model,2024,2024-03-05,1,1,0.5545868931787109
+XLK,Market + news sentiment model,2024,2024-03-06,1,1,0.5173442728640524
+XLK,Market + news sentiment model,2024,2024-03-07,0,1,0.5641175173682677
+XLK,Market + news sentiment model,2024,2024-03-08,0,1,0.5445205689496784
+XLK,Market + news sentiment model,2024,2024-03-11,1,1,0.5490997814749723
+XLK,Market + news sentiment model,2024,2024-03-12,0,1,0.5851930858910381
+XLK,Market + news sentiment model,2024,2024-03-13,1,0,0.48949620108248426
+XLK,Market + news sentiment model,2024,2024-03-14,0,1,0.5372357096465469
+XLK,Market + news sentiment model,2024,2024-03-15,1,1,0.6023533007552634
+XLK,Market + news sentiment model,2024,2024-03-18,1,1,0.521243843825458
+XLK,Market + news sentiment model,2024,2024-03-19,1,1,0.5152658041651904
+XLK,Market + news sentiment model,2024,2024-03-20,1,1,0.5704919676562896
+XLK,Market + news sentiment model,2024,2024-03-21,1,1,0.6306968829910345
+XLK,Market + news sentiment model,2024,2024-03-22,0,1,0.5568132403027564
+XLK,Market + news sentiment model,2024,2024-03-25,0,1,0.5394935586869909
+XLK,Market + news sentiment model,2024,2024-03-26,1,1,0.5372688094287035
+XLK,Market + news sentiment model,2024,2024-03-27,0,1,0.5364843374679834
+XLK,Market + news sentiment model,2024,2024-03-28,1,1,0.5774339221235589
+XLK,Market + news sentiment model,2024,2024-04-01,0,1,0.5390155413556347
+XLK,Market + news sentiment model,2024,2024-04-02,1,1,0.5443931108365861
+XLK,Market + news sentiment model,2024,2024-04-03,0,0,0.4908819633620484
+XLK,Market + news sentiment model,2024,2024-04-04,1,1,0.5807027719023288
+XLK,Market + news sentiment model,2024,2024-04-05,0,1,0.5740016616607709
+XLK,Market + news sentiment model,2024,2024-04-08,1,1,0.5376149870405948
+XLK,Market + news sentiment model,2024,2024-04-09,0,1,0.5712601811018372
+XLK,Market + news sentiment model,2024,2024-04-10,1,1,0.6009996648546755
+XLK,Market + news sentiment model,2024,2024-04-11,0,1,0.5676692727996672
+XLK,Market + news sentiment model,2024,2024-04-12,0,1,0.5288695538701392
+XLK,Market + news sentiment model,2024,2024-04-15,1,1,0.5225493740339079
+XLK,Market + news sentiment model,2024,2024-04-16,0,1,0.5468987832487496
+XLK,Market + news sentiment model,2024,2024-04-17,0,1,0.5974369722918806
+XLK,Market + news sentiment model,2024,2024-04-18,0,1,0.5548762378459909
+XLK,Market + news sentiment model,2024,2024-04-19,1,1,0.6201668710833231
+XLK,Market + news sentiment model,2024,2024-04-22,1,1,0.548860627745012
+XLK,Market + news sentiment model,2024,2024-04-23,1,1,0.5543531506789531
+XLK,Market + news sentiment model,2024,2024-04-24,0,1,0.5906605985773999
+XLK,Market + news sentiment model,2024,2024-04-25,1,1,0.566306027822001
+XLK,Market + news sentiment model,2024,2024-04-26,1,1,0.5324445609454994
+XLK,Market + news sentiment model,2024,2024-04-29,0,1,0.5307142080877517
+XLK,Market + news sentiment model,2024,2024-04-30,0,0,0.47540218336812345
+XLK,Market + news sentiment model,2024,2024-05-01,1,1,0.5299615280919241
+XLK,Market + news sentiment model,2024,2024-05-02,1,1,0.5269764170634718
+XLK,Market + news sentiment model,2024,2024-05-03,1,1,0.584759242620861
+XLK,Market + news sentiment model,2024,2024-05-06,0,1,0.5420489779945
+XLK,Market + news sentiment model,2024,2024-05-07,1,1,0.5087228132014352
+XLK,Market + news sentiment model,2024,2024-05-08,0,1,0.530820265671388
+XLK,Market + news sentiment model,2024,2024-05-09,1,1,0.5397732580123398
+XLK,Market + news sentiment model,2024,2024-05-10,1,0,0.46576311390459957
+XLK,Market + news sentiment model,2024,2024-05-13,1,0,0.47597777249339174
+XLK,Market + news sentiment model,2024,2024-05-14,1,1,0.5198045123393638
+XLK,Market + news sentiment model,2024,2024-05-15,0,0,0.4849648591231825
+XLK,Market + news sentiment model,2024,2024-05-16,0,1,0.5324157131220498
+XLK,Market + news sentiment model,2024,2024-05-17,1,0,0.4727544937210095
+XLK,Market + news sentiment model,2024,2024-05-20,1,1,0.5334729144609495
+XLK,Market + news sentiment model,2024,2024-05-21,1,1,0.5192559237195151
+XLK,Market + news sentiment model,2024,2024-05-22,0,1,0.5103364672733267
+XLK,Market + news sentiment model,2024,2024-05-23,1,1,0.5680606698625831
+XLK,Market + news sentiment model,2024,2024-05-24,1,1,0.5716895416476431
+XLK,Market + news sentiment model,2024,2024-05-28,0,1,0.5290481694452689
+XLK,Market + news sentiment model,2024,2024-05-29,0,1,0.5088619371968608
+XLK,Market + news sentiment model,2024,2024-05-30,1,1,0.5106939114369858
+XLK,Market + news sentiment model,2024,2024-05-31,1,1,0.5803231048578522
+XLK,Market + news sentiment model,2024,2024-06-03,1,1,0.5970025055452219
+XLK,Market + news sentiment model,2024,2024-06-04,1,1,0.5658099690802403
+XLK,Market + news sentiment model,2024,2024-06-05,0,1,0.5368107856487021
+XLK,Market + news sentiment model,2024,2024-06-06,1,1,0.5795545235429311
+XLK,Market + news sentiment model,2024,2024-06-07,1,1,0.5221608027165581
+XLK,Market + news sentiment model,2024,2024-06-10,1,1,0.5267442274888412
+XLK,Market + news sentiment model,2024,2024-06-11,1,1,0.528176528761312
+XLK,Market + news sentiment model,2024,2024-06-12,1,1,0.559748864878797
+XLK,Market + news sentiment model,2024,2024-06-13,1,1,0.614801494130264
+XLK,Market + news sentiment model,2024,2024-06-14,1,1,0.518619165032443
+XLK,Market + news sentiment model,2024,2024-06-17,1,0,0.49472059339838
+XLK,Market + news sentiment model,2024,2024-06-18,0,1,0.5246576919652856
+XLK,Market + news sentiment model,2024,2024-06-20,0,0,0.47952772137456223
+XLK,Market + news sentiment model,2024,2024-06-21,0,1,0.529122317259062
+XLK,Market + news sentiment model,2024,2024-06-24,1,1,0.5404950600332519
+XLK,Market + news sentiment model,2024,2024-06-25,0,1,0.5599692686022412
+XLK,Market + news sentiment model,2024,2024-06-26,1,1,0.568565142606055
+XLK,Market + news sentiment model,2024,2024-06-27,0,1,0.5516642206351906
+XLK,Market + news sentiment model,2024,2024-06-28,1,1,0.5170139039295923
+XLK,Market + news sentiment model,2024,2024-07-01,1,1,0.5986084966980018
+XLK,Market + news sentiment model,2024,2024-07-02,1,1,0.5294321139147417
+XLK,Market + news sentiment model,2024,2024-07-03,1,1,0.5562637457146646
+XLK,Market + news sentiment model,2024,2024-07-05,1,1,0.5834171884601843
+XLK,Market + news sentiment model,2024,2024-07-08,0,1,0.5192323286512854
+XLK,Market + news sentiment model,2024,2024-07-09,1,1,0.5350904080432015
+XLK,Market + news sentiment model,2024,2024-07-10,0,1,0.507598407886723
+XLK,Market + news sentiment model,2024,2024-07-11,1,1,0.5742488860146032
+XLK,Market + news sentiment model,2024,2024-07-12,1,1,0.5364430338902203
+XLK,Market + news sentiment model,2024,2024-07-15,0,1,0.594314187810377
+XLK,Market + news sentiment model,2024,2024-07-16,0,1,0.5474272977965
+XLK,Market + news sentiment model,2024,2024-07-17,1,1,0.5249098066291499
+XLK,Market + news sentiment model,2024,2024-07-18,0,1,0.5188283212453645
+XLK,Market + news sentiment model,2024,2024-07-19,1,1,0.5435696770805684
+XLK,Market + news sentiment model,2024,2024-07-22,0,0,0.4799731930471857
+XLK,Market + news sentiment model,2024,2024-07-23,0,0,0.4997622390680664
+XLK,Market + news sentiment model,2024,2024-07-24,0,1,0.5914507959009316
+XLK,Market + news sentiment model,2024,2024-07-25,1,1,0.5621982717772911
+XLK,Market + news sentiment model,2024,2024-07-26,0,1,0.5615356195983083
+XLK,Market + news sentiment model,2024,2024-07-29,0,1,0.5500352107148354
+XLK,Market + news sentiment model,2024,2024-07-30,1,1,0.5477796772613059
+XLK,Market + news sentiment model,2024,2024-07-31,0,1,0.5485164502759021
+XLK,Market + news sentiment model,2024,2024-08-01,0,1,0.5919641616256781
+XLK,Market + news sentiment model,2024,2024-08-02,0,1,0.5113589735503596
+XLK,Market + news sentiment model,2024,2024-08-05,1,1,0.5487987941760049
+XLK,Market + news sentiment model,2024,2024-08-06,0,1,0.5883764454096271
+XLK,Market + news sentiment model,2024,2024-08-07,1,1,0.5361633145465297
+XLK,Market + news sentiment model,2024,2024-08-08,1,1,0.5206037481915748
+XLK,Market + news sentiment model,2024,2024-08-09,1,1,0.5990092237540633
+XLK,Market + news sentiment model,2024,2024-08-12,1,1,0.5257978319625389
+XLK,Market + news sentiment model,2024,2024-08-13,1,0,0.45663780754526756
+XLK,Market + news sentiment model,2024,2024-08-14,1,0,0.4525982529145868
+XLK,Market + news sentiment model,2024,2024-08-15,1,0,0.4488260592673581
+XLK,Market + news sentiment model,2024,2024-08-16,1,0,0.42835749350336627
+XLK,Market + news sentiment model,2024,2024-08-19,0,0,0.49619075247263766
+XLK,Market + news sentiment model,2024,2024-08-20,1,0,0.45826235783468233
+XLK,Market + news sentiment model,2024,2024-08-21,0,0,0.4023367776098132
+XLK,Market + news sentiment model,2024,2024-08-22,1,0,0.47933360093126176
+XLK,Market + news sentiment model,2024,2024-08-23,0,1,0.5284448159699267
+XLK,Market + news sentiment model,2024,2024-08-26,1,1,0.517930317433198
+XLK,Market + news sentiment model,2024,2024-08-27,0,0,0.4726026341009491
+XLK,Market + news sentiment model,2024,2024-08-28,0,1,0.5814115703912239
+XLK,Market + news sentiment model,2024,2024-08-29,1,0,0.4658078050174955
+XLK,Market + news sentiment model,2024,2024-08-30,0,0,0.445565506113508
+XLK,Market + news sentiment model,2024,2024-09-03,0,0,0.48984824628267953
+XLK,Market + news sentiment model,2024,2024-09-04,0,1,0.5606503173884466
+XLK,Market + news sentiment model,2024,2024-09-05,0,1,0.5549820742258714
+XLK,Market + news sentiment model,2024,2024-09-06,1,1,0.6231464773291945
+XLK,Market + news sentiment model,2024,2024-09-09,1,1,0.5290481370286282
+XLK,Market + news sentiment model,2024,2024-09-10,1,1,0.6107197075056447
+XLK,Market + news sentiment model,2024,2024-09-11,1,1,0.6015047031517903
+XLK,Market + news sentiment model,2024,2024-09-12,1,1,0.5231760183440098
+XLK,Market + news sentiment model,2024,2024-09-13,0,1,0.5629310670101138
+XLK,Market + news sentiment model,2024,2024-09-16,0,0,0.48515987387905996
+XLK,Market + news sentiment model,2024,2024-09-17,0,1,0.5018614045024306
+XLK,Market + news sentiment model,2024,2024-09-18,1,0,0.45128929900450937
+XLK,Market + news sentiment model,2024,2024-09-19,0,1,0.5091271318560703
+XLK,Market + news sentiment model,2024,2024-09-20,0,1,0.5066307587731456
+XLK,Market + news sentiment model,2024,2024-09-23,1,1,0.5715747575283313
+XLK,Market + news sentiment model,2024,2024-09-24,1,0,0.47689745542770257
+XLK,Market + news sentiment model,2024,2024-09-25,1,1,0.5077163374829544
+XLK,Market + news sentiment model,2024,2024-09-26,0,0,0.4755979876919294
+XLK,Market + news sentiment model,2024,2024-09-27,1,1,0.5608478921647563
+XLK,Market + news sentiment model,2024,2024-09-30,0,1,0.53726059379601
+XLK,Market + news sentiment model,2024,2024-10-01,1,0,0.4237846667545454
+XLK,Market + news sentiment model,2024,2024-10-02,1,0,0.4833993545640675
+XLK,Market + news sentiment model,2024,2024-10-03,1,1,0.5006575880445266
+XLK,Market + news sentiment model,2024,2024-10-04,0,0,0.4832106641699124
+XLK,Market + news sentiment model,2024,2024-10-07,1,1,0.5197975102185094
+XLK,Market + news sentiment model,2024,2024-10-08,1,1,0.5846240644007206
+XLK,Market + news sentiment model,2024,2024-10-09,0,1,0.5706078750265496
+XLK,Market + news sentiment model,2024,2024-10-10,1,1,0.5776287242567915
+XLK,Market + news sentiment model,2024,2024-10-11,1,1,0.5024214053297396
+XLK,Market + news sentiment model,2024,2024-10-14,0,1,0.5436975832883796
+XLK,Market + news sentiment model,2024,2024-10-15,1,0,0.48190552972187084
+XLK,Market + news sentiment model,2024,2024-10-16,1,0,0.49464826765567
+XLK,Market + news sentiment model,2024,2024-10-17,1,1,0.5729779148590076
+XLK,Market + news sentiment model,2024,2024-10-18,1,1,0.5042306804278335
+XLK,Market + news sentiment model,2024,2024-10-21,0,0,0.49616201764410617
+XLK,Market + news sentiment model,2024,2024-10-22,0,1,0.5417460221640954
+XLK,Market + news sentiment model,2024,2024-10-23,1,1,0.5321598811796691
+XLK,Market + news sentiment model,2024,2024-10-24,1,1,0.5306166177139813
+XLK,Market + news sentiment model,2024,2024-10-25,0,0,0.46969841282853453
+XLK,Market + news sentiment model,2024,2024-10-28,1,1,0.5475759287831811
+XLK,Market + news sentiment model,2024,2024-10-29,0,0,0.4835955466085307
+XLK,Market + news sentiment model,2024,2024-10-30,0,1,0.5699339047302523
+XLK,Market + news sentiment model,2024,2024-10-31,1,1,0.5341242633030748
+XLK,Market + news sentiment model,2024,2024-11-01,0,1,0.5518732117225227
+XLK,Market + news sentiment model,2024,2024-11-04,1,1,0.5408436809741692
+XLK,Market + news sentiment model,2024,2024-11-05,1,1,0.56222284159308
+XLK,Market + news sentiment model,2024,2024-11-06,1,1,0.5763500186823676
+XLK,Market + news sentiment model,2024,2024-11-07,0,1,0.5530146483488749
+XLK,Market + news sentiment model,2024,2024-11-08,0,1,0.5131946724625488
+XLK,Market + news sentiment model,2024,2024-11-11,1,1,0.5120789038992427
+XLK,Market + news sentiment model,2024,2024-11-12,0,0,0.4651550716530432
+XLK,Market + news sentiment model,2024,2024-11-13,0,1,0.5298212890764402
+XLK,Market + news sentiment model,2024,2024-11-14,0,0,0.49880811815626114
+XLK,Market + news sentiment model,2024,2024-11-15,1,1,0.5385658203267335
+XLK,Market + news sentiment model,2024,2024-11-18,1,1,0.5482297754302844
+XLK,Market + news sentiment model,2024,2024-11-19,0,1,0.5362588535870558
+XLK,Market + news sentiment model,2024,2024-11-20,1,0,0.49804246052421675
+XLK,Market + news sentiment model,2024,2024-11-21,1,1,0.5707364954034624
+XLK,Market + news sentiment model,2024,2024-11-22,0,1,0.5695487288420685
+XLK,Market + news sentiment model,2024,2024-11-25,1,1,0.5253038654639814
+XLK,Market + news sentiment model,2024,2024-11-26,0,1,0.5627411927081717
+XLK,Market + news sentiment model,2024,2024-11-27,1,1,0.5135064194970959
+XLK,Market + news sentiment model,2024,2024-11-29,1,0,0.4605986763537726
+XLK,Market + news sentiment model,2024,2024-12-02,1,1,0.5647215866540063
+XLK,Market + news sentiment model,2024,2024-12-03,1,1,0.5626758722467984
+XLK,Market + news sentiment model,2024,2024-12-04,0,0,0.48134891665510854
+XLK,Market + news sentiment model,2024,2024-12-05,1,1,0.6077889916717955
+XLK,Market + news sentiment model,2024,2024-12-06,0,1,0.5424832308913029
+XLK,Market + news sentiment model,2024,2024-12-09,0,1,0.5221861102917151
+XLK,Market + news sentiment model,2024,2024-12-10,1,1,0.5208366123519926
+XLK,Market + news sentiment model,2024,2024-12-11,0,1,0.5446531211919529
+XLK,Market + news sentiment model,2024,2024-12-12,1,1,0.5321580730912694
+XLK,Market + news sentiment model,2024,2024-12-13,1,1,0.5256335615819704
+XLK,Market + news sentiment model,2024,2024-12-16,0,1,0.517142644398228
+XLK,Market + news sentiment model,2024,2024-12-17,0,1,0.5857619181752751
+XLK,Market + news sentiment model,2024,2024-12-18,1,1,0.5303510378492197
+XLK,Market + news sentiment model,2024,2024-12-19,1,1,0.5416408024977533
+XLK,Market + news sentiment model,2024,2024-12-20,1,1,0.5734745206668711
+XLK,Market + news sentiment model,2024,2024-12-23,1,1,0.5924596471392145
+XLK,Market + news sentiment model,2024,2024-12-24,1,1,0.526189874195855
+XLK,Market + news sentiment model,2024,2024-12-26,0,1,0.5146067307755067
+XLK,Market + news sentiment model,2024,2024-12-27,0,0,0.445505382018301
+XLK,Market + news sentiment model,2024,2024-12-30,0,1,0.5004926434716084
+XLK,Market + news sentiment model,2024,2024-12-31,0,1,0.5306137787037452
+XLK,Always-up reference,2024,2024-01-02,0,1,1.0
+XLK,Always-up reference,2024,2024-01-03,0,1,1.0
+XLK,Always-up reference,2024,2024-01-04,0,1,1.0
+XLK,Always-up reference,2024,2024-01-05,1,1,1.0
+XLK,Always-up reference,2024,2024-01-08,1,1,1.0
+XLK,Always-up reference,2024,2024-01-09,1,1,1.0
+XLK,Always-up reference,2024,2024-01-10,1,1,1.0
+XLK,Always-up reference,2024,2024-01-11,1,1,1.0
+XLK,Always-up reference,2024,2024-01-12,1,1,1.0
+XLK,Always-up reference,2024,2024-01-16,0,1,1.0
+XLK,Always-up reference,2024,2024-01-17,1,1,1.0
+XLK,Always-up reference,2024,2024-01-18,1,1,1.0
+XLK,Always-up reference,2024,2024-01-19,1,1,1.0
+XLK,Always-up reference,2024,2024-01-22,1,1,1.0
+XLK,Always-up reference,2024,2024-01-23,1,1,1.0
+XLK,Always-up reference,2024,2024-01-24,1,1,1.0
+XLK,Always-up reference,2024,2024-01-25,0,1,1.0
+XLK,Always-up reference,2024,2024-01-26,1,1,1.0
+XLK,Always-up reference,2024,2024-01-29,0,1,1.0
+XLK,Always-up reference,2024,2024-01-30,0,1,1.0
+XLK,Always-up reference,2024,2024-01-31,1,1,1.0
+XLK,Always-up reference,2024,2024-02-01,1,1,1.0
+XLK,Always-up reference,2024,2024-02-02,1,1,1.0
+XLK,Always-up reference,2024,2024-02-05,0,1,1.0
+XLK,Always-up reference,2024,2024-02-06,1,1,1.0
+XLK,Always-up reference,2024,2024-02-07,1,1,1.0
+XLK,Always-up reference,2024,2024-02-08,1,1,1.0
+XLK,Always-up reference,2024,2024-02-09,0,1,1.0
+XLK,Always-up reference,2024,2024-02-12,0,1,1.0
+XLK,Always-up reference,2024,2024-02-13,1,1,1.0
+XLK,Always-up reference,2024,2024-02-14,0,1,1.0
+XLK,Always-up reference,2024,2024-02-15,0,1,1.0
+XLK,Always-up reference,2024,2024-02-16,0,1,1.0
+XLK,Always-up reference,2024,2024-02-20,0,1,1.0
+XLK,Always-up reference,2024,2024-02-21,1,1,1.0
+XLK,Always-up reference,2024,2024-02-22,0,1,1.0
+XLK,Always-up reference,2024,2024-02-23,1,1,1.0
+XLK,Always-up reference,2024,2024-02-26,1,1,1.0
+XLK,Always-up reference,2024,2024-02-27,0,1,1.0
+XLK,Always-up reference,2024,2024-02-28,1,1,1.0
+XLK,Always-up reference,2024,2024-02-29,1,1,1.0
+XLK,Always-up reference,2024,2024-03-01,0,1,1.0
+XLK,Always-up reference,2024,2024-03-04,0,1,1.0
+XLK,Always-up reference,2024,2024-03-05,1,1,1.0
+XLK,Always-up reference,2024,2024-03-06,1,1,1.0
+XLK,Always-up reference,2024,2024-03-07,0,1,1.0
+XLK,Always-up reference,2024,2024-03-08,0,1,1.0
+XLK,Always-up reference,2024,2024-03-11,1,1,1.0
+XLK,Always-up reference,2024,2024-03-12,0,1,1.0
+XLK,Always-up reference,2024,2024-03-13,1,1,1.0
+XLK,Always-up reference,2024,2024-03-14,0,1,1.0
+XLK,Always-up reference,2024,2024-03-15,1,1,1.0
+XLK,Always-up reference,2024,2024-03-18,1,1,1.0
+XLK,Always-up reference,2024,2024-03-19,1,1,1.0
+XLK,Always-up reference,2024,2024-03-20,1,1,1.0
+XLK,Always-up reference,2024,2024-03-21,1,1,1.0
+XLK,Always-up reference,2024,2024-03-22,0,1,1.0
+XLK,Always-up reference,2024,2024-03-25,0,1,1.0
+XLK,Always-up reference,2024,2024-03-26,1,1,1.0
+XLK,Always-up reference,2024,2024-03-27,0,1,1.0
+XLK,Always-up reference,2024,2024-03-28,1,1,1.0
+XLK,Always-up reference,2024,2024-04-01,0,1,1.0
+XLK,Always-up reference,2024,2024-04-02,1,1,1.0
+XLK,Always-up reference,2024,2024-04-03,0,1,1.0
+XLK,Always-up reference,2024,2024-04-04,1,1,1.0
+XLK,Always-up reference,2024,2024-04-05,0,1,1.0
+XLK,Always-up reference,2024,2024-04-08,1,1,1.0
+XLK,Always-up reference,2024,2024-04-09,0,1,1.0
+XLK,Always-up reference,2024,2024-04-10,1,1,1.0
+XLK,Always-up reference,2024,2024-04-11,0,1,1.0
+XLK,Always-up reference,2024,2024-04-12,0,1,1.0
+XLK,Always-up reference,2024,2024-04-15,1,1,1.0
+XLK,Always-up reference,2024,2024-04-16,0,1,1.0
+XLK,Always-up reference,2024,2024-04-17,0,1,1.0
+XLK,Always-up reference,2024,2024-04-18,0,1,1.0
+XLK,Always-up reference,2024,2024-04-19,1,1,1.0
+XLK,Always-up reference,2024,2024-04-22,1,1,1.0
+XLK,Always-up reference,2024,2024-04-23,1,1,1.0
+XLK,Always-up reference,2024,2024-04-24,0,1,1.0
+XLK,Always-up reference,2024,2024-04-25,1,1,1.0
+XLK,Always-up reference,2024,2024-04-26,1,1,1.0
+XLK,Always-up reference,2024,2024-04-29,0,1,1.0
+XLK,Always-up reference,2024,2024-04-30,0,1,1.0
+XLK,Always-up reference,2024,2024-05-01,1,1,1.0
+XLK,Always-up reference,2024,2024-05-02,1,1,1.0
+XLK,Always-up reference,2024,2024-05-03,1,1,1.0
+XLK,Always-up reference,2024,2024-05-06,0,1,1.0
+XLK,Always-up reference,2024,2024-05-07,1,1,1.0
+XLK,Always-up reference,2024,2024-05-08,0,1,1.0
+XLK,Always-up reference,2024,2024-05-09,1,1,1.0
+XLK,Always-up reference,2024,2024-05-10,1,1,1.0
+XLK,Always-up reference,2024,2024-05-13,1,1,1.0
+XLK,Always-up reference,2024,2024-05-14,1,1,1.0
+XLK,Always-up reference,2024,2024-05-15,0,1,1.0
+XLK,Always-up reference,2024,2024-05-16,0,1,1.0
+XLK,Always-up reference,2024,2024-05-17,1,1,1.0
+XLK,Always-up reference,2024,2024-05-20,1,1,1.0
+XLK,Always-up reference,2024,2024-05-21,1,1,1.0
+XLK,Always-up reference,2024,2024-05-22,0,1,1.0
+XLK,Always-up reference,2024,2024-05-23,1,1,1.0
+XLK,Always-up reference,2024,2024-05-24,1,1,1.0
+XLK,Always-up reference,2024,2024-05-28,0,1,1.0
+XLK,Always-up reference,2024,2024-05-29,0,1,1.0
+XLK,Always-up reference,2024,2024-05-30,1,1,1.0
+XLK,Always-up reference,2024,2024-05-31,1,1,1.0
+XLK,Always-up reference,2024,2024-06-03,1,1,1.0
+XLK,Always-up reference,2024,2024-06-04,1,1,1.0
+XLK,Always-up reference,2024,2024-06-05,0,1,1.0
+XLK,Always-up reference,2024,2024-06-06,1,1,1.0
+XLK,Always-up reference,2024,2024-06-07,1,1,1.0
+XLK,Always-up reference,2024,2024-06-10,1,1,1.0
+XLK,Always-up reference,2024,2024-06-11,1,1,1.0
+XLK,Always-up reference,2024,2024-06-12,1,1,1.0
+XLK,Always-up reference,2024,2024-06-13,1,1,1.0
+XLK,Always-up reference,2024,2024-06-14,1,1,1.0
+XLK,Always-up reference,2024,2024-06-17,1,1,1.0
+XLK,Always-up reference,2024,2024-06-18,0,1,1.0
+XLK,Always-up reference,2024,2024-06-20,0,1,1.0
+XLK,Always-up reference,2024,2024-06-21,0,1,1.0
+XLK,Always-up reference,2024,2024-06-24,1,1,1.0
+XLK,Always-up reference,2024,2024-06-25,0,1,1.0
+XLK,Always-up reference,2024,2024-06-26,1,1,1.0
+XLK,Always-up reference,2024,2024-06-27,0,1,1.0
+XLK,Always-up reference,2024,2024-06-28,1,1,1.0
+XLK,Always-up reference,2024,2024-07-01,1,1,1.0
+XLK,Always-up reference,2024,2024-07-02,1,1,1.0
+XLK,Always-up reference,2024,2024-07-03,1,1,1.0
+XLK,Always-up reference,2024,2024-07-05,1,1,1.0
+XLK,Always-up reference,2024,2024-07-08,0,1,1.0
+XLK,Always-up reference,2024,2024-07-09,1,1,1.0
+XLK,Always-up reference,2024,2024-07-10,0,1,1.0
+XLK,Always-up reference,2024,2024-07-11,1,1,1.0
+XLK,Always-up reference,2024,2024-07-12,1,1,1.0
+XLK,Always-up reference,2024,2024-07-15,0,1,1.0
+XLK,Always-up reference,2024,2024-07-16,0,1,1.0
+XLK,Always-up reference,2024,2024-07-17,1,1,1.0
+XLK,Always-up reference,2024,2024-07-18,0,1,1.0
+XLK,Always-up reference,2024,2024-07-19,1,1,1.0
+XLK,Always-up reference,2024,2024-07-22,0,1,1.0
+XLK,Always-up reference,2024,2024-07-23,0,1,1.0
+XLK,Always-up reference,2024,2024-07-24,0,1,1.0
+XLK,Always-up reference,2024,2024-07-25,1,1,1.0
+XLK,Always-up reference,2024,2024-07-26,0,1,1.0
+XLK,Always-up reference,2024,2024-07-29,0,1,1.0
+XLK,Always-up reference,2024,2024-07-30,1,1,1.0
+XLK,Always-up reference,2024,2024-07-31,0,1,1.0
+XLK,Always-up reference,2024,2024-08-01,0,1,1.0
+XLK,Always-up reference,2024,2024-08-02,0,1,1.0
+XLK,Always-up reference,2024,2024-08-05,1,1,1.0
+XLK,Always-up reference,2024,2024-08-06,0,1,1.0
+XLK,Always-up reference,2024,2024-08-07,1,1,1.0
+XLK,Always-up reference,2024,2024-08-08,1,1,1.0
+XLK,Always-up reference,2024,2024-08-09,1,1,1.0
+XLK,Always-up reference,2024,2024-08-12,1,1,1.0
+XLK,Always-up reference,2024,2024-08-13,1,1,1.0
+XLK,Always-up reference,2024,2024-08-14,1,1,1.0
+XLK,Always-up reference,2024,2024-08-15,1,1,1.0
+XLK,Always-up reference,2024,2024-08-16,1,1,1.0
+XLK,Always-up reference,2024,2024-08-19,0,1,1.0
+XLK,Always-up reference,2024,2024-08-20,1,1,1.0
+XLK,Always-up reference,2024,2024-08-21,0,1,1.0
+XLK,Always-up reference,2024,2024-08-22,1,1,1.0
+XLK,Always-up reference,2024,2024-08-23,0,1,1.0
+XLK,Always-up reference,2024,2024-08-26,1,1,1.0
+XLK,Always-up reference,2024,2024-08-27,0,1,1.0
+XLK,Always-up reference,2024,2024-08-28,0,1,1.0
+XLK,Always-up reference,2024,2024-08-29,1,1,1.0
+XLK,Always-up reference,2024,2024-08-30,0,1,1.0
+XLK,Always-up reference,2024,2024-09-03,0,1,1.0
+XLK,Always-up reference,2024,2024-09-04,0,1,1.0
+XLK,Always-up reference,2024,2024-09-05,0,1,1.0
+XLK,Always-up reference,2024,2024-09-06,1,1,1.0
+XLK,Always-up reference,2024,2024-09-09,1,1,1.0
+XLK,Always-up reference,2024,2024-09-10,1,1,1.0
+XLK,Always-up reference,2024,2024-09-11,1,1,1.0
+XLK,Always-up reference,2024,2024-09-12,1,1,1.0
+XLK,Always-up reference,2024,2024-09-13,0,1,1.0
+XLK,Always-up reference,2024,2024-09-16,0,1,1.0
+XLK,Always-up reference,2024,2024-09-17,0,1,1.0
+XLK,Always-up reference,2024,2024-09-18,1,1,1.0
+XLK,Always-up reference,2024,2024-09-19,0,1,1.0
+XLK,Always-up reference,2024,2024-09-20,0,1,1.0
+XLK,Always-up reference,2024,2024-09-23,1,1,1.0
+XLK,Always-up reference,2024,2024-09-24,1,1,1.0
+XLK,Always-up reference,2024,2024-09-25,1,1,1.0
+XLK,Always-up reference,2024,2024-09-26,0,1,1.0
+XLK,Always-up reference,2024,2024-09-27,1,1,1.0
+XLK,Always-up reference,2024,2024-09-30,0,1,1.0
+XLK,Always-up reference,2024,2024-10-01,1,1,1.0
+XLK,Always-up reference,2024,2024-10-02,1,1,1.0
+XLK,Always-up reference,2024,2024-10-03,1,1,1.0
+XLK,Always-up reference,2024,2024-10-04,0,1,1.0
+XLK,Always-up reference,2024,2024-10-07,1,1,1.0
+XLK,Always-up reference,2024,2024-10-08,1,1,1.0
+XLK,Always-up reference,2024,2024-10-09,0,1,1.0
+XLK,Always-up reference,2024,2024-10-10,1,1,1.0
+XLK,Always-up reference,2024,2024-10-11,1,1,1.0
+XLK,Always-up reference,2024,2024-10-14,0,1,1.0
+XLK,Always-up reference,2024,2024-10-15,1,1,1.0
+XLK,Always-up reference,2024,2024-10-16,1,1,1.0
+XLK,Always-up reference,2024,2024-10-17,1,1,1.0
+XLK,Always-up reference,2024,2024-10-18,1,1,1.0
+XLK,Always-up reference,2024,2024-10-21,0,1,1.0
+XLK,Always-up reference,2024,2024-10-22,0,1,1.0
+XLK,Always-up reference,2024,2024-10-23,1,1,1.0
+XLK,Always-up reference,2024,2024-10-24,1,1,1.0
+XLK,Always-up reference,2024,2024-10-25,0,1,1.0
+XLK,Always-up reference,2024,2024-10-28,1,1,1.0
+XLK,Always-up reference,2024,2024-10-29,0,1,1.0
+XLK,Always-up reference,2024,2024-10-30,0,1,1.0
+XLK,Always-up reference,2024,2024-10-31,1,1,1.0
+XLK,Always-up reference,2024,2024-11-01,0,1,1.0
+XLK,Always-up reference,2024,2024-11-04,1,1,1.0
+XLK,Always-up reference,2024,2024-11-05,1,1,1.0
+XLK,Always-up reference,2024,2024-11-06,1,1,1.0
+XLK,Always-up reference,2024,2024-11-07,0,1,1.0
+XLK,Always-up reference,2024,2024-11-08,0,1,1.0
+XLK,Always-up reference,2024,2024-11-11,1,1,1.0
+XLK,Always-up reference,2024,2024-11-12,0,1,1.0
+XLK,Always-up reference,2024,2024-11-13,0,1,1.0
+XLK,Always-up reference,2024,2024-11-14,0,1,1.0
+XLK,Always-up reference,2024,2024-11-15,1,1,1.0
+XLK,Always-up reference,2024,2024-11-18,1,1,1.0
+XLK,Always-up reference,2024,2024-11-19,0,1,1.0
+XLK,Always-up reference,2024,2024-11-20,1,1,1.0
+XLK,Always-up reference,2024,2024-11-21,1,1,1.0
+XLK,Always-up reference,2024,2024-11-22,0,1,1.0
+XLK,Always-up reference,2024,2024-11-25,1,1,1.0
+XLK,Always-up reference,2024,2024-11-26,0,1,1.0
+XLK,Always-up reference,2024,2024-11-27,1,1,1.0
+XLK,Always-up reference,2024,2024-11-29,1,1,1.0
+XLK,Always-up reference,2024,2024-12-02,1,1,1.0
+XLK,Always-up reference,2024,2024-12-03,1,1,1.0
+XLK,Always-up reference,2024,2024-12-04,0,1,1.0
+XLK,Always-up reference,2024,2024-12-05,1,1,1.0
+XLK,Always-up reference,2024,2024-12-06,0,1,1.0
+XLK,Always-up reference,2024,2024-12-09,0,1,1.0
+XLK,Always-up reference,2024,2024-12-10,1,1,1.0
+XLK,Always-up reference,2024,2024-12-11,0,1,1.0
+XLK,Always-up reference,2024,2024-12-12,1,1,1.0
+XLK,Always-up reference,2024,2024-12-13,1,1,1.0
+XLK,Always-up reference,2024,2024-12-16,0,1,1.0
+XLK,Always-up reference,2024,2024-12-17,0,1,1.0
+XLK,Always-up reference,2024,2024-12-18,1,1,1.0
+XLK,Always-up reference,2024,2024-12-19,1,1,1.0
+XLK,Always-up reference,2024,2024-12-20,1,1,1.0
+XLK,Always-up reference,2024,2024-12-23,1,1,1.0
+XLK,Always-up reference,2024,2024-12-24,1,1,1.0
+XLK,Always-up reference,2024,2024-12-26,0,1,1.0
+XLK,Always-up reference,2024,2024-12-27,0,1,1.0
+XLK,Always-up reference,2024,2024-12-30,0,1,1.0
+XLK,Always-up reference,2024,2024-12-31,0,1,1.0
+XLK,Market-only model,2025,2025-01-02,1,1,0.5378276888680963
+XLK,Market-only model,2025,2025-01-03,1,1,0.5842047264341155
+XLK,Market-only model,2025,2025-01-06,0,1,0.5638475632909559
+XLK,Market-only model,2025,2025-01-07,0,1,0.5648196586683307
+XLK,Market-only model,2025,2025-01-08,0,1,0.5166863509126484
+XLK,Market-only model,2025,2025-01-10,0,1,0.5170007827918232
+XLK,Market-only model,2025,2025-01-13,1,1,0.5366814534682983
+XLK,Market-only model,2025,2025-01-14,1,1,0.5280590422543691
+XLK,Market-only model,2025,2025-01-15,0,1,0.5723732798499566
+XLK,Market-only model,2025,2025-01-16,1,1,0.5764703628480361
+XLK,Market-only model,2025,2025-01-17,1,1,0.5297697643334686
+XLK,Market-only model,2025,2025-01-21,1,0,0.4902333195722381
+XLK,Market-only model,2025,2025-01-22,1,1,0.528392928677084
+XLK,Market-only model,2025,2025-01-23,0,1,0.5515261883847925
+XLK,Market-only model,2025,2025-01-24,0,1,0.5454414974403831
+XLK,Market-only model,2025,2025-01-27,1,1,0.5144777500273401
+XLK,Market-only model,2025,2025-01-28,0,1,0.5031102935984724
+XLK,Market-only model,2025,2025-01-29,1,1,0.522250244449541
+XLK,Market-only model,2025,2025-01-30,0,1,0.5102666827619228
+XLK,Market-only model,2025,2025-01-31,0,1,0.5356589494813262
+XLK,Market-only model,2025,2025-02-03,1,1,0.5683855848741146
+XLK,Market-only model,2025,2025-02-04,1,1,0.5294029736872026
+XLK,Market-only model,2025,2025-02-05,1,1,0.5700372689306636
+XLK,Market-only model,2025,2025-02-06,0,0,0.49355115063976573
+XLK,Market-only model,2025,2025-02-07,1,1,0.5255045097989042
+XLK,Market-only model,2025,2025-02-10,1,0,0.4906608107698241
+XLK,Market-only model,2025,2025-02-11,0,1,0.5010421295824466
+XLK,Market-only model,2025,2025-02-12,1,1,0.5092765170716029
+XLK,Market-only model,2025,2025-02-13,1,1,0.5534964454343637
+XLK,Market-only model,2025,2025-02-14,1,1,0.5283364400996571
+XLK,Market-only model,2025,2025-02-18,1,1,0.5242714494314691
+XLK,Market-only model,2025,2025-02-19,0,1,0.5362093425147002
+XLK,Market-only model,2025,2025-02-20,0,1,0.5513895112313869
+XLK,Market-only model,2025,2025-02-21,0,1,0.5064566240685078
+XLK,Market-only model,2025,2025-02-24,0,0,0.49082546303561514
+XLK,Market-only model,2025,2025-02-25,1,0,0.43811939706269576
+XLK,Market-only model,2025,2025-02-26,0,1,0.5890748217879662
+XLK,Market-only model,2025,2025-02-27,1,1,0.5523127835129347
+XLK,Market-only model,2025,2025-02-28,0,1,0.5516434495080726
+XLK,Market-only model,2025,2025-03-03,0,1,0.5705329663538871
+XLK,Market-only model,2025,2025-03-04,1,1,0.5154459308809822
+XLK,Market-only model,2025,2025-03-05,0,1,0.5746501579028698
+XLK,Market-only model,2025,2025-03-06,1,1,0.612767105257418
+XLK,Market-only model,2025,2025-03-07,0,1,0.522878740151422
+XLK,Market-only model,2025,2025-03-10,0,1,0.5680275547361823
+XLK,Market-only model,2025,2025-03-11,1,1,0.5417329815765722
+XLK,Market-only model,2025,2025-03-12,0,1,0.5403917578977295
+XLK,Market-only model,2025,2025-03-13,1,1,0.5774163073312356
+XLK,Market-only model,2025,2025-03-14,1,1,0.5391736944185553
+XLK,Market-only model,2025,2025-03-17,0,1,0.5980804962764622
+XLK,Market-only model,2025,2025-03-18,1,1,0.5419961290382147
+XLK,Market-only model,2025,2025-03-19,0,0,0.4981954048241575
+XLK,Market-only model,2025,2025-03-20,1,1,0.540214004335584
+XLK,Market-only model,2025,2025-03-21,1,0,0.4381142725437528
+XLK,Market-only model,2025,2025-03-24,1,1,0.502015388361694
+XLK,Market-only model,2025,2025-03-25,0,1,0.525843723834734
+XLK,Market-only model,2025,2025-03-26,0,1,0.520862851407523
+XLK,Market-only model,2025,2025-03-27,0,0,0.44660832346969476
+XLK,Market-only model,2025,2025-03-28,1,1,0.5319114924819566
+XLK,Market-only model,2025,2025-03-31,1,0,0.4532246346427902
+XLK,Market-only model,2025,2025-04-01,1,1,0.5495948426247891
+XLK,Market-only model,2025,2025-04-02,0,1,0.5885507314032845
+XLK,Market-only model,2025,2025-04-03,0,1,0.5029525448152316
+XLK,Market-only model,2025,2025-04-04,1,1,0.5335264565114399
+XLK,Market-only model,2025,2025-04-07,0,0,0.4441778742928548
+XLK,Market-only model,2025,2025-04-08,1,1,0.5755856536918248
+XLK,Market-only model,2025,2025-04-09,0,1,0.5797979260254122
+XLK,Market-only model,2025,2025-04-10,1,1,0.6566600926078271
+XLK,Market-only model,2025,2025-04-11,1,1,0.543549166927516
+XLK,Market-only model,2025,2025-04-14,1,0,0.48542955873630356
+XLK,Market-only model,2025,2025-04-15,0,0,0.45293397929037477
+XLK,Market-only model,2025,2025-04-16,0,0,0.3651324279073887
+XLK,Market-only model,2025,2025-04-17,0,0,0.4903756474241088
+XLK,Market-only model,2025,2025-04-21,1,0,0.46115418449250606
+XLK,Market-only model,2025,2025-04-22,1,0,0.4942659251525728
+XLK,Market-only model,2025,2025-04-23,1,1,0.5170859489899273
+XLK,Market-only model,2025,2025-04-24,1,1,0.5055402328217162
+XLK,Market-only model,2025,2025-04-25,0,0,0.4803809498031984
+XLK,Market-only model,2025,2025-04-28,1,0,0.43526127388234476
+XLK,Market-only model,2025,2025-04-29,1,0,0.41264434419186646
+XLK,Market-only model,2025,2025-04-30,1,0,0.4418208106242296
+XLK,Market-only model,2025,2025-05-01,1,0,0.4454506940889069
+XLK,Market-only model,2025,2025-05-02,0,0,0.36207939011199397
+XLK,Market-only model,2025,2025-05-05,0,0,0.3763983830740212
+XLK,Market-only model,2025,2025-05-06,1,0,0.4684294126958424
+XLK,Market-only model,2025,2025-05-07,1,0,0.4308042581915522
+XLK,Market-only model,2025,2025-05-08,0,1,0.6820770634622707
+XLK,Market-only model,2025,2025-05-09,1,0,0.4336246577451498
+XLK,Market-only model,2025,2025-05-12,1,1,0.5565619694436286
+XLK,Market-only model,2025,2025-05-13,1,1,0.5771351548808611
+XLK,Market-only model,2025,2025-05-14,1,1,0.519891127015653
+XLK,Market-only model,2025,2025-05-15,1,0,0.4402369427767503
+XLK,Market-only model,2025,2025-05-16,0,0,0.49665535653945314
+XLK,Market-only model,2025,2025-05-19,0,0,0.42569315474287045
+XLK,Market-only model,2025,2025-05-20,0,1,0.5480551300535087
+XLK,Market-only model,2025,2025-05-21,1,1,0.5698129353268633
+XLK,Market-only model,2025,2025-05-22,0,1,0.5915436086715106
+XLK,Market-only model,2025,2025-05-23,1,1,0.5685389179225785
+XLK,Market-only model,2025,2025-05-27,0,1,0.5387493190460646
+XLK,Market-only model,2025,2025-05-28,1,1,0.5774986063976777
+XLK,Market-only model,2025,2025-05-29,0,1,0.5555316304157799
+XLK,Market-only model,2025,2025-05-30,1,1,0.5628878057900828
+XLK,Market-only model,2025,2025-06-02,1,1,0.5705761415685787
+XLK,Market-only model,2025,2025-06-03,1,1,0.5147742111407783
+XLK,Market-only model,2025,2025-06-04,0,1,0.5406979731327606
+XLK,Market-only model,2025,2025-06-05,1,1,0.5462161890738934
+XLK,Market-only model,2025,2025-06-06,1,1,0.553814791714192
+XLK,Market-only model,2025,2025-06-09,1,1,0.5243542353668349
+XLK,Market-only model,2025,2025-06-10,0,1,0.5969528611399817
+XLK,Market-only model,2025,2025-06-11,1,1,0.5778531288854795
+XLK,Market-only model,2025,2025-06-12,0,1,0.5526525709228395
+XLK,Market-only model,2025,2025-06-13,1,1,0.5455086088362673
+XLK,Market-only model,2025,2025-06-16,0,1,0.5366920578829708
+XLK,Market-only model,2025,2025-06-17,1,1,0.55583082242325
+XLK,Market-only model,2025,2025-06-18,0,1,0.533689663101343
+XLK,Market-only model,2025,2025-06-20,1,1,0.5088841998642365
+XLK,Market-only model,2025,2025-06-23,1,1,0.5582562809249959
+XLK,Market-only model,2025,2025-06-24,1,1,0.5259264911977581
+XLK,Market-only model,2025,2025-06-25,1,1,0.6018189534824038
+XLK,Market-only model,2025,2025-06-26,0,1,0.5362625556576234
+XLK,Market-only model,2025,2025-06-27,1,1,0.5505404479351739
+XLK,Market-only model,2025,2025-06-30,0,1,0.5238486957793264
+XLK,Market-only model,2025,2025-07-01,1,1,0.5511652752192275
+XLK,Market-only model,2025,2025-07-02,1,1,0.5601958021801273
+XLK,Market-only model,2025,2025-07-03,0,1,0.5536491177064743
+XLK,Market-only model,2025,2025-07-07,1,1,0.5421279280830276
+XLK,Market-only model,2025,2025-07-08,1,1,0.5447843861169629
+XLK,Market-only model,2025,2025-07-09,0,1,0.5715594584679798
+XLK,Market-only model,2025,2025-07-10,0,1,0.5506105301206419
+XLK,Market-only model,2025,2025-07-11,0,1,0.5262936123601941
+XLK,Market-only model,2025,2025-07-14,1,1,0.562938824677788
+XLK,Market-only model,2025,2025-07-15,1,1,0.5146618684571739
+XLK,Market-only model,2025,2025-07-16,1,1,0.5850883708935927
+XLK,Market-only model,2025,2025-07-17,0,1,0.554043491732859
+XLK,Market-only model,2025,2025-07-18,1,1,0.5624319079820589
+XLK,Market-only model,2025,2025-07-21,0,1,0.5372028441212093
+XLK,Market-only model,2025,2025-07-22,1,1,0.555063534221995
+XLK,Market-only model,2025,2025-07-23,1,1,0.5722700137396456
+XLK,Market-only model,2025,2025-07-24,1,1,0.5626855001932456
+XLK,Market-only model,2025,2025-07-25,1,1,0.5712189840141955
+XLK,Market-only model,2025,2025-07-28,1,1,0.5461058661660021
+XLK,Market-only model,2025,2025-07-29,1,1,0.5814855523926544
+XLK,Market-only model,2025,2025-07-30,0,1,0.534226584550272
+XLK,Market-only model,2025,2025-07-31,0,1,0.5709720768989893
+XLK,Market-only model,2025,2025-08-01,1,1,0.574373847421629
+XLK,Market-only model,2025,2025-08-04,0,1,0.5312926013060816
+XLK,Market-only model,2025,2025-08-05,1,1,0.5829848374455824
+XLK,Market-only model,2025,2025-08-06,1,1,0.5556223326785845
+XLK,Market-only model,2025,2025-08-07,1,1,0.5610582431927924
+XLK,Market-only model,2025,2025-08-08,0,1,0.55748944711013
+XLK,Market-only model,2025,2025-08-11,1,1,0.53230147574654
+XLK,Market-only model,2025,2025-08-12,1,1,0.5577603186545201
+XLK,Market-only model,2025,2025-08-13,0,1,0.550576379396764
+XLK,Market-only model,2025,2025-08-14,0,1,0.5611284923232537
+XLK,Market-only model,2025,2025-08-15,1,1,0.5398891342537353
+XLK,Market-only model,2025,2025-08-18,0,1,0.5523675325666956
+XLK,Market-only model,2025,2025-08-19,0,1,0.5238217292933055
+XLK,Market-only model,2025,2025-08-20,0,1,0.5562914005975937
+XLK,Market-only model,2025,2025-08-21,1,1,0.5738918501652066
+XLK,Market-only model,2025,2025-08-22,0,1,0.5701518753601605
+XLK,Market-only model,2025,2025-08-25,1,1,0.5788678657470024
+XLK,Market-only model,2025,2025-08-26,1,1,0.5622987444873071
+XLK,Market-only model,2025,2025-08-27,1,1,0.558208624637531
+XLK,Market-only model,2025,2025-08-28,0,1,0.5381096765863108
+XLK,Market-only model,2025,2025-08-29,0,1,0.5022930262334449
+XLK,Market-only model,2025,2025-09-02,1,1,0.575999832178523
+XLK,Market-only model,2025,2025-09-03,1,1,0.5358376223138651
+XLK,Market-only model,2025,2025-09-04,1,1,0.578350140618932
+XLK,Market-only model,2025,2025-09-05,1,1,0.5687089922762835
+XLK,Market-only model,2025,2025-09-08,1,1,0.6067363603613469
+XLK,Market-only model,2025,2025-09-09,1,1,0.5639794651185517
+XLK,Market-only model,2025,2025-09-10,1,1,0.5777024694343906
+XLK,Market-only model,2025,2025-09-11,0,1,0.5711974502691703
+XLK,Market-only model,2025,2025-09-12,1,1,0.5543751456410569
+XLK,Market-only model,2025,2025-09-15,0,1,0.5293112378473327
+XLK,Market-only model,2025,2025-09-16,0,1,0.5584182232782001
+XLK,Market-only model,2025,2025-09-17,1,1,0.504256136591815
+XLK,Market-only model,2025,2025-09-18,1,1,0.5444444569285968
+XLK,Market-only model,2025,2025-09-19,1,1,0.5684387971288218
+XLK,Market-only model,2025,2025-09-22,0,1,0.5727793953747095
+XLK,Market-only model,2025,2025-09-23,0,1,0.5591092217334326
+XLK,Market-only model,2025,2025-09-24,0,1,0.5495145394279963
+XLK,Market-only model,2025,2025-09-25,1,1,0.5346133891429203
+XLK,Market-only model,2025,2025-09-26,1,1,0.5632174711327761
+XLK,Market-only model,2025,2025-09-29,1,1,0.5245010725850355
+XLK,Market-only model,2025,2025-09-30,1,1,0.5563871736875556
+XLK,Market-only model,2025,2025-10-01,1,1,0.5794159130569827
+XLK,Market-only model,2025,2025-10-02,0,1,0.5726207942419496
+XLK,Market-only model,2025,2025-10-03,1,1,0.5564139624431975
+XLK,Market-only model,2025,2025-10-06,0,1,0.5573093048739263
+XLK,Market-only model,2025,2025-10-07,1,1,0.5616305958708453
+XLK,Market-only model,2025,2025-10-08,0,1,0.568754847995422
+XLK,Market-only model,2025,2025-10-09,0,1,0.5671290093078633
+XLK,Market-only model,2025,2025-10-10,1,1,0.5488601754200552
+XLK,Market-only model,2025,2025-10-13,0,1,0.5439616072481163
+XLK,Market-only model,2025,2025-10-14,1,1,0.577812807907574
+XLK,Market-only model,2025,2025-10-15,1,1,0.5299445047311044
+XLK,Market-only model,2025,2025-10-16,1,1,0.5956356147001332
+XLK,Market-only model,2025,2025-10-17,1,1,0.605953994200604
+XLK,Market-only model,2025,2025-10-20,1,1,0.5568443128420771
+XLK,Market-only model,2025,2025-10-21,0,1,0.5478817690206149
+XLK,Market-only model,2025,2025-10-22,1,1,0.5189704360823595
+XLK,Market-only model,2025,2025-10-23,1,1,0.5388553309664275
+XLK,Market-only model,2025,2025-10-24,1,1,0.5520369738615409
+XLK,Market-only model,2025,2025-10-27,1,1,0.5501284035018
+XLK,Market-only model,2025,2025-10-28,1,1,0.5584573828397462
+XLK,Market-only model,2025,2025-10-29,0,1,0.5614452786814359
+XLK,Market-only model,2025,2025-10-30,1,1,0.5372748879880234
+XLK,Market-only model,2025,2025-10-31,1,1,0.5044408061676929
+XLK,Market-only model,2025,2025-11-03,0,1,0.5410677939068778
+XLK,Market-only model,2025,2025-11-04,1,1,0.5250137837572015
+XLK,Market-only model,2025,2025-11-05,0,1,0.5493379138288158
+XLK,Market-only model,2025,2025-11-06,0,1,0.5610713415879265
+XLK,Market-only model,2025,2025-11-07,1,0,0.4771381389792184
+XLK,Market-only model,2025,2025-11-10,0,1,0.602966128326288
+XLK,Market-only model,2025,2025-11-11,1,1,0.5802434346241807
+XLK,Market-only model,2025,2025-11-12,0,1,0.5528814844530114
+XLK,Market-only model,2025,2025-11-13,1,1,0.5650344381569454
+XLK,Market-only model,2025,2025-11-14,0,1,0.5373314812295614
+XLK,Market-only model,2025,2025-11-17,0,1,0.5615517657847483
+XLK,Market-only model,2025,2025-11-18,1,1,0.5599354463234343
+XLK,Market-only model,2025,2025-11-19,0,1,0.5439467632084555
+XLK,Market-only model,2025,2025-11-20,1,1,0.6144883467229338
+XLK,Market-only model,2025,2025-11-21,1,1,0.5759235344468864
+XLK,Market-only model,2025,2025-11-24,1,1,0.625519655013786
+XLK,Market-only model,2025,2025-11-25,1,1,0.6030773309843241
+XLK,Market-only model,2025,2025-11-26,1,1,0.5581116789911822
+XLK,Market-only model,2025,2025-11-28,1,1,0.5522489975680082
+XLK,Market-only model,2025,2025-12-01,1,1,0.5181410951461571
+XLK,Market-only model,2025,2025-12-02,1,1,0.5144525080002166
+XLK,Market-only model,2025,2025-12-03,1,0,0.49782619876912027
+XLK,Market-only model,2025,2025-12-04,1,1,0.5282955913705775
+XLK,Market-only model,2025,2025-12-05,1,0,0.49258038525127773
+XLK,Market-only model,2025,2025-12-08,1,1,0.5358567993305217
+XLK,Market-only model,2025,2025-12-09,1,1,0.5769912300614791
+XLK,Market-only model,2025,2025-12-10,0,1,0.5257928870190216
+XLK,Market-only model,2025,2025-12-11,0,1,0.5498715319261703
+XLK,Market-only model,2025,2025-12-12,0,0,0.49680881751254014
+XLK,Market-only model,2025,2025-12-15,1,1,0.5421671814875597
+XLK,Market-only model,2025,2025-12-16,0,1,0.528825901978662
+XLK,Market-only model,2025,2025-12-17,1,1,0.5382724534843464
+XLK,Market-only model,2025,2025-12-18,1,1,0.5774564841772584
+XLK,Market-only model,2025,2025-12-19,1,1,0.5544753822553213
+XLK,Market-only model,2025,2025-12-22,1,1,0.5915749744764782
+XLK,Market-only model,2025,2025-12-23,1,1,0.585660804997262
+XLK,Market-only model,2025,2025-12-24,1,1,0.5675822872691865
+XLK,Market-only model,2025,2025-12-26,0,1,0.5300137678388344
+XLK,Market-only model,2025,2025-12-29,0,1,0.5308104013696586
+XLK,Market-only model,2025,2025-12-30,0,1,0.5454448386901738
+XLK,Market + news sentiment model,2025,2025-01-02,1,1,0.5092700194882718
+XLK,Market + news sentiment model,2025,2025-01-03,1,1,0.5471210535443161
+XLK,Market + news sentiment model,2025,2025-01-06,0,1,0.5906910341626541
+XLK,Market + news sentiment model,2025,2025-01-07,0,1,0.588786287609837
+XLK,Market + news sentiment model,2025,2025-01-08,0,1,0.5728982164596306
+XLK,Market + news sentiment model,2025,2025-01-10,0,1,0.5188030551935836
+XLK,Market + news sentiment model,2025,2025-01-13,1,1,0.5693896611493304
+XLK,Market + news sentiment model,2025,2025-01-14,1,1,0.5249858900303316
+XLK,Market + news sentiment model,2025,2025-01-15,0,1,0.5722020090727772
+XLK,Market + news sentiment model,2025,2025-01-16,1,1,0.5979758378331271
+XLK,Market + news sentiment model,2025,2025-01-17,1,1,0.5108220097743669
+XLK,Market + news sentiment model,2025,2025-01-21,1,1,0.5103777723801746
+XLK,Market + news sentiment model,2025,2025-01-22,1,1,0.5578728622249084
+XLK,Market + news sentiment model,2025,2025-01-23,0,1,0.5736161145948104
+XLK,Market + news sentiment model,2025,2025-01-24,0,1,0.5342786952344735
+XLK,Market + news sentiment model,2025,2025-01-27,1,1,0.5170843038728612
+XLK,Market + news sentiment model,2025,2025-01-28,0,1,0.5300954337510273
+XLK,Market + news sentiment model,2025,2025-01-29,1,1,0.533941691286872
+XLK,Market + news sentiment model,2025,2025-01-30,0,1,0.5062476354412614
+XLK,Market + news sentiment model,2025,2025-01-31,0,1,0.5304272834640725
+XLK,Market + news sentiment model,2025,2025-02-03,1,1,0.5315654406472887
+XLK,Market + news sentiment model,2025,2025-02-04,1,1,0.5638083906133924
+XLK,Market + news sentiment model,2025,2025-02-05,1,1,0.526303707360026
+XLK,Market + news sentiment model,2025,2025-02-06,0,0,0.4889102165638788
+XLK,Market + news sentiment model,2025,2025-02-07,1,1,0.5460223149954426
+XLK,Market + news sentiment model,2025,2025-02-10,1,0,0.478890586639245
+XLK,Market + news sentiment model,2025,2025-02-11,0,0,0.4999089959763523
+XLK,Market + news sentiment model,2025,2025-02-12,1,1,0.5037722742969506
+XLK,Market + news sentiment model,2025,2025-02-13,1,1,0.5681902415903468
+XLK,Market + news sentiment model,2025,2025-02-14,1,1,0.5241278912258482
+XLK,Market + news sentiment model,2025,2025-02-18,1,1,0.5195843156390383
+XLK,Market + news sentiment model,2025,2025-02-19,0,1,0.5585393431144111
+XLK,Market + news sentiment model,2025,2025-02-20,0,1,0.575213261701419
+XLK,Market + news sentiment model,2025,2025-02-21,0,1,0.5097037850299831
+XLK,Market + news sentiment model,2025,2025-02-24,0,0,0.47578639183959465
+XLK,Market + news sentiment model,2025,2025-02-25,1,0,0.43868254516403304
+XLK,Market + news sentiment model,2025,2025-02-26,0,1,0.561588105507262
+XLK,Market + news sentiment model,2025,2025-02-27,1,1,0.5785654032897986
+XLK,Market + news sentiment model,2025,2025-02-28,0,1,0.5605895378266128
+XLK,Market + news sentiment model,2025,2025-03-03,0,1,0.5570391092685018
+XLK,Market + news sentiment model,2025,2025-03-04,1,1,0.5164927974912833
+XLK,Market + news sentiment model,2025,2025-03-05,0,1,0.5774088240589594
+XLK,Market + news sentiment model,2025,2025-03-06,1,1,0.5936351085378611
+XLK,Market + news sentiment model,2025,2025-03-07,0,1,0.55142315635883
+XLK,Market + news sentiment model,2025,2025-03-10,0,1,0.5555449277771383
+XLK,Market + news sentiment model,2025,2025-03-11,1,1,0.5510109608362846
+XLK,Market + news sentiment model,2025,2025-03-12,0,1,0.5072030006376553
+XLK,Market + news sentiment model,2025,2025-03-13,1,1,0.5708010361134356
+XLK,Market + news sentiment model,2025,2025-03-14,1,1,0.5183062023217219
+XLK,Market + news sentiment model,2025,2025-03-17,0,1,0.582710511918528
+XLK,Market + news sentiment model,2025,2025-03-18,1,1,0.5240533806256954
+XLK,Market + news sentiment model,2025,2025-03-19,0,0,0.4976081639935252
+XLK,Market + news sentiment model,2025,2025-03-20,1,1,0.554593102556742
+XLK,Market + news sentiment model,2025,2025-03-21,1,0,0.42276929427466337
+XLK,Market + news sentiment model,2025,2025-03-24,1,1,0.5345780906254259
+XLK,Market + news sentiment model,2025,2025-03-25,0,1,0.5389299855165154
+XLK,Market + news sentiment model,2025,2025-03-26,0,1,0.5254565442506117
+XLK,Market + news sentiment model,2025,2025-03-27,0,0,0.4582077459623255
+XLK,Market + news sentiment model,2025,2025-03-28,1,1,0.5342866790904646
+XLK,Market + news sentiment model,2025,2025-03-31,1,0,0.4748444167928703
+XLK,Market + news sentiment model,2025,2025-04-01,1,1,0.5563365665012615
+XLK,Market + news sentiment model,2025,2025-04-02,0,1,0.5594618919982189
+XLK,Market + news sentiment model,2025,2025-04-03,0,0,0.4687092645759147
+XLK,Market + news sentiment model,2025,2025-04-04,1,1,0.5457791938869117
+XLK,Market + news sentiment model,2025,2025-04-07,0,0,0.4382797480002182
+XLK,Market + news sentiment model,2025,2025-04-08,1,1,0.5691125242807763
+XLK,Market + news sentiment model,2025,2025-04-09,0,1,0.5789902765781437
+XLK,Market + news sentiment model,2025,2025-04-10,1,1,0.7005519451116683
+XLK,Market + news sentiment model,2025,2025-04-11,1,1,0.5698476968816877
+XLK,Market + news sentiment model,2025,2025-04-14,1,0,0.4811376652947546
+XLK,Market + news sentiment model,2025,2025-04-15,0,0,0.46350979109836643
+XLK,Market + news sentiment model,2025,2025-04-16,0,0,0.3606733757953437
+XLK,Market + news sentiment model,2025,2025-04-17,0,1,0.528810746139628
+XLK,Market + news sentiment model,2025,2025-04-21,1,0,0.44726567214400226
+XLK,Market + news sentiment model,2025,2025-04-22,1,0,0.4527203879049215
+XLK,Market + news sentiment model,2025,2025-04-23,1,1,0.5752369864871096
+XLK,Market + news sentiment model,2025,2025-04-24,1,1,0.5154178715708838
+XLK,Market + news sentiment model,2025,2025-04-25,0,1,0.5024052123006455
+XLK,Market + news sentiment model,2025,2025-04-28,1,0,0.42555462648932935
+XLK,Market + news sentiment model,2025,2025-04-29,1,0,0.4364214155697027
+XLK,Market + news sentiment model,2025,2025-04-30,1,0,0.41154184693658413
+XLK,Market + news sentiment model,2025,2025-05-01,1,0,0.4365941731356664
+XLK,Market + news sentiment model,2025,2025-05-02,0,0,0.38773347378192674
+XLK,Market + news sentiment model,2025,2025-05-05,0,0,0.3866769280767124
+XLK,Market + news sentiment model,2025,2025-05-06,1,0,0.4573197064495415
+XLK,Market + news sentiment model,2025,2025-05-07,1,0,0.4454338284121936
+XLK,Market + news sentiment model,2025,2025-05-08,0,1,0.6555127951199399
+XLK,Market + news sentiment model,2025,2025-05-09,1,0,0.40051929295979183
+XLK,Market + news sentiment model,2025,2025-05-12,1,1,0.5303527107192484
+XLK,Market + news sentiment model,2025,2025-05-13,1,1,0.594011458946833
+XLK,Market + news sentiment model,2025,2025-05-14,1,1,0.534502930814239
+XLK,Market + news sentiment model,2025,2025-05-15,1,0,0.45667447417025464
+XLK,Market + news sentiment model,2025,2025-05-16,0,1,0.5029743123762703
+XLK,Market + news sentiment model,2025,2025-05-19,0,0,0.43894374665732333
+XLK,Market + news sentiment model,2025,2025-05-20,0,1,0.5603139472680498
+XLK,Market + news sentiment model,2025,2025-05-21,1,1,0.5732094522358395
+XLK,Market + news sentiment model,2025,2025-05-22,0,1,0.6174203695646296
+XLK,Market + news sentiment model,2025,2025-05-23,1,1,0.5373205292798066
+XLK,Market + news sentiment model,2025,2025-05-27,0,1,0.5474215478378134
+XLK,Market + news sentiment model,2025,2025-05-28,1,1,0.6015890675707757
+XLK,Market + news sentiment model,2025,2025-05-29,0,1,0.5463728903942681
+XLK,Market + news sentiment model,2025,2025-05-30,1,1,0.5700406326451009
+XLK,Market + news sentiment model,2025,2025-06-02,1,1,0.5148866392456459
+XLK,Market + news sentiment model,2025,2025-06-03,1,1,0.5010796095771624
+XLK,Market + news sentiment model,2025,2025-06-04,0,1,0.5859525163173183
+XLK,Market + news sentiment model,2025,2025-06-05,1,1,0.5449951195270721
+XLK,Market + news sentiment model,2025,2025-06-06,1,1,0.5136607729982883
+XLK,Market + news sentiment model,2025,2025-06-09,1,1,0.5205738003560919
+XLK,Market + news sentiment model,2025,2025-06-10,0,1,0.6220692068317071
+XLK,Market + news sentiment model,2025,2025-06-11,1,1,0.5614795407619616
+XLK,Market + news sentiment model,2025,2025-06-12,0,1,0.5499716316329806
+XLK,Market + news sentiment model,2025,2025-06-13,1,1,0.5201192277982716
+XLK,Market + news sentiment model,2025,2025-06-16,0,1,0.5371033468490064
+XLK,Market + news sentiment model,2025,2025-06-17,1,1,0.5375187063312937
+XLK,Market + news sentiment model,2025,2025-06-18,0,1,0.5445080977374045
+XLK,Market + news sentiment model,2025,2025-06-20,1,0,0.49381063308447376
+XLK,Market + news sentiment model,2025,2025-06-23,1,1,0.5465547866206215
+XLK,Market + news sentiment model,2025,2025-06-24,1,1,0.5370895177951559
+XLK,Market + news sentiment model,2025,2025-06-25,1,1,0.6098498442678916
+XLK,Market + news sentiment model,2025,2025-06-26,0,1,0.522451118280124
+XLK,Market + news sentiment model,2025,2025-06-27,1,1,0.5670903511727946
+XLK,Market + news sentiment model,2025,2025-06-30,0,1,0.5476234310354797
+XLK,Market + news sentiment model,2025,2025-07-01,1,1,0.5830649937235144
+XLK,Market + news sentiment model,2025,2025-07-02,1,1,0.5842547284901027
+XLK,Market + news sentiment model,2025,2025-07-03,0,1,0.5520514118126552
+XLK,Market + news sentiment model,2025,2025-07-07,1,1,0.5631793225301218
+XLK,Market + news sentiment model,2025,2025-07-08,1,1,0.5545481026420123
+XLK,Market + news sentiment model,2025,2025-07-09,0,1,0.5927130978562323
+XLK,Market + news sentiment model,2025,2025-07-10,0,1,0.5872217109308586
+XLK,Market + news sentiment model,2025,2025-07-11,0,1,0.516232906759574
+XLK,Market + news sentiment model,2025,2025-07-14,1,1,0.5621668754575173
+XLK,Market + news sentiment model,2025,2025-07-15,1,1,0.520657018933565
+XLK,Market + news sentiment model,2025,2025-07-16,1,1,0.5675347451614442
+XLK,Market + news sentiment model,2025,2025-07-17,0,1,0.5488027597177718
+XLK,Market + news sentiment model,2025,2025-07-18,1,1,0.5457161712496245
+XLK,Market + news sentiment model,2025,2025-07-21,0,1,0.5085835611081383
+XLK,Market + news sentiment model,2025,2025-07-22,1,1,0.5338494475480807
+XLK,Market + news sentiment model,2025,2025-07-23,1,1,0.5663033167717372
+XLK,Market + news sentiment model,2025,2025-07-24,1,1,0.586947642928398
+XLK,Market + news sentiment model,2025,2025-07-25,1,1,0.5718944354706595
+XLK,Market + news sentiment model,2025,2025-07-28,1,1,0.5142897675891002
+XLK,Market + news sentiment model,2025,2025-07-29,1,1,0.5451201410352513
+XLK,Market + news sentiment model,2025,2025-07-30,0,1,0.5340841803056618
+XLK,Market + news sentiment model,2025,2025-07-31,0,1,0.5611493452057629
+XLK,Market + news sentiment model,2025,2025-08-01,1,1,0.5714677976630838
+XLK,Market + news sentiment model,2025,2025-08-04,0,0,0.4969846254766718
+XLK,Market + news sentiment model,2025,2025-08-05,1,1,0.618192873995898
+XLK,Market + news sentiment model,2025,2025-08-06,1,1,0.543836857635983
+XLK,Market + news sentiment model,2025,2025-08-07,1,1,0.5394448690846126
+XLK,Market + news sentiment model,2025,2025-08-08,0,1,0.5582901345540767
+XLK,Market + news sentiment model,2025,2025-08-11,1,1,0.532411728264965
+XLK,Market + news sentiment model,2025,2025-08-12,1,1,0.5623775360945285
+XLK,Market + news sentiment model,2025,2025-08-13,0,1,0.5292085883047175
+XLK,Market + news sentiment model,2025,2025-08-14,0,1,0.5557038350988693
+XLK,Market + news sentiment model,2025,2025-08-15,1,1,0.5243000249771608
+XLK,Market + news sentiment model,2025,2025-08-18,0,1,0.5791395561438623
+XLK,Market + news sentiment model,2025,2025-08-19,0,1,0.5139144639746448
+XLK,Market + news sentiment model,2025,2025-08-20,0,1,0.5735482532488191
+XLK,Market + news sentiment model,2025,2025-08-21,1,1,0.615700856592729
+XLK,Market + news sentiment model,2025,2025-08-22,0,1,0.5820534038489383
+XLK,Market + news sentiment model,2025,2025-08-25,1,1,0.577828118660613
+XLK,Market + news sentiment model,2025,2025-08-26,1,1,0.5829047942506109
+XLK,Market + news sentiment model,2025,2025-08-27,1,1,0.5593405399271841
+XLK,Market + news sentiment model,2025,2025-08-28,0,1,0.5845295143927157
+XLK,Market + news sentiment model,2025,2025-08-29,0,1,0.515822645473275
+XLK,Market + news sentiment model,2025,2025-09-02,1,1,0.6168199729853626
+XLK,Market + news sentiment model,2025,2025-09-03,1,1,0.5215585533775833
+XLK,Market + news sentiment model,2025,2025-09-04,1,1,0.556287732745157
+XLK,Market + news sentiment model,2025,2025-09-05,1,1,0.6305366093013769
+XLK,Market + news sentiment model,2025,2025-09-08,1,1,0.6017506155963867
+XLK,Market + news sentiment model,2025,2025-09-09,1,1,0.5701693883884289
+XLK,Market + news sentiment model,2025,2025-09-10,1,1,0.5945148026137738
+XLK,Market + news sentiment model,2025,2025-09-11,0,1,0.6000900652154629
+XLK,Market + news sentiment model,2025,2025-09-12,1,1,0.5519410689867877
+XLK,Market + news sentiment model,2025,2025-09-15,0,1,0.5108141370518365
+XLK,Market + news sentiment model,2025,2025-09-16,0,1,0.5556613475342344
+XLK,Market + news sentiment model,2025,2025-09-17,1,0,0.487590503931995
+XLK,Market + news sentiment model,2025,2025-09-18,1,1,0.5072454215915781
+XLK,Market + news sentiment model,2025,2025-09-19,1,1,0.5744776592473259
+XLK,Market + news sentiment model,2025,2025-09-22,0,1,0.5812044012633235
+XLK,Market + news sentiment model,2025,2025-09-23,0,1,0.5599085279431227
+XLK,Market + news sentiment model,2025,2025-09-24,0,1,0.5817182013110225
+XLK,Market + news sentiment model,2025,2025-09-25,1,1,0.5321440860538511
+XLK,Market + news sentiment model,2025,2025-09-26,1,1,0.5962584115548768
+XLK,Market + news sentiment model,2025,2025-09-29,1,1,0.5499649211306219
+XLK,Market + news sentiment model,2025,2025-09-30,1,1,0.5971896855732162
+XLK,Market + news sentiment model,2025,2025-10-01,1,1,0.5875942188266702
+XLK,Market + news sentiment model,2025,2025-10-02,0,1,0.5822870296012592
+XLK,Market + news sentiment model,2025,2025-10-03,1,1,0.5617136256703199
+XLK,Market + news sentiment model,2025,2025-10-06,0,1,0.5398937241198491
+XLK,Market + news sentiment model,2025,2025-10-07,1,1,0.5702872261249463
+XLK,Market + news sentiment model,2025,2025-10-08,0,1,0.5913438670234653
+XLK,Market + news sentiment model,2025,2025-10-09,0,1,0.5800085693331112
+XLK,Market + news sentiment model,2025,2025-10-10,1,1,0.5650991384572084
+XLK,Market + news sentiment model,2025,2025-10-13,0,1,0.5634887077226701
+XLK,Market + news sentiment model,2025,2025-10-14,1,1,0.5754268376556829
+XLK,Market + news sentiment model,2025,2025-10-15,1,1,0.5221370093326954
+XLK,Market + news sentiment model,2025,2025-10-16,1,1,0.5820405342437218
+XLK,Market + news sentiment model,2025,2025-10-17,1,1,0.581957375978952
+XLK,Market + news sentiment model,2025,2025-10-20,1,1,0.5436415999850024
+XLK,Market + news sentiment model,2025,2025-10-21,0,1,0.5562430511048524
+XLK,Market + news sentiment model,2025,2025-10-22,1,1,0.5164289024948299
+XLK,Market + news sentiment model,2025,2025-10-23,1,1,0.5948444507264402
+XLK,Market + news sentiment model,2025,2025-10-24,1,1,0.5837040736901224
+XLK,Market + news sentiment model,2025,2025-10-27,1,1,0.5409580465523005
+XLK,Market + news sentiment model,2025,2025-10-28,1,1,0.5829961830736221
+XLK,Market + news sentiment model,2025,2025-10-29,0,1,0.5410955155580672
+XLK,Market + news sentiment model,2025,2025-10-30,1,1,0.5550236904187016
+XLK,Market + news sentiment model,2025,2025-10-31,1,1,0.5089615424758778
+XLK,Market + news sentiment model,2025,2025-11-03,0,1,0.5406113419743851
+XLK,Market + news sentiment model,2025,2025-11-04,1,1,0.5203546552225153
+XLK,Market + news sentiment model,2025,2025-11-05,0,1,0.5471267772382341
+XLK,Market + news sentiment model,2025,2025-11-06,0,1,0.5866965420713137
+XLK,Market + news sentiment model,2025,2025-11-07,1,0,0.4886597239078639
+XLK,Market + news sentiment model,2025,2025-11-10,0,1,0.6246486868486815
+XLK,Market + news sentiment model,2025,2025-11-11,1,1,0.5196255456151276
+XLK,Market + news sentiment model,2025,2025-11-12,0,0,0.4892002403790138
+XLK,Market + news sentiment model,2025,2025-11-13,1,1,0.54853382908105
+XLK,Market + news sentiment model,2025,2025-11-14,0,1,0.5626236205501423
+XLK,Market + news sentiment model,2025,2025-11-17,0,1,0.5707284920970909
+XLK,Market + news sentiment model,2025,2025-11-18,1,1,0.5853081029242255
+XLK,Market + news sentiment model,2025,2025-11-19,0,1,0.5729846876179826
+XLK,Market + news sentiment model,2025,2025-11-20,1,1,0.6595748726770365
+XLK,Market + news sentiment model,2025,2025-11-21,1,1,0.5698335760767284
+XLK,Market + news sentiment model,2025,2025-11-24,1,1,0.6339761438648482
+XLK,Market + news sentiment model,2025,2025-11-25,1,1,0.6403159146184261
+XLK,Market + news sentiment model,2025,2025-11-26,1,1,0.5674515649183374
+XLK,Market + news sentiment model,2025,2025-11-28,1,1,0.5509176900752178
+XLK,Market + news sentiment model,2025,2025-12-01,1,1,0.5062557841801518
+XLK,Market + news sentiment model,2025,2025-12-02,1,1,0.5356533944197068
+XLK,Market + news sentiment model,2025,2025-12-03,1,0,0.49378190321856724
+XLK,Market + news sentiment model,2025,2025-12-04,1,1,0.5360267241082624
+XLK,Market + news sentiment model,2025,2025-12-05,1,1,0.5102689618431329
+XLK,Market + news sentiment model,2025,2025-12-08,1,1,0.5696001349954541
+XLK,Market + news sentiment model,2025,2025-12-09,1,1,0.5965127733762395
+XLK,Market + news sentiment model,2025,2025-12-10,0,1,0.5319373529400295
+XLK,Market + news sentiment model,2025,2025-12-11,0,1,0.5324692291571531
+XLK,Market + news sentiment model,2025,2025-12-12,0,0,0.4853239685812968
+XLK,Market + news sentiment model,2025,2025-12-15,1,1,0.5341731873602643
+XLK,Market + news sentiment model,2025,2025-12-16,0,1,0.586476963176744
+XLK,Market + news sentiment model,2025,2025-12-17,1,1,0.5411025898480463
+XLK,Market + news sentiment model,2025,2025-12-18,1,1,0.6147376901451722
+XLK,Market + news sentiment model,2025,2025-12-19,1,1,0.567292817266976
+XLK,Market + news sentiment model,2025,2025-12-22,1,1,0.5687268605166286
+XLK,Market + news sentiment model,2025,2025-12-23,1,1,0.603598513442025
+XLK,Market + news sentiment model,2025,2025-12-24,1,1,0.5382383891213481
+XLK,Market + news sentiment model,2025,2025-12-26,0,1,0.5645338194783683
+XLK,Market + news sentiment model,2025,2025-12-29,0,1,0.5393387385480406
+XLK,Market + news sentiment model,2025,2025-12-30,0,1,0.5580999556613135
+XLK,Always-up reference,2025,2025-01-02,1,1,1.0
+XLK,Always-up reference,2025,2025-01-03,1,1,1.0
+XLK,Always-up reference,2025,2025-01-06,0,1,1.0
+XLK,Always-up reference,2025,2025-01-07,0,1,1.0
+XLK,Always-up reference,2025,2025-01-08,0,1,1.0
+XLK,Always-up reference,2025,2025-01-10,0,1,1.0
+XLK,Always-up reference,2025,2025-01-13,1,1,1.0
+XLK,Always-up reference,2025,2025-01-14,1,1,1.0
+XLK,Always-up reference,2025,2025-01-15,0,1,1.0
+XLK,Always-up reference,2025,2025-01-16,1,1,1.0
+XLK,Always-up reference,2025,2025-01-17,1,1,1.0
+XLK,Always-up reference,2025,2025-01-21,1,1,1.0
+XLK,Always-up reference,2025,2025-01-22,1,1,1.0
+XLK,Always-up reference,2025,2025-01-23,0,1,1.0
+XLK,Always-up reference,2025,2025-01-24,0,1,1.0
+XLK,Always-up reference,2025,2025-01-27,1,1,1.0
+XLK,Always-up reference,2025,2025-01-28,0,1,1.0
+XLK,Always-up reference,2025,2025-01-29,1,1,1.0
+XLK,Always-up reference,2025,2025-01-30,0,1,1.0
+XLK,Always-up reference,2025,2025-01-31,0,1,1.0
+XLK,Always-up reference,2025,2025-02-03,1,1,1.0
+XLK,Always-up reference,2025,2025-02-04,1,1,1.0
+XLK,Always-up reference,2025,2025-02-05,1,1,1.0
+XLK,Always-up reference,2025,2025-02-06,0,1,1.0
+XLK,Always-up reference,2025,2025-02-07,1,1,1.0
+XLK,Always-up reference,2025,2025-02-10,1,1,1.0
+XLK,Always-up reference,2025,2025-02-11,0,1,1.0
+XLK,Always-up reference,2025,2025-02-12,1,1,1.0
+XLK,Always-up reference,2025,2025-02-13,1,1,1.0
+XLK,Always-up reference,2025,2025-02-14,1,1,1.0
+XLK,Always-up reference,2025,2025-02-18,1,1,1.0
+XLK,Always-up reference,2025,2025-02-19,0,1,1.0
+XLK,Always-up reference,2025,2025-02-20,0,1,1.0
+XLK,Always-up reference,2025,2025-02-21,0,1,1.0
+XLK,Always-up reference,2025,2025-02-24,0,1,1.0
+XLK,Always-up reference,2025,2025-02-25,1,1,1.0
+XLK,Always-up reference,2025,2025-02-26,0,1,1.0
+XLK,Always-up reference,2025,2025-02-27,1,1,1.0
+XLK,Always-up reference,2025,2025-02-28,0,1,1.0
+XLK,Always-up reference,2025,2025-03-03,0,1,1.0
+XLK,Always-up reference,2025,2025-03-04,1,1,1.0
+XLK,Always-up reference,2025,2025-03-05,0,1,1.0
+XLK,Always-up reference,2025,2025-03-06,1,1,1.0
+XLK,Always-up reference,2025,2025-03-07,0,1,1.0
+XLK,Always-up reference,2025,2025-03-10,0,1,1.0
+XLK,Always-up reference,2025,2025-03-11,1,1,1.0
+XLK,Always-up reference,2025,2025-03-12,0,1,1.0
+XLK,Always-up reference,2025,2025-03-13,1,1,1.0
+XLK,Always-up reference,2025,2025-03-14,1,1,1.0
+XLK,Always-up reference,2025,2025-03-17,0,1,1.0
+XLK,Always-up reference,2025,2025-03-18,1,1,1.0
+XLK,Always-up reference,2025,2025-03-19,0,1,1.0
+XLK,Always-up reference,2025,2025-03-20,1,1,1.0
+XLK,Always-up reference,2025,2025-03-21,1,1,1.0
+XLK,Always-up reference,2025,2025-03-24,1,1,1.0
+XLK,Always-up reference,2025,2025-03-25,0,1,1.0
+XLK,Always-up reference,2025,2025-03-26,0,1,1.0
+XLK,Always-up reference,2025,2025-03-27,0,1,1.0
+XLK,Always-up reference,2025,2025-03-28,1,1,1.0
+XLK,Always-up reference,2025,2025-03-31,1,1,1.0
+XLK,Always-up reference,2025,2025-04-01,1,1,1.0
+XLK,Always-up reference,2025,2025-04-02,0,1,1.0
+XLK,Always-up reference,2025,2025-04-03,0,1,1.0
+XLK,Always-up reference,2025,2025-04-04,1,1,1.0
+XLK,Always-up reference,2025,2025-04-07,0,1,1.0
+XLK,Always-up reference,2025,2025-04-08,1,1,1.0
+XLK,Always-up reference,2025,2025-04-09,0,1,1.0
+XLK,Always-up reference,2025,2025-04-10,1,1,1.0
+XLK,Always-up reference,2025,2025-04-11,1,1,1.0
+XLK,Always-up reference,2025,2025-04-14,1,1,1.0
+XLK,Always-up reference,2025,2025-04-15,0,1,1.0
+XLK,Always-up reference,2025,2025-04-16,0,1,1.0
+XLK,Always-up reference,2025,2025-04-17,0,1,1.0
+XLK,Always-up reference,2025,2025-04-21,1,1,1.0
+XLK,Always-up reference,2025,2025-04-22,1,1,1.0
+XLK,Always-up reference,2025,2025-04-23,1,1,1.0
+XLK,Always-up reference,2025,2025-04-24,1,1,1.0
+XLK,Always-up reference,2025,2025-04-25,0,1,1.0
+XLK,Always-up reference,2025,2025-04-28,1,1,1.0
+XLK,Always-up reference,2025,2025-04-29,1,1,1.0
+XLK,Always-up reference,2025,2025-04-30,1,1,1.0
+XLK,Always-up reference,2025,2025-05-01,1,1,1.0
+XLK,Always-up reference,2025,2025-05-02,0,1,1.0
+XLK,Always-up reference,2025,2025-05-05,0,1,1.0
+XLK,Always-up reference,2025,2025-05-06,1,1,1.0
+XLK,Always-up reference,2025,2025-05-07,1,1,1.0
+XLK,Always-up reference,2025,2025-05-08,0,1,1.0
+XLK,Always-up reference,2025,2025-05-09,1,1,1.0
+XLK,Always-up reference,2025,2025-05-12,1,1,1.0
+XLK,Always-up reference,2025,2025-05-13,1,1,1.0
+XLK,Always-up reference,2025,2025-05-14,1,1,1.0
+XLK,Always-up reference,2025,2025-05-15,1,1,1.0
+XLK,Always-up reference,2025,2025-05-16,0,1,1.0
+XLK,Always-up reference,2025,2025-05-19,0,1,1.0
+XLK,Always-up reference,2025,2025-05-20,0,1,1.0
+XLK,Always-up reference,2025,2025-05-21,1,1,1.0
+XLK,Always-up reference,2025,2025-05-22,0,1,1.0
+XLK,Always-up reference,2025,2025-05-23,1,1,1.0
+XLK,Always-up reference,2025,2025-05-27,0,1,1.0
+XLK,Always-up reference,2025,2025-05-28,1,1,1.0
+XLK,Always-up reference,2025,2025-05-29,0,1,1.0
+XLK,Always-up reference,2025,2025-05-30,1,1,1.0
+XLK,Always-up reference,2025,2025-06-02,1,1,1.0
+XLK,Always-up reference,2025,2025-06-03,1,1,1.0
+XLK,Always-up reference,2025,2025-06-04,0,1,1.0
+XLK,Always-up reference,2025,2025-06-05,1,1,1.0
+XLK,Always-up reference,2025,2025-06-06,1,1,1.0
+XLK,Always-up reference,2025,2025-06-09,1,1,1.0
+XLK,Always-up reference,2025,2025-06-10,0,1,1.0
+XLK,Always-up reference,2025,2025-06-11,1,1,1.0
+XLK,Always-up reference,2025,2025-06-12,0,1,1.0
+XLK,Always-up reference,2025,2025-06-13,1,1,1.0
+XLK,Always-up reference,2025,2025-06-16,0,1,1.0
+XLK,Always-up reference,2025,2025-06-17,1,1,1.0
+XLK,Always-up reference,2025,2025-06-18,0,1,1.0
+XLK,Always-up reference,2025,2025-06-20,1,1,1.0
+XLK,Always-up reference,2025,2025-06-23,1,1,1.0
+XLK,Always-up reference,2025,2025-06-24,1,1,1.0
+XLK,Always-up reference,2025,2025-06-25,1,1,1.0
+XLK,Always-up reference,2025,2025-06-26,0,1,1.0
+XLK,Always-up reference,2025,2025-06-27,1,1,1.0
+XLK,Always-up reference,2025,2025-06-30,0,1,1.0
+XLK,Always-up reference,2025,2025-07-01,1,1,1.0
+XLK,Always-up reference,2025,2025-07-02,1,1,1.0
+XLK,Always-up reference,2025,2025-07-03,0,1,1.0
+XLK,Always-up reference,2025,2025-07-07,1,1,1.0
+XLK,Always-up reference,2025,2025-07-08,1,1,1.0
+XLK,Always-up reference,2025,2025-07-09,0,1,1.0
+XLK,Always-up reference,2025,2025-07-10,0,1,1.0
+XLK,Always-up reference,2025,2025-07-11,0,1,1.0
+XLK,Always-up reference,2025,2025-07-14,1,1,1.0
+XLK,Always-up reference,2025,2025-07-15,1,1,1.0
+XLK,Always-up reference,2025,2025-07-16,1,1,1.0
+XLK,Always-up reference,2025,2025-07-17,0,1,1.0
+XLK,Always-up reference,2025,2025-07-18,1,1,1.0
+XLK,Always-up reference,2025,2025-07-21,0,1,1.0
+XLK,Always-up reference,2025,2025-07-22,1,1,1.0
+XLK,Always-up reference,2025,2025-07-23,1,1,1.0
+XLK,Always-up reference,2025,2025-07-24,1,1,1.0
+XLK,Always-up reference,2025,2025-07-25,1,1,1.0
+XLK,Always-up reference,2025,2025-07-28,1,1,1.0
+XLK,Always-up reference,2025,2025-07-29,1,1,1.0
+XLK,Always-up reference,2025,2025-07-30,0,1,1.0
+XLK,Always-up reference,2025,2025-07-31,0,1,1.0
+XLK,Always-up reference,2025,2025-08-01,1,1,1.0
+XLK,Always-up reference,2025,2025-08-04,0,1,1.0
+XLK,Always-up reference,2025,2025-08-05,1,1,1.0
+XLK,Always-up reference,2025,2025-08-06,1,1,1.0
+XLK,Always-up reference,2025,2025-08-07,1,1,1.0
+XLK,Always-up reference,2025,2025-08-08,0,1,1.0
+XLK,Always-up reference,2025,2025-08-11,1,1,1.0
+XLK,Always-up reference,2025,2025-08-12,1,1,1.0
+XLK,Always-up reference,2025,2025-08-13,0,1,1.0
+XLK,Always-up reference,2025,2025-08-14,0,1,1.0
+XLK,Always-up reference,2025,2025-08-15,1,1,1.0
+XLK,Always-up reference,2025,2025-08-18,0,1,1.0
+XLK,Always-up reference,2025,2025-08-19,0,1,1.0
+XLK,Always-up reference,2025,2025-08-20,0,1,1.0
+XLK,Always-up reference,2025,2025-08-21,1,1,1.0
+XLK,Always-up reference,2025,2025-08-22,0,1,1.0
+XLK,Always-up reference,2025,2025-08-25,1,1,1.0
+XLK,Always-up reference,2025,2025-08-26,1,1,1.0
+XLK,Always-up reference,2025,2025-08-27,1,1,1.0
+XLK,Always-up reference,2025,2025-08-28,0,1,1.0
+XLK,Always-up reference,2025,2025-08-29,0,1,1.0
+XLK,Always-up reference,2025,2025-09-02,1,1,1.0
+XLK,Always-up reference,2025,2025-09-03,1,1,1.0
+XLK,Always-up reference,2025,2025-09-04,1,1,1.0
+XLK,Always-up reference,2025,2025-09-05,1,1,1.0
+XLK,Always-up reference,2025,2025-09-08,1,1,1.0
+XLK,Always-up reference,2025,2025-09-09,1,1,1.0
+XLK,Always-up reference,2025,2025-09-10,1,1,1.0
+XLK,Always-up reference,2025,2025-09-11,0,1,1.0
+XLK,Always-up reference,2025,2025-09-12,1,1,1.0
+XLK,Always-up reference,2025,2025-09-15,0,1,1.0
+XLK,Always-up reference,2025,2025-09-16,0,1,1.0
+XLK,Always-up reference,2025,2025-09-17,1,1,1.0
+XLK,Always-up reference,2025,2025-09-18,1,1,1.0
+XLK,Always-up reference,2025,2025-09-19,1,1,1.0
+XLK,Always-up reference,2025,2025-09-22,0,1,1.0
+XLK,Always-up reference,2025,2025-09-23,0,1,1.0
+XLK,Always-up reference,2025,2025-09-24,0,1,1.0
+XLK,Always-up reference,2025,2025-09-25,1,1,1.0
+XLK,Always-up reference,2025,2025-09-26,1,1,1.0
+XLK,Always-up reference,2025,2025-09-29,1,1,1.0
+XLK,Always-up reference,2025,2025-09-30,1,1,1.0
+XLK,Always-up reference,2025,2025-10-01,1,1,1.0
+XLK,Always-up reference,2025,2025-10-02,0,1,1.0
+XLK,Always-up reference,2025,2025-10-03,1,1,1.0
+XLK,Always-up reference,2025,2025-10-06,0,1,1.0
+XLK,Always-up reference,2025,2025-10-07,1,1,1.0
+XLK,Always-up reference,2025,2025-10-08,0,1,1.0
+XLK,Always-up reference,2025,2025-10-09,0,1,1.0
+XLK,Always-up reference,2025,2025-10-10,1,1,1.0
+XLK,Always-up reference,2025,2025-10-13,0,1,1.0
+XLK,Always-up reference,2025,2025-10-14,1,1,1.0
+XLK,Always-up reference,2025,2025-10-15,1,1,1.0
+XLK,Always-up reference,2025,2025-10-16,1,1,1.0
+XLK,Always-up reference,2025,2025-10-17,1,1,1.0
+XLK,Always-up reference,2025,2025-10-20,1,1,1.0
+XLK,Always-up reference,2025,2025-10-21,0,1,1.0
+XLK,Always-up reference,2025,2025-10-22,1,1,1.0
+XLK,Always-up reference,2025,2025-10-23,1,1,1.0
+XLK,Always-up reference,2025,2025-10-24,1,1,1.0
+XLK,Always-up reference,2025,2025-10-27,1,1,1.0
+XLK,Always-up reference,2025,2025-10-28,1,1,1.0
+XLK,Always-up reference,2025,2025-10-29,0,1,1.0
+XLK,Always-up reference,2025,2025-10-30,1,1,1.0
+XLK,Always-up reference,2025,2025-10-31,1,1,1.0
+XLK,Always-up reference,2025,2025-11-03,0,1,1.0
+XLK,Always-up reference,2025,2025-11-04,1,1,1.0
+XLK,Always-up reference,2025,2025-11-05,0,1,1.0
+XLK,Always-up reference,2025,2025-11-06,0,1,1.0
+XLK,Always-up reference,2025,2025-11-07,1,1,1.0
+XLK,Always-up reference,2025,2025-11-10,0,1,1.0
+XLK,Always-up reference,2025,2025-11-11,1,1,1.0
+XLK,Always-up reference,2025,2025-11-12,0,1,1.0
+XLK,Always-up reference,2025,2025-11-13,1,1,1.0
+XLK,Always-up reference,2025,2025-11-14,0,1,1.0
+XLK,Always-up reference,2025,2025-11-17,0,1,1.0
+XLK,Always-up reference,2025,2025-11-18,1,1,1.0
+XLK,Always-up reference,2025,2025-11-19,0,1,1.0
+XLK,Always-up reference,2025,2025-11-20,1,1,1.0
+XLK,Always-up reference,2025,2025-11-21,1,1,1.0
+XLK,Always-up reference,2025,2025-11-24,1,1,1.0
+XLK,Always-up reference,2025,2025-11-25,1,1,1.0
+XLK,Always-up reference,2025,2025-11-26,1,1,1.0
+XLK,Always-up reference,2025,2025-11-28,1,1,1.0
+XLK,Always-up reference,2025,2025-12-01,1,1,1.0
+XLK,Always-up reference,2025,2025-12-02,1,1,1.0
+XLK,Always-up reference,2025,2025-12-03,1,1,1.0
+XLK,Always-up reference,2025,2025-12-04,1,1,1.0
+XLK,Always-up reference,2025,2025-12-05,1,1,1.0
+XLK,Always-up reference,2025,2025-12-08,1,1,1.0
+XLK,Always-up reference,2025,2025-12-09,1,1,1.0
+XLK,Always-up reference,2025,2025-12-10,0,1,1.0
+XLK,Always-up reference,2025,2025-12-11,0,1,1.0
+XLK,Always-up reference,2025,2025-12-12,0,1,1.0
+XLK,Always-up reference,2025,2025-12-15,1,1,1.0
+XLK,Always-up reference,2025,2025-12-16,0,1,1.0
+XLK,Always-up reference,2025,2025-12-17,1,1,1.0
+XLK,Always-up reference,2025,2025-12-18,1,1,1.0
+XLK,Always-up reference,2025,2025-12-19,1,1,1.0
+XLK,Always-up reference,2025,2025-12-22,1,1,1.0
+XLK,Always-up reference,2025,2025-12-23,1,1,1.0
+XLK,Always-up reference,2025,2025-12-24,1,1,1.0
+XLK,Always-up reference,2025,2025-12-26,0,1,1.0
+XLK,Always-up reference,2025,2025-12-29,0,1,1.0
+XLK,Always-up reference,2025,2025-12-30,0,1,1.0
