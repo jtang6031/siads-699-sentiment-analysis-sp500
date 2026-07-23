@@ -10,4 +10,6 @@ nbformat
 nbclient
 nbconvert
 ipykernel
+torch
+transformers
 pywin32; sys_platform == "win32"
