@@ -10,6 +10,22 @@ Does FinBERT-derived sentiment from financial macro news add incremental out-of-
 
 This is the final project goal. The RavenPack and CRSP data pipelines, data-quality checks, and baseline models have been implemented. FinBERT sentiment scoring is currently being completed, followed by the final comparison of market-only, RavenPack-enhanced, and FinBERT-enhanced models.
 
+Add these sections:
+
+## Environment Setup
+
+1. Clone the repository.
+2. Create and activate a Python virtual environment.
+3. Install dependencies:
+
+   pip install -r requirements.txt
+
+## Required Credentials
+
+A valid WRDS account with access to RavenPack News Analytics and CRSP is required to regenerate the raw data.
+
+Create a local `.env` file or enter credentials through the secure WRDS login prompt. Never commit credentials.
+
 ## Target Universe
 
 Eleven SPDR sector ETFs representing the S&P 500 broken out by sector:
