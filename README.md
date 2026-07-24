@@ -55,7 +55,7 @@ See [Basic_EDA_Data_Model.md](Basic_EDA_Data_Model.md) for a full breakdown of t
 | `Equity_Sentiment_EDA2.ipynb` | Exploratory individual-stock extension using company-level RavenPack data; outside the current sector-ETF MVP |
 | `data_collection/07a_llm_scoring_input_prep.ipynb` | Prepares deduplicated RavenPack text inputs and an event-to-text mapping for FinBERT scoring |
 | `07_finbert_sentiment_scoring.ipynb` | Scores each distinct news text with FinBERT and produces positive, negative, neutral, confidence, and continuous sentiment outputs |
-| `08_finbert_feature_aggregation.ipynb` | Planned: working on it 7/24/26
+| `08_finbert_sentiment_summary.ipynb` | Validate FinBERT scores and run weekly exploratory analysis
 
 ## Licensing
 
