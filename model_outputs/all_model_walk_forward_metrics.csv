@@ -1,0 +1,61 @@
+model,fold,metric,score
+M0 Market only,2022,auc_roc,0.4834409456431727
+M0 Market only,2022,f1,0.6358292869920776
+M0 Market only,2022,directional_accuracy,0.4838826512133285
+M1 Market + RavenPack,2022,auc_roc,0.4700703263259224
+M1 Market + RavenPack,2022,f1,0.6210498824758423
+M1 Market + RavenPack,2022,directional_accuracy,0.47446577327055417
+M2 Market + FinBERT,2022,auc_roc,0.46389155117259584
+M2 Market + FinBERT,2022,f1,0.6247737264028963
+M2 Market + FinBERT,2022,directional_accuracy,0.47446577327055417
+M3 Market + RavenPack + FinBERT,2022,auc_roc,0.46583571887965497
+M3 Market + RavenPack + FinBERT,2022,f1,0.6218313502327988
+M3 Market + RavenPack + FinBERT,2022,directional_accuracy,0.47048170952553425
+Always-up reference,2022,auc_roc,0.5
+Always-up reference,2022,f1,0.649877750611247
+Always-up reference,2022,directional_accuracy,0.4813473379210431
+M0 Market only,2023,auc_roc,0.5125456087977138
+M0 Market only,2023,f1,0.6822660098522167
+M0 Market only,2023,directional_accuracy,0.5309090909090909
+M1 Market + RavenPack,2023,auc_roc,0.5046209473021706
+M1 Market + RavenPack,2023,f1,0.6792734511072406
+M1 Market + RavenPack,2023,directional_accuracy,0.5312727272727272
+M2 Market + FinBERT,2023,auc_roc,0.4989958622507995
+M2 Market + FinBERT,2023,f1,0.6632151177841056
+M2 Market + FinBERT,2023,directional_accuracy,0.5269090909090909
+M3 Market + RavenPack + FinBERT,2023,auc_roc,0.5196261354358033
+M3 Market + RavenPack + FinBERT,2023,f1,0.6697674418604651
+M3 Market + RavenPack + FinBERT,2023,directional_accuracy,0.5352727272727272
+Always-up reference,2023,auc_roc,0.5
+Always-up reference,2023,f1,0.6972998578872572
+Always-up reference,2023,directional_accuracy,0.5352727272727272
+M0 Market only,2024,auc_roc,0.48389129454690333
+M0 Market only,2024,f1,0.6967833491012299
+M0 Market only,2024,directional_accuracy,0.5375180375180375
+M1 Market + RavenPack,2024,auc_roc,0.49361586126634305
+M1 Market + RavenPack,2024,f1,0.700282752120641
+M1 Market + RavenPack,2024,directional_accuracy,0.5411255411255411
+M2 Market + FinBERT,2024,auc_roc,0.503842645501536
+M2 Market + FinBERT,2024,f1,0.6899038461538461
+M2 Market + FinBERT,2024,directional_accuracy,0.5346320346320347
+M3 Market + RavenPack + FinBERT,2024,auc_roc,0.50986034368873
+M3 Market + RavenPack + FinBERT,2024,f1,0.6894230769230769
+M3 Market + RavenPack + FinBERT,2024,directional_accuracy,0.5339105339105339
+Always-up reference,2024,auc_roc,0.5
+Always-up reference,2024,f1,0.7028544688816097
+Always-up reference,2024,directional_accuracy,0.5418470418470418
+M0 Market only,2025,auc_roc,0.5047432909869954
+M0 Market only,2025,f1,0.6998087954110899
+M0 Market only,2025,directional_accuracy,0.5414384811975174
+M1 Market + RavenPack,2025,auc_roc,0.5031684582425017
+M1 Market + RavenPack,2025,f1,0.702158273381295
+M1 Market + RavenPack,2025,directional_accuracy,0.5465498357064622
+M2 Market + FinBERT,2025,auc_roc,0.486970178584852
+M2 Market + FinBERT,2025,f1,0.6823122529644269
+M2 Market + FinBERT,2025,directional_accuracy,0.5304855786783498
+M3 Market + RavenPack + FinBERT,2025,auc_roc,0.4880945221808185
+M3 Market + RavenPack + FinBERT,2025,f1,0.6831805796383453
+M3 Market + RavenPack + FinBERT,2025,directional_accuracy,0.5330412559328221
+Always-up reference,2025,auc_roc,0.5
+Always-up reference,2025,f1,0.7028179019654274
+Always-up reference,2025,directional_accuracy,0.5418035779481563
