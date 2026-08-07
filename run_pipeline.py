@@ -137,24 +137,77 @@ def check_packages() -> list[str]:
     return problems
 
 
-def check_wrds_credentials() -> list[str]:
-    """WRDS prompts for a password on stdin, and an executed notebook has no usable stdin.
+PGPASS_CANDIDATES = [
+    Path.home() / ".pgpass",
+    Path.home() / "pgpass.conf",
+    Path.home() / "AppData" / "Roaming" / "postgresql" / "pgpass.conf",
+]
 
-    Without a stored credential the run hangs or dies on the first WRDS stage, so this is a hard
-    pre-flight check rather than a warning.
+SETUP_HINT = (
+    "            python -c \"import wrds; wrds.Connection(wrds_username='YOUR_USERNAME')"
+    ".create_pgpass_file()\"\n\n"
+    "        Then re-run this pipeline. Use --skip-wrds to run only the local stages."
+)
+
+
+def find_wrds_credential() -> tuple[Path, tuple[str, str, str, str]] | None:
+    """Locate a pgpass file and return its WRDS entry as (host, port, dbname, username)."""
+    for path in PGPASS_CANDIDATES:
+        if not path.exists():
+            continue
+        for line in path.read_text(encoding="utf-8-sig").splitlines():
+            fields = line.strip().split(":")
+            if len(fields) >= 5 and "wrds" in fields[0].lower():
+                return path, (fields[0], fields[1], fields[2], fields[3])
+    return None
+
+
+def configure_wrds_env() -> list[str]:
+    """Export PGUSER/PGPASSFILE so the notebook kernels authenticate without prompting.
+
+    `wrds.Connection()` takes no username argument in these notebooks, and the library defaults
+    it to an empty string (`kwargs.get("wrds_username", "")`). libpq then falls back to the OS
+    account name, which does not match the WRDS username stored in pgpass, so authentication
+    fails and the library drops through to `input()` — inside a kernel with no stdin, that raises
+    StdinNotImplementedError and the stage dies. Setting PGUSER from the pgpass entry itself is
+    what makes the unattended run work; child kernels inherit it from this process.
     """
-    pgpass = [Path.home() / ".pgpass", Path.home() / "pgpass.conf",
-              Path.home() / "AppData" / "Roaming" / "postgresql" / "pgpass.conf"]
-    if any(p.exists() for p in pgpass):
-        return []
-    return [
-        "no stored WRDS credential found (looked for ~/.pgpass and pgpass.conf).\n"
-        "        The WRDS stages prompt for a password on stdin, which an executed notebook\n"
-        "        does not have, so the run would hang. Create the credential once, interactively:\n\n"
-        "            python -c \"import wrds; wrds.Connection(wrds_username='YOUR_USERNAME')"
-        ".create_pgpass_file()\"\n\n"
-        "        Then re-run this pipeline. Use --skip-wrds to run only the local stages."
-    ]
+    import os
+
+    found = find_wrds_credential()
+    if found is None:
+        return [
+            "no stored WRDS credential found (looked for ~/.pgpass and pgpass.conf).\n"
+            "        The WRDS stages would prompt for a password on stdin, which an executed\n"
+            "        notebook does not have. Create the credential once, interactively:\n\n"
+            + SETUP_HINT
+        ]
+
+    path, (host, port, dbname, username) = found
+    os.environ["PGPASSFILE"] = str(path)
+    os.environ["PGUSER"] = username
+
+    # A file on disk is not proof of a working login, so actually connect.
+    try:
+        import psycopg2
+    except ImportError:
+        return ["psycopg2 not installed — needed to verify the WRDS login (pip install psycopg2-binary)"]
+
+    try:
+        conn = psycopg2.connect(host=host, port=port, dbname=dbname,
+                                user=username, connect_timeout=30)
+        conn.close()
+    except Exception as exc:                                          # noqa: BLE001
+        first_line = str(exc).strip().splitlines()[0]
+        return [
+            f"WRDS login failed for user '{username}' using {path.name}:\n"
+            f"          {first_line}\n\n"
+            "        The credential file exists but does not authenticate. Recreate it:\n\n"
+            + SETUP_HINT
+        ]
+
+    print(f"  wrds      : authenticated as {username} ({host})")
+    return []
 
 
 def check_gpu() -> str:
@@ -276,7 +329,7 @@ def main() -> int:
     print("Pre-flight")
     problems = check_packages()
     if any(s.needs_wrds for s in selected):
-        problems += check_wrds_credentials()
+        problems += configure_wrds_env()
     for stage in selected:
         if not (REPO_ROOT / stage.notebook).exists():
             problems.append(f"notebook not found: {stage.notebook}")
