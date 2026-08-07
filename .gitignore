@@ -6,3 +6,4 @@ venv/
 # Row-level RavenPack extracts are a licensed WRDS export — never commit, even filtered/derived
 data_collection/raw/
 .superpowers/
+pipeline_logs/
