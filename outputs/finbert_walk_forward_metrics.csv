@@ -2,9 +2,9 @@ model,fold,metric,score
 M0 Market only,2022,auc_roc,0.48474091075324416
 M0 Market only,2022,f1,0.6267087276550999
 M0 Market only,2022,directional_accuracy,0.48569358927924666
-M1 Market + RavenPack,2022,auc_roc,0.47049226326342736
-M1 Market + RavenPack,2022,f1,0.6045627376425855
-M1 Market + RavenPack,2022,directional_accuracy,0.472654835204636
+M1 Market + RavenPack,2022,auc_roc,0.4688644168968141
+M1 Market + RavenPack,2022,f1,0.6038961038961039
+M1 Market + RavenPack,2022,directional_accuracy,0.469757334299167
 M2 Market + FinBERT,2022,auc_roc,0.4623257079923158
 M2 Market + FinBERT,2022,f1,0.6019833824711873
 M2 Market + FinBERT,2022,directional_accuracy,0.46215139442231074
@@ -14,9 +14,9 @@ Always-up reference,2022,directional_accuracy,0.4813473379210431
 M0 Market only,2023,auc_roc,0.514659666938831
 M0 Market only,2023,f1,0.6670081967213115
 M0 Market only,2023,directional_accuracy,0.5272727272727272
-M1 Market + RavenPack,2023,auc_roc,0.5126152446077431
-M1 Market + RavenPack,2023,f1,0.652255137443288
-M1 Market + RavenPack,2023,directional_accuracy,0.5261818181818182
+M1 Market + RavenPack,2023,auc_roc,0.5119715120432742
+M1 Market + RavenPack,2023,f1,0.6490947816826411
+M1 Market + RavenPack,2023,directional_accuracy,0.5207272727272727
 M2 Market + FinBERT,2023,auc_roc,0.49605202167108936
 M2 Market + FinBERT,2023,f1,0.6198208286674132
 M2 Market + FinBERT,2023,directional_accuracy,0.5061818181818182
@@ -26,9 +26,9 @@ Always-up reference,2023,directional_accuracy,0.5352727272727272
 M0 Market only,2024,auc_roc,0.4839510573828072
 M0 Market only,2024,f1,0.689156626506024
 M0 Market only,2024,directional_accuracy,0.5346320346320347
-M1 Market + RavenPack,2024,auc_roc,0.4996120658020277
-M1 Market + RavenPack,2024,f1,0.6978743730594698
-M1 Market + RavenPack,2024,directional_accuracy,0.5436507936507936
+M1 Market + RavenPack,2024,auc_roc,0.49931692127032723
+M1 Market + RavenPack,2024,f1,0.6984051416329445
+M1 Market + RavenPack,2024,directional_accuracy,0.5429292929292929
 M2 Market + FinBERT,2024,auc_roc,0.5174580873795569
 M2 Market + FinBERT,2024,f1,0.6838071693448702
 M2 Market + FinBERT,2024,directional_accuracy,0.5386002886002886
@@ -38,9 +38,9 @@ Always-up reference,2024,directional_accuracy,0.5418470418470418
 M0 Market only,2025,auc_roc,0.5066966634808475
 M0 Market only,2025,f1,0.6969550507491542
 M0 Market only,2025,directional_accuracy,0.5421686746987951
-M1 Market + RavenPack,2025,auc_roc,0.5065984042267587
-M1 Market + RavenPack,2025,f1,0.6955882352941176
-M1 Market + RavenPack,2025,directional_accuracy,0.5465498357064622
+M1 Market + RavenPack,2025,auc_roc,0.507737245089722
+M1 Market + RavenPack,2025,f1,0.6960136952800196
+M1 Market + RavenPack,2025,directional_accuracy,0.5461847389558233
 M2 Market + FinBERT,2025,auc_roc,0.49861148398320465
 M2 Market + FinBERT,2025,f1,0.632890365448505
 M2 Market + FinBERT,2025,directional_accuracy,0.515881708652793
