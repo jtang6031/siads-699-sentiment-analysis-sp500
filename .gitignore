@@ -7,3 +7,5 @@ venv/
 data_collection/raw/
 .superpowers/
 pipeline_logs/
+__pycache__/
+*.pyc
