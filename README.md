@@ -65,9 +65,9 @@ We compare four models for predicting next-session direction (`fwd_1d_positive`)
 
 **Why the null is credible.** The design guards that make it trustworthy are all in place: strictly temporal walk-forward splits, a lookahead-safe 4:00 PM ET news cutoff (verified in `03_data_quality_visual_qa.ipynb`), an identical row set and identical hyperparameters across models, and a naive benchmark to beat. Temporal text masking is deliberately deferred to a later masked-vs-unmasked ablation: RavenPack and FinBERT are both compared on unmasked text so the comparison stays apples-to-apples.
 
-**Why the signal may still exist elsewhere.** A linear daily classifier is low-capacity, and daily direction is dominated by market microstructure noise; macro narrative sentiment plausibly acts at a **lower frequency** than one day. That motivates the next stage — an **Autoformer** on the LLM sentiment matrix at a longer horizon, which is where the report's monthly-macro-regime framing expects any narrative signal to live. The `model_outputs/model_comparison_all.csv` scoreboard is the linear-baseline bar that model must clear.
+**Why the signal may still exist elsewhere.** A linear daily classifier is low-capacity, and daily direction is dominated by market microstructure noise; macro narrative sentiment plausibly acts at a **lower frequency** than one day. That motivates the next stage — an **Autoformer** on the LLM sentiment matrix at a longer horizon, which is where the report's monthly-macro-regime framing expects any narrative signal to live. The `outputs/model_comparison_all.csv` scoreboard is the linear-baseline bar that model must clear.
 
-Outputs: `model_outputs/model_comparison_all.csv`, `all_model_scoreboard.png`, and the per-model walk-forward metrics and holdout predictions.
+Outputs: `outputs/model_comparison_all.csv`, `all_model_scoreboard.png`, and the per-model walk-forward metrics and holdout predictions.
 
 ## Team
 
@@ -79,20 +79,20 @@ Outputs: `model_outputs/model_comparison_all.csv`, `all_model_scoreboard.png`, a
 
 | Notebook | Description |
 |---|---|
-| `data_collection/01_ravenpack_news_extraction.ipynb` | WRDS/RavenPack extraction, 4:00 PM ET cutoff, session mapping, and daily sentiment aggregation |
-| `data_collection/02_crsp_sector_etf_price_extraction.ipynb` | WRDS/CRSP sector-ETF prices, returns, volume, and forward-return labels |
-| `data_collection/03_data_quality_visual_qa.ipynb` | Schema, completeness, timestamp, forward-label, join, and visual QA scorecard |
-| `ml/04_report_visual_plan.ipynb` | Report figures and presentation guardrails for the current derived panel |
-| `ml/05_baseline_model.ipynb` | Simple pooled chronological baseline: market-only versus market-plus-sentiment prediction of next-session sector-ETF direction (**M0/M1**) |
-| `ml/06_xlk_baseline_model.ipynb` | XLK-only walk-forward baseline and comparison of market-only versus market-plus-news features |
-| `ml/07_all_sector_baseline_models.ipynb` | Per-sector walk-forward of market-only versus market-plus-RavenPack across all eleven ETFs |
-| `data_collection/07a_llm_scoring_input_prep.ipynb` | Prepares deduplicated RavenPack text inputs and an event-to-text mapping for FinBERT scoring |
-| `ml/07_finbert_sentiment_scoring.ipynb` | Scores each distinct news text with FinBERT and produces positive, negative, neutral, confidence, and continuous sentiment outputs |
-| `ml/08_finbert_sentiment_summary.ipynb` | Validate FinBERT scores and run weekly exploratory analysis |
-| `ml/09_finbert_sentiment_model.ipynb` | **M2** — builds the session-level FinBERT aggregate (`finbert_daily_df.csv`) and runs the pooled walk-forward comparing market-only, RavenPack, and FinBERT on one identical row set |
-| `ml/10_combined_sentiment_model.ipynb` | **M3** — the four-model scoreboard: market, RavenPack, FinBERT, and RavenPack+FinBERT combined, in the same harness |
-| `eda/Basic_EDA_Analysis.ipynb` | Initial EDA: RavenPack global macro sentiment aggregated by trading session, joined to sector ETF returns (2020–2025) |
-| `eda/Equity_Sentiment_EDA2.ipynb` | Exploratory individual-stock extension using company-level RavenPack data; outside the current sector-ETF MVP |
+| `notebooks/1_extract/01_ravenpack_news_extraction.ipynb` | WRDS/RavenPack extraction, 4:00 PM ET cutoff, session mapping, and daily sentiment aggregation |
+| `notebooks/1_extract/02_crsp_sector_etf_price_extraction.ipynb` | WRDS/CRSP sector-ETF prices, returns, volume, and forward-return labels |
+| `notebooks/2_prepare/03_data_quality_visual_qa.ipynb` | Schema, completeness, timestamp, forward-label, join, and visual QA scorecard |
+| `notebooks/4_model/04_report_visual_plan.ipynb` | Report figures and presentation guardrails for the current derived panel |
+| `notebooks/4_model/05_baseline_model.ipynb` | Simple pooled chronological baseline: market-only versus market-plus-sentiment prediction of next-session sector-ETF direction (**M0/M1**) |
+| `notebooks/4_model/06_xlk_baseline_model.ipynb` | XLK-only walk-forward baseline and comparison of market-only versus market-plus-news features |
+| `notebooks/4_model/07_all_sector_baseline_models.ipynb` | Per-sector walk-forward of market-only versus market-plus-RavenPack across all eleven ETFs |
+| `notebooks/2_prepare/07a_llm_scoring_input_prep.ipynb` | Prepares deduplicated RavenPack text inputs and an event-to-text mapping for FinBERT scoring |
+| `notebooks/2_prepare/07_finbert_sentiment_scoring.ipynb` | Scores each distinct news text with FinBERT and produces positive, negative, neutral, confidence, and continuous sentiment outputs |
+| `notebooks/4_model/08_finbert_sentiment_summary.ipynb` | Validate FinBERT scores and run weekly exploratory analysis |
+| `notebooks/4_model/09_finbert_sentiment_model.ipynb` | **M2** — builds the session-level FinBERT aggregate (`finbert_daily_df.csv`) and runs the pooled walk-forward comparing market-only, RavenPack, and FinBERT on one identical row set |
+| `notebooks/4_model/10_combined_sentiment_model.ipynb` | **M3** — the four-model scoreboard: market, RavenPack, FinBERT, and RavenPack+FinBERT combined, in the same harness |
+| `notebooks/3_explore/Basic_EDA_Analysis.ipynb` | Initial EDA: RavenPack global macro sentiment aggregated by trading session, joined to sector ETF returns (2020–2025) |
+| `notebooks/3_explore/Equity_Sentiment_EDA2.ipynb` | Exploratory individual-stock extension using company-level RavenPack data; outside the current sector-ETF MVP |
 
 ## Licensing
 

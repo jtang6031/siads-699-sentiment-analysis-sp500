@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from ml import model_lib as ml
+from src import model_lib as ml
 
 
 def _frame(n=800, signal=0.0, seed=0):

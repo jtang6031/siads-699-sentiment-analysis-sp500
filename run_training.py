@@ -27,13 +27,13 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ml import cleaning_lib as clean          # noqa: E402
-from ml import model_lib as model             # noqa: E402
+from src import cleaning_lib as clean          # noqa: E402
+from src import model_lib as model             # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent
-DATA_DIR = REPO_ROOT / "data_collection"
+DATA_DIR = REPO_ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
-OUT_DIR = REPO_ROOT / "model_outputs"
+OUT_DIR = REPO_ROOT / "outputs"
 
 ELEVEN = ("XLB", "XLC", "XLE", "XLF", "XLI", "XLK", "XLP", "XLRE", "XLU", "XLV", "XLY")
 NINE = tuple(t for t in ELEVEN if t not in clean.LATE_LAUNCH_TICKERS)
@@ -41,7 +41,7 @@ NINE = tuple(t for t in ELEVEN if t not in clean.LATE_LAUNCH_TICKERS)
 
 def sample_tag() -> str:
     """Read the window out of notebook 01 so this file cannot disagree with the pull."""
-    nb = json.loads((DATA_DIR / "01_ravenpack_news_extraction.ipynb").read_text(encoding="utf-8"))
+    nb = json.loads((REPO_ROOT / "notebooks/1_extract/01_ravenpack_news_extraction.ipynb").read_text(encoding="utf-8"))
     src = "\n".join("".join(c["source"]) for c in nb["cells"] if c["cell_type"] == "code")
     start = re.search(r'START_DATE\s*=\s*"(\d{4})', src)
     end = re.search(r'END_DATE\s*=\s*"(\d{4})', src)

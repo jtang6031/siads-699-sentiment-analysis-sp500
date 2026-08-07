@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from ml import cleaning_lib as lib
+from src import cleaning_lib as lib
 
 NY = "America/New_York"
 

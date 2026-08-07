@@ -27,7 +27,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent
-DATA_DIR = REPO_ROOT / "data_collection"
+DATA_DIR = REPO_ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 LOG_DIR = REPO_ROOT / "pipeline_logs"
 
@@ -38,7 +38,7 @@ DEFAULT_TIMEOUT_SECONDS = 3600
 # read the sample window out of notebook 01 so this file can never disagree with it
 # --------------------------------------------------------------------------------------
 def read_sample_window() -> tuple[str, str]:
-    notebook = DATA_DIR / "01_ravenpack_news_extraction.ipynb"
+    notebook = REPO_ROOT / "notebooks/1_extract/01_ravenpack_news_extraction.ipynb"
     source = "\n".join(
         "".join(cell["source"])
         for cell in json.loads(notebook.read_text(encoding="utf-8"))["cells"]
@@ -70,48 +70,48 @@ class Stage:
 STAGES: list[Stage] = [
     Stage(
         key="news",
-        notebook="data_collection/01_ravenpack_news_extraction.ipynb",
+        notebook="notebooks/1_extract/01_ravenpack_news_extraction.ipynb",
         title="RavenPack macro news extraction",
         needs_wrds=True,
         produces=[
-            f"data_collection/raw/ravenpack_core_events_{TAG}.csv",
-            "data_collection/news_daily_df.csv",
+            f"data/raw/ravenpack_core_events_{TAG}.csv",
+            "data/news_daily_df.csv",
         ],
         note="Slowest stage — one query per year, licensed row-level output stays in raw/.",
     ),
     Stage(
         key="prices",
-        notebook="data_collection/02_crsp_sector_etf_price_extraction.ipynb",
+        notebook="notebooks/1_extract/02_crsp_sector_etf_price_extraction.ipynb",
         title="CRSP sector ETF prices (incl. open, overnight gap)",
         needs_wrds=True,
         produces=[
-            f"data_collection/raw/crsp_sector_etf_daily_raw_{TAG}.csv",
-            "data_collection/market_daily_df.csv",
+            f"data/raw/crsp_sector_etf_daily_raw_{TAG}.csv",
+            "data/market_daily_df.csv",
         ],
     ),
     Stage(
         key="panel",
-        notebook="data_collection/03_data_quality_visual_qa.ipynb",
+        notebook="notebooks/2_prepare/03_data_quality_visual_qa.ipynb",
         title="Data-quality QA and the joined model panel",
-        produces=["data_collection/model_daily_panel.csv"],
+        produces=["data/model_daily_panel.csv"],
         note="Despite the name this is not optional — it builds model_daily_panel.csv.",
     ),
     Stage(
         key="scoring-input",
-        notebook="data_collection/07a_llm_scoring_input_prep.ipynb",
+        notebook="notebooks/2_prepare/07a_llm_scoring_input_prep.ipynb",
         title="Dedup headlines into the FinBERT scoring input",
         produces=[
-            "data_collection/raw/llm_scoring_input.csv",
-            "data_collection/raw/llm_scoring_event_map.csv",
+            "data/raw/llm_scoring_input.csv",
+            "data/raw/llm_scoring_event_map.csv",
         ],
     ),
     Stage(
         key="finbert",
-        notebook="ml/07_finbert_sentiment_scoring.ipynb",
+        notebook="notebooks/2_prepare/07_finbert_sentiment_scoring.ipynb",
         title="FinBERT sentiment scoring",
         needs_gpu=True,
-        produces=["data_collection/raw/finbert_scores.csv"],
-        warn_if_exists=["data_collection/raw/finbert_scores.csv"],
+        produces=["data/raw/finbert_scores.csv"],
+        warn_if_exists=["data/raw/finbert_scores.csv"],
         note="Appends with mode='a'. Existing rows are NOT replaced — see the duplicate check below.",
     ),
 ]
