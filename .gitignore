@@ -1,7 +1,18 @@
-data/
+data/raw/
 Basic_EDA_Analysis.executed.ipynb
 venv/
 .env
 
 # Row-level RavenPack extracts are a licensed WRDS export — never commit, even filtered/derived
-data_collection/raw/
+.superpowers/
+pipeline_logs/
+__pycache__/
+*.pyc
+
+# scratch and tool dirs that keep reappearing
+.pytest_cache/
+docx_tmp/
+.agents/
+.codex/
+.jupyter_runtime/
+data/cache/
