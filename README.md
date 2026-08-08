@@ -155,8 +155,8 @@ the table and column breakdown.
 ## Team
 
 - **Jeremy Tang** — Data Engineering: WRDS/RavenPack ingestion, news-returns matching, timestamp
-  alignment, feature engineering, Autoformer
-- **Christian Goelz** — ML: model development, baseline vs sentiment-augmented classifiers,
+  alignment, feature engineering, 
+- **Christian Goelz** — ML: model development, baseline vs sentiment-augmented classifiers, Autoformer
   evaluation metrics
 - **Dongxin Liang** — NLP/LLM: FinBERT sentiment scoring, RavenPack-versus-FinBERT comparison,
   pipeline and evaluation harness, interpretation of sentiment results
