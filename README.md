@@ -131,7 +131,6 @@ The final column is an arithmetic annualized average, not compound growth. It is
 exactly as produced by V5: for example, 0.109173 means 10.9173% per year under the notebook's
 assumptions.
 
-† In this V5 execution, `finbert_daily_df.csv` was not found in the notebook's working directory.
 The notebook generated random stand-in values so it could continue. Because the model feature sets
 build on one another, every row from M2 through M7 uses that column. Those rows are not valid tests
 of real FinBERT information.
