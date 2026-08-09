@@ -1,4 +1,4 @@
-# Financial News and S&P 500 Sector Returns
+# SIADS-699-sentiment-analysis-sp500 - Financial News and S&P 500 Sector Returns
 
 **Academic research only. This project is not investment advice.**
 
