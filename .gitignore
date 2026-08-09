@@ -16,3 +16,4 @@ docx_tmp/
 .codex/
 .jupyter_runtime/
 data/cache/
+/docs

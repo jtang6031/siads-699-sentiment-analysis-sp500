@@ -1,0 +1,4 @@
+model,overnight_net_sharpe,overnight_net_arithmetic_annual_return,delayed_c2c_net_sharpe,delayed_c2c_net_arithmetic_annual_return,reported_avg_turnover,aggregation
+M5,0.43,0.033,-0.37,-0.048,2.00,whole_period_seed_averaged
+M6,0.87,0.067,-0.14,-0.019,2.00,whole_period_seed_averaged
+M7,1.48,0.112,-0.28,-0.035,2.00,whole_period_seed_averaged

@@ -1,0 +1,9 @@
+model,ic_mean_ic,ic_t_stat,ls_gross_sharpe,on_net_sharpe,on_net_arithmetic_annual_return,finbert_input_status
+M0_Market_Baseline,-0.00468843,-0.149517,-0.179366,-1.61385,-0.118438,not_used
+M1_Narrative_Projected,0.0445961,1.84856,1.83103,0.462243,0.0438523,not_used
+M2_FinBERT_Projected,-0.00689727,-0.271448,-0.139301,-1.57016,-0.111038,synthetic_placeholder
+M3_Multimodal_Projected,0.0488618,2.04493,2.0402,0.655388,0.0614283,synthetic_placeholder
+M4_Macro_Projected,0.0475541,1.9925,1.6431,0.252955,0.0350629,synthetic_placeholder
+M5_Sector_Attributed,0.0434403,1.79139,1.50441,0.120243,0.029153,synthetic_placeholder
+M6_LLM_Attributed,0.0550994,2.32356,2.04136,0.650439,0.0634247,synthetic_placeholder
+M7_Multimodal_LLM,0.0651768,2.74447,2.71781,1.3348,0.109173,synthetic_placeholder

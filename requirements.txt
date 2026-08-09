@@ -4,6 +4,8 @@ pandas
 numpy
 matplotlib
 seaborn
+scikit-learn
+pytest
 pyarrow
 pandas_market_calendars
 nbformat
