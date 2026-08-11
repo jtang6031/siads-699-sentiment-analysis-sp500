@@ -5,6 +5,7 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+scipy
 pytest
 pyarrow
 pandas_market_calendars
@@ -12,7 +13,12 @@ nbformat
 nbclient
 nbconvert
 ipykernel
+ipython
 torch
 transformers
-pywin32; sys_platform == "win32"
+yfinance
+pandas-datareader
+tabulate
+google-genai
+pydantic
 
