@@ -32,14 +32,14 @@ next-session direction forecasts, tone had a small same-session association with
 lagged volatility was associated with full-session move size. The possible news-volume gain is
 preliminary, while V5 remains an exploratory diagnostic.
 
-## Question 
+## Question we may ask
 
 A **sector ETF** is a fund that follows one broad industry, such as technology, energy, or health
 care. **News sentiment** describes whether financial news sounds positive, negative, or neutral.
 We tested whether that information helped forecast:
 
-1. whether a sector would go up or down next;
-2. whether a session's full close-to-close market move was relatively large or small; and
+1. whether a sector would go up or down next trading day.
+2. whether a session's full close-to-close market move was relatively large or small, and
 3. how sectors ranked against one another during the overnight period, from one market close to the
    next morning's open.
 
