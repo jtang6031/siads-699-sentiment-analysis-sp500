@@ -2,8 +2,7 @@
 
 **Academic research only. This project is not investment advice.**
 
-This University of Michigan MADS capstone asks a simple question: can the language and amount of
-financial news help us anticipate what broad parts of the U.S. stock market will do next?
+A simple question: Can the language and amount of financial news help us anticipate what broad parts of the U.S. stock market will do next?
 
 ## Executive Summary
 
