@@ -10,6 +10,12 @@ financial news help us anticipate what broad parts of the U.S. stock market will
 - **News sentiment did not improve next-session direction forecasts.** Across 11,022 later-date
   sector comparisons from 2022 through 2025, the market-only model and every news-based version
   scored near 0.50 AUC, which is chance-level ranking.
+- **News tone had a small relationship with prices in the session around its arrival.** Across
+  2015–2025, RavenPack and FinBERT tone had same-session correlations of 0.078 and 0.068 with an
+  equal-weight nine-sector ETF composite. In the following session, the correlations were only
+  0.008 and −0.006. This is consistent with news being reflected quickly, but market recaps and
+  shared events are also possible explanations. Daily data cannot show a reaction within seconds or
+  prove that news caused the move.
 - **Lagged volatility was associated with full-session move size in an open-time test.** Volatility
   alone reached 0.5521 AUC. In a separate setup, adding current news volume to a 0.5507 baseline of
   lagged volatility plus trailing news flow raised AUC to 0.5604, a gain of +0.0097. The
@@ -22,9 +28,10 @@ financial news help us anticipate what broad parts of the U.S. stock market will
   have been earned as shown. The run also replaced a missing FinBERT file with randomly generated
   stand-in values. A delayed-return check was negative for M5, M6, and M7.
 
-Taken together, the primary analyses support two conclusions: news sentiment did not improve
-direction forecasts, and lagged volatility was associated with full-session move size. The possible
-news-volume gain is preliminary, while V5 remains an exploratory diagnostic.
+Taken together, the primary analyses support three conclusions: sentiment did not improve
+next-session direction forecasts, tone had a small same-session association with returns, and
+lagged volatility was associated with full-session move size. The possible news-volume gain is
+preliminary, while V5 remains an exploratory diagnostic.
 
 ## The Question in Everyday Language
 
@@ -42,7 +49,7 @@ training. This is better than randomly mixing old and new dates, but chronologic
 not guarantee that every input was available before the measured return began. The timing limits are
 called out beside the affected results below.
 
-## Confirmed Findings from the Primary Analyses
+## Main Results
 
 ### Confirmed: news sentiment did not improve direction forecasts
 
@@ -67,6 +74,29 @@ instead. A rule that always predicts “up” has AUC 0.5000 and provides no use
 In this sample, the daily sentiment measures did not tell us which sectors would rise next.
 
 Source: [`outputs/model_comparison_all.csv`](outputs/model_comparison_all.csv).
+
+### Descriptive timing result: tone aligned modestly with same-session returns
+
+A surprising news item can move prices quickly. That is different from asking whether its tone
+predicts the next trading session. To examine the first idea at the resolution available here, we
+compared pre-open tone with the equal-weight return of nine long-running sector ETFs in the
+close-to-close session around the news and in the session that followed.
+
+Here, “same session” means the previous close to the current close; “following session” means the
+current close to the next close. News arrives inside the first window.
+
+RavenPack and FinBERT tone had small positive same-session correlations of 0.078 and 0.068. Their
+following-session correlations were 0.008 and −0.006, both near zero. The 95% uncertainty ranges
+were [0.039, 0.112] and [0.027, 0.105] for the same session; both following-session ranges included
+zero. Nearby trading days were resampled together in 21-session blocks. A correlation of zero would
+mean no linear relationship. The pattern is consistent with information being reflected quickly,
+but it is not proof of a causal market reaction or a tradeable forecast. The data are daily, and the
+news window overlaps the overnight part of the same-session return, so this study cannot measure a
+response within seconds. Some stories may also recap a move already underway or respond to the same
+event that moved prices.
+
+Source: [`outputs/report_sentiment_reaction_window.csv`](outputs/report_sentiment_reaction_window.csv).
+Rebuild: [`src/report_reaction_metrics.py`](src/report_reaction_metrics.py).
 
 ### Confirmed statistical result: lagged volatility separated large and small full-session moves
 
@@ -97,12 +127,13 @@ number should be read as proof on its own.
 
 The full setup improved from a 0.5507 baseline containing lagged volatility and trailing 20-session
 news flow to 0.5604 after current news volume was added, a gain of +0.0097. Most of the useful
-information still came from recent price movement. An independent audit of the saved results used
-paired resampling on that gain and included zero improvement; the gain was also concentrated in
-2024 and 2025. The careful interpretation is therefore: **current news volume may add a small amount
-of information about move size, but the evidence is not yet stable enough to call it a general
-rule.** Because the news and target intervals overlap, some of the gain may reflect the market's
-overnight reaction to the same news rather than information about a future return.
+information still came from recent price movement. The saved p-value tests the full specification
+against shifted versions of the current-news features; it is not a paired uncertainty range for the
++0.0097 increment, and the row-level predictions needed for that paired check were not preserved.
+The careful interpretation is therefore: **current news volume may add a small amount of
+information about move size, but the evidence is not yet stable enough to call it a general rule.**
+Because the news and target intervals overlap, some of the gain may reflect the market's overnight
+reaction to the same news rather than information about a future return.
 
 Source: [`outputs/grid_metrics_2015_2026.csv`](outputs/grid_metrics_2015_2026.csv).
 
@@ -163,8 +194,8 @@ the return begins; it does not show that news caused returns or that the strateg
 Sources: [`outputs/v5_autoformer_daily_metrics.csv`](outputs/v5_autoformer_daily_metrics.csv) and
 [`outputs/v5_autoformer_delayed_outcome_metrics.csv`](outputs/v5_autoformer_delayed_outcome_metrics.csv).
 These aggregate files preserve the executed values without licensed text. The exploratory V5 source
-notebook is excluded from the public release because its saved cells contain licensed or sensitive
-material.
+notebook is outside the supported public reproduction path and must be sanitized or omitted before
+release because its saved cells contain licensed or sensitive material.
 
 ## What We Can Conclude
 
@@ -173,6 +204,12 @@ material.
 - RavenPack and FinBERT sentiment did not improve next-session sector direction forecasts.
 - In the open-time association test, lagged volatility helped distinguish large from small
   full-session moves.
+
+**Descriptive timing result—not a causal claim:**
+
+- More positive RavenPack and FinBERT tone had small positive relationships with the same
+  close-to-close session, but almost none with the following session. Daily data cannot determine
+  whether news caused the move or whether the response happened within seconds.
 
 **Preliminary—not confirmed:**
 
@@ -186,9 +223,10 @@ material.
 - that the M2–M7 results show an effect from real FinBERT information in this execution; or
 - that news is the cause of the overnight relationship.
 
-Taken together, the evidence supports a cautious ending: the primary direction result is negative,
-lagged volatility is associated with same-session move size, the extra news-volume gain is
-preliminary, and V5 does not support an executable overnight forecast.
+Taken together, the evidence supports a cautious ending: sentiment aligns modestly with the session
+around its arrival but does not add a reliable next-session direction forecast; lagged volatility is
+associated with same-session move size; the extra news-volume gain is preliminary; and V5 does not
+support an executable overnight forecast.
 
 ## Data and Study Scope
 
@@ -208,6 +246,9 @@ nine long-running sectors are used when a full-period comparison is required.
 
 - RavenPack story coverage changes sharply around 2017: about 138,000 stories in 2015, 96,000 in
   2017, and 59,000 in 2018. A raw news count can therefore partly reflect a vendor coverage change.
+- The pre-open rule uses clock time. It excludes weekend and holiday stories posted between 9:30
+  a.m. and 4:00 p.m. even when the stock market was closed, so the timing comparison does not cover
+  every story published between two sessions.
 - Overnight gaps account for about 40.9% of the combined average absolute overnight and intraday
   component movement. This makes the timing window important, but it does not make a signal
   available before the gap begins.
@@ -243,9 +284,9 @@ python -m pytest tests/ -q
 python run_training.py --list
 ```
 
-The test suite currently contains 36 tests. In a public clone, `--list` will show that the private
-raw inputs for the cleaning step are missing; that is expected. The prepared
-`data/model_inputs_2015_2026.csv` file should be present.
+The test suite checks the shared cleaning, evaluation, and report-figure code. In a public clone,
+`--list` will show that the private raw inputs for the cleaning step are missing; that is expected.
+The prepared `data/model_inputs_2015_2026.csv` file should be present.
 
 ### Rerun the grid from the prepared table
 
@@ -263,6 +304,31 @@ The training command writes:
 The 250-permutation run can take many minutes and overwrites both files. Start from a clean checkout
 if you want to compare a rerun with the committed result. These commands do not regenerate the
 direction-model table, the V5 matrix, or the V5 timing figure.
+
+### Rebuild the report figures
+
+The report figures use saved aggregate tables. To refresh the sentiment-timing aggregate from the
+prepared daily table and then rebuild the figures, run:
+
+```bash
+python -m src.report_reaction_metrics
+python -m src.capstone_report_figures
+```
+
+The first command writes `outputs/report_sentiment_reaction_window.csv`. The second creates four
+body figures and one appendix figure under `docs/assets/`. The report folder is intentionally kept
+out of the public repository, but the figure code and aggregate values behind each chart remain
+available for review.
+
+The paired uncertainty ranges for the direction comparison can also be rebuilt from the saved
+holdout predictions:
+
+```bash
+python -m src.report_audit_metrics
+```
+
+This uses a fixed seed and 2,000 paired 21-session block resamples, then writes only the aggregate
+report statistics to `outputs/report_directional_paired_auc_lift.csv`.
 
 ### Full statistical-grid rebuild from licensed data
 
@@ -301,8 +367,9 @@ outputs/                   saved metrics and figures
 tests/                     checks for the shared cleaning and evaluation code
 ```
 
-The exploratory V5 source notebook is excluded from the public release because its saved cells
-contain licensed or sensitive material. The primary move-size analysis is in
+The exploratory root V4 and V5 notebooks are not part of the supported public reproduction path.
+They must be sanitized or omitted before a public release because their saved cells contain
+licensed or sensitive material. The primary move-size analysis is in
 [`notebooks/4_model/11_news_flow_magnitude_model.ipynb`](notebooks/4_model/11_news_flow_magnitude_model.ipynb).
 The earlier seven-year Autoformer study is in
 [`notebooks/4_model/12_autoformer_extended_test.ipynb`](notebooks/4_model/12_autoformer_extended_test.ipynb).
