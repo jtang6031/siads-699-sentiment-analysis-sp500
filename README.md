@@ -33,7 +33,7 @@ next-session direction forecasts, tone had a small same-session association with
 lagged volatility was associated with full-session move size. The possible news-volume gain is
 preliminary, while V5 remains an exploratory diagnostic.
 
-## The Question in Everyday Language
+## Question 
 
 A **sector ETF** is a fund that follows one broad industry, such as technology, energy, or health
 care. **News sentiment** describes whether financial news sounds positive, negative, or neutral.
