@@ -304,31 +304,6 @@ The 250-permutation run can take many minutes and overwrites both files. Start f
 if you want to compare a rerun with the committed result. These commands do not regenerate the
 direction-model table, the V5 matrix, or the V5 timing figure.
 
-### Rebuild the report figures
-
-The report figures use saved aggregate tables. To refresh the sentiment-timing aggregate from the
-prepared daily table and then rebuild the figures, run:
-
-```bash
-python -m src.report_reaction_metrics
-python -m src.capstone_report_figures
-```
-
-The first command writes `outputs/report_sentiment_reaction_window.csv`. The second creates four
-body figures and one appendix figure under `docs/assets/`. The report folder is intentionally kept
-out of the public repository, but the figure code and aggregate values behind each chart remain
-available for review.
-
-The paired uncertainty ranges for the direction comparison can also be rebuilt from the saved
-holdout predictions:
-
-```bash
-python -m src.report_audit_metrics
-```
-
-This uses a fixed seed and 2,000 paired 21-session block resamples, then writes only the aggregate
-report statistics to `outputs/report_directional_paired_auc_lift.csv`.
-
 ### Full statistical-grid rebuild from licensed data
 
 A complete rebuild requires a WRDS account with access to RavenPack and CRSP, internet access for
