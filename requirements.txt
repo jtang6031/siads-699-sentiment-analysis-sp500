@@ -1,24 +1,40 @@
-wrds
-psycopg2-binary
+# Runtime dependencies for the SIADS 699 capstone repo.
+# Every package below is imported by code in src/, tests/, notebooks/,
+# run_pipeline.py, or run_training.py. Standard-library modules are not listed.
+
+# --- Data access (WRDS / RavenPack / CRSP, market and macro series) ---
+wrds                      # notebooks/1_extract/*, notebooks/3_explore/* -- WRDS session
+psycopg2-binary           # Postgres driver behind wrds; preflight check in run_pipeline.py
+yfinance                  # ETF price fallback in notebooks/4_model/12_autoformer_extended_test.ipynb
+pandas-datareader         # FRED macro series (pandas_datareader.data)
+
+# --- Core data handling ---
 pandas
 numpy
+pyarrow                   # parquet read/write for the raw news + price caches
+pandas_market_calendars   # NYSE session mapping in 01_ravenpack_news_extraction.ipynb
+
+# --- Modeling ---
+scikit-learn              # src/model_lib.py logistic pipeline, metrics
+scipy                     # scipy.stats significance tests
+torch                     # FinBERT inference; Autoformer experiment
+transformers              # FinBERT tokenizer/model in 07_finbert_sentiment_scoring.ipynb
+
+# --- Figures and report output ---
 matplotlib
-seaborn
-scikit-learn
-scipy
-pytest
-pyarrow
-pandas_market_calendars
+seaborn                   # notebooks/3_explore EDA charts
+tabulate                  # backend for DataFrame.to_markdown() in model notebooks
+reportlab                 # src/report_pdf.py final report PDF build
+
+# --- Notebook execution (run_pipeline.py executes notebooks headlessly) ---
 nbformat
 nbclient
-nbconvert
-ipykernel
-ipython
-torch
-transformers
-yfinance
-pandas-datareader
-tabulate
-google-genai
-pydantic
+ipykernel                 # provides the "python3" kernel NotebookClient launches
+ipython                   # IPython.display.display in notebooks/4_model/*
 
+# --- LLM sentiment scoring (Corrected_SIADS_699_Capstone_Features_v5.ipynb) ---
+google-genai
+pydantic                  # structured-output schema for the LLM scoring calls
+
+# --- Testing ---
+pytest
