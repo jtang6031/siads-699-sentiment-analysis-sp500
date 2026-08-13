@@ -94,9 +94,6 @@ news window overlaps the overnight part of the same-session return, so this stud
 response within seconds. Some stories may also recap a move already underway or respond to the same
 event that moved prices.
 
-Source: [`outputs/report_sentiment_reaction_window.csv`](outputs/report_sentiment_reaction_window.csv).
-Rebuild: [`src/report_reaction_metrics.py`](src/report_reaction_metrics.py).
-
 ### Confirmed statistical result: lagged volatility separated large and small full-session moves
 
 This second test classifies whether the equal-weight sector average had a large or small

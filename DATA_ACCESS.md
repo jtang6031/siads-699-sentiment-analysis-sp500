@@ -51,7 +51,6 @@ included with this repository.
 - **Owner:** RavenPack. Distributed to subscribing institutions through WRDS.
 - **Access:** University of Michigan WRDS subscription, academic use only.
 - **Tables used:** `rpna.rpa_djpr_global_macro_{year}` (macro news events),
-  `rpna.rpa_djpr_equities_{year}` (firm-level news events), `rpna.rpa_entity_mapping`,
   `rpna.rpa_source_list`.
 - **Window pulled:** configured `2015-01-01` through `2026-12-31`; the reported study window ends
   `2025-12-31`.
@@ -59,8 +58,7 @@ included with this repository.
   sentiment scores. Headline text was used as FinBERT input but is not published.
 - **Redistribution:** **Not permitted.** Raw event records, article text, and licensed headlines
   are excluded from this repository and written only to the gitignored `data/raw/` directory.
-- **Collected in:** [notebooks/1_extract/01_ravenpack_news_extraction.ipynb](notebooks/1_extract/01_ravenpack_news_extraction.ipynb),
-  [notebooks/1_extract/01b_ravenpack_equity_news_extraction.ipynb](notebooks/1_extract/01b_ravenpack_equity_news_extraction.ipynb)
+- **Collected in:** [notebooks/1_extract/01_ravenpack_news_extraction.ipynb](notebooks/1_extract/01_ravenpack_news_extraction.ipynb)
 
 ### 2. CRSP US Stock Database (via WRDS, `crsp` library)
 
