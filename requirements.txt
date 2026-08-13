@@ -24,7 +24,6 @@ transformers              # FinBERT tokenizer/model in 07_finbert_sentiment_scor
 matplotlib
 seaborn                   # notebooks/3_explore EDA charts
 tabulate                  # backend for DataFrame.to_markdown() in model notebooks
-reportlab                 # src/report_pdf.py final report PDF build
 
 # --- Notebook execution (run_pipeline.py executes notebooks headlessly) ---
 nbformat
