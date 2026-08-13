@@ -283,7 +283,7 @@ python -m pytest tests/ -q
 python run_training.py --list
 ```
 
-The test suite checks the shared cleaning, evaluation, and report-figure code. In a public clone,
+The test suite checks the shared cleaning and evaluation code. In a public clone,
 `--list` will show that the private raw inputs for the cleaning step are missing; that is expected.
 The prepared `data/model_inputs_2015_2026.csv` file should be present.
 
@@ -331,7 +331,7 @@ public repository.
 ```text
 run_pipeline.py            collects the licensed source data in notebook order
 run_training.py            prepares the modeling table and reruns the statistical grid
-src/                       shared cleaning, evaluation, path, and figure code
+src/                       shared cleaning and evaluation code
 notebooks/1_extract/       RavenPack news and CRSP market-data collection
 notebooks/2_prepare/       data checks and FinBERT text scoring
 notebooks/3_explore/       exploratory analysis
