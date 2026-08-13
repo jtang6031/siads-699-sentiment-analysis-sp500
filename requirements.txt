@@ -31,7 +31,7 @@ nbclient
 ipykernel                 # provides the "python3" kernel NotebookClient launches
 ipython                   # IPython.display.display in notebooks/4_model/*
 
-# --- LLM sentiment scoring (Corrected_SIADS_699_Capstone_Features_v5.ipynb) ---
+# --- LLM sentiment scoring (SIADS_699_Capstone_Features_LLM_vfinal.ipynb) ---
 google-genai
 pydantic                  # structured-output schema for the LLM scoring calls
 

@@ -95,7 +95,7 @@ included with this repository.
 - **Yahoo Finance**, accessed via the third-party `yfinance` package, used as a price fallback.
   Yahoo Finance data is subject to Yahoo's terms of service and is **not** redistributed here.
 
-These appear only in `Corrected_SIADS_699_Capstone_Features_v5.ipynb` and
+These appear only in `SIADS_699_Capstone_Features_LLM_vfinal.ipynb` and
 [notebooks/4_model/12_autoformer_extended_test.ipynb](notebooks/4_model/12_autoformer_extended_test.ipynb),
 which the README identifies as exploratory and outside the supported public reproduction path.
 

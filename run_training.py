@@ -10,9 +10,8 @@ Run this after run_pipeline.py. The two are separate because cleaning and traini
 different clocks: the data pull takes hours and changes rarely, while the grid gets re-run whenever
 a spec or a control changes.
 
-The transforms live in ml/cleaning_lib.py and the harness in ml/model_lib.py, both unit-tested, so
-this file is orchestration only. Notebook 11 imports the same harness -- one implementation, so a
-number cannot move because the measurement quietly drifted.
+The transforms live in src/cleaning_lib.py and the harness in src/model_lib.py. Both are
+unit-tested, so this file is orchestration only.
 """
 from __future__ import annotations
 
