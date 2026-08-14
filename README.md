@@ -320,8 +320,13 @@ python run_training.py --stage train --n-perm 250 --seed 20260807
 
 This rebuild uses the source dates configured in the extraction notebooks. Align their end date with
 December 31, 2025 before comparing with the published sample. It does not rerun the separate
-direction or V5 notebooks. The raw RavenPack and FinBERT files are intentionally excluded from the
-public repository.
+direction or V5 notebooks.
+
+You do not have to run this rebuild to reproduce the results. The extracted RavenPack news cache and
+the FinBERT/LLM scoring outputs are already included in this repository under `data/`, so a reviewer
+can go straight to training and evaluation. See
+[Data Access and Licensing](#data-access-and-licensing) for why that data is included and the terms
+under which it is held.
 
 ## Project Guide
 
@@ -333,7 +338,8 @@ notebooks/1_extract/       RavenPack news and CRSP market-data collection
 notebooks/2_prepare/       data checks and FinBERT text scoring
 notebooks/3_explore/       exploratory analysis
 notebooks/4_model/         direction, move-size, and Autoformer models
-data/                      prepared public tables; licensed raw files stay private
+data/                      prepared tables, plus the cached news and LLM scoring inputs
+data/llm_files/            extracted news cache and LLM/FinBERT scoring artifacts (see below)
 outputs/                   saved metrics and figures
 tests/                     checks for the shared cleaning and evaluation code
 ```
@@ -364,8 +370,21 @@ The earlier seven-year Autoformer study is in
 
 ## Data Access and Licensing
 
-RavenPack data is licensed for academic use only. Raw event records, article text, licensed
-headlines, and WRDS exports must not be published. Credentials must never appear in code, notebook
-cells, saved notebook output, or version history. The public repository should contain only code,
-prepared non-licensed tables, aggregated statistics, and figures that do not reproduce licensed
-text.
+RavenPack and CRSP data reach this project through Wharton Research Data Services (WRDS) under the
+University of Michigan's institutional subscription, and are used for academic research only.
+Full detail on sources, ownership, and how we connected is in [DATA_ACCESS.md](DATA_ACCESS.md).
+
+**Why the extracted data is included here.** This repository is private. It includes the extracted
+RavenPack news cache and the FinBERT/LLM scoring outputs under `data/` so that the project can be
+run end to end without repeating the collection work. Re-running the WRDS extraction and the FinBERT
+scoring pass takes many hours, needs an entitled WRDS account, and benefits from a CUDA-capable GPU.
+Shipping those artifacts means a reviewer can run training and evaluation directly and still
+reproduce the reported results.
+
+That data is held here for this project's own use and is **not shared, published, or redistributed
+anywhere else**. Credentials must never appear in code, notebook cells, saved notebook output, or
+version history.
+
+**Before making this repository public**, the licensed material under `data/llm_files/` — the
+RavenPack news caches with headline text and the LLM batch inputs built from them — must be removed,
+and removed from git history as well, not just from the current commit.

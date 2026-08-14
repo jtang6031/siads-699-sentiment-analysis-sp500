@@ -56,8 +56,10 @@ included with this repository.
   `2025-12-31`.
 - **Fields used:** event timestamps, relevance, entity identifiers, and RavenPack's structured
   sentiment scores. Headline text was used as FinBERT input but is not published.
-- **Redistribution:** **Not permitted.** Raw event records, article text, and licensed headlines
-  are excluded from this repository and written only to the gitignored `data/raw/` directory.
+- **Held in this repository:** the extracted news cache under `data/llm_files/` includes row-level
+  event records with headline text. It is included so the project can be run without repeating the
+  multi-hour WRDS extraction (see [Why the extracted data is included](#why-the-extracted-data-is-included)).
+  This repository is private and the data is not shared or published anywhere else.
 - **Collected in:** [notebooks/1_extract/01_ravenpack_news_extraction.ipynb](notebooks/1_extract/01_ravenpack_news_extraction.ipynb)
 
 ### 2. CRSP US Stock Database (via WRDS, `crsp` library)
@@ -70,8 +72,9 @@ included with this repository.
 - **Coverage:** 11 SPDR sector ETFs — XLK, XLV, XLF, XLC, XLY, XLI, XLP, XLE, XLU, XLB, XLRE —
   over 2015-01-01 through 2025-12-31 (29,362 daily fund observations).
 - **Fields used:** daily return, closing price, opening price, trading volume, and `permno`.
-- **Redistribution:** **Not permitted.** The raw CRSP pull is written only to the gitignored
-  `data/raw/` directory.
+- **Held in this repository:** the daily ETF panel is included under `data/` and
+  `data/llm_files/cache/sector_prices.parquet` for the same efficiency reason. Private repository,
+  not shared or published elsewhere.
 - **Collected in:** [notebooks/1_extract/02_crsp_sector_etf_price_extraction.ipynb](notebooks/1_extract/02_crsp_sector_etf_price_extraction.ipynb)
 
 ### 3. FinBERT sentiment scores — derived by this project
@@ -82,9 +85,11 @@ included with this repository.
 - **What we derived:** positive / negative / neutral probabilities for each distinct headline in
   the RavenPack extract, reduced to a per-headline sentiment score and then aggregated to a daily
   series. This is the only data product this project created rather than obtained.
-- **Important:** the scores are derived *from licensed RavenPack text*. The per-headline score file
-  (`data/raw/finbert_scores.csv`) is row-aligned to licensed records and is therefore **not
-  published**. Only the daily aggregate is committed.
+- **Held in this repository:** the daily aggregate is in `data/finbert_daily_df.csv`, and the LLM
+  scoring artifacts are under `data/llm_files/`. These are included so the scoring pass — which needs
+  a GPU and several hours — does not have to be repeated. The scores derive from licensed RavenPack
+  text, so they are held under the same terms as the source: private repository, not shared or
+  published elsewhere.
 - **Produced in:** [notebooks/2_prepare/07a_llm_scoring_input_prep.ipynb](notebooks/2_prepare/07a_llm_scoring_input_prep.ipynb),
   [notebooks/2_prepare/07_finbert_sentiment_scoring.ipynb](notebooks/2_prepare/07_finbert_sentiment_scoring.ipynb)
 
@@ -99,9 +104,23 @@ These appear only in `SIADS_699_Capstone_Features_LLM_vfinal.ipynb` and
 [notebooks/4_model/12_autoformer_extended_test.ipynb](notebooks/4_model/12_autoformer_extended_test.ipynb),
 which the README identifies as exploratory and outside the supported public reproduction path.
 
-## What is committed to this repository
+## Why the extracted data is included
 
-Licensed row-level source records are **not** committed. The files in [data/](data/) are:
+This repository is **private**. It deliberately includes the extracted source data and the scoring
+artifacts so the project can be reproduced without repeating the collection work.
+
+Rebuilding those inputs from scratch requires an entitled WRDS account, one query per year against
+RavenPack, and a FinBERT scoring pass over roughly 600,000 distinct texts that is many hours of
+work and benefits from a CUDA-capable GPU. Including the extracts means a reviewer can clone the
+repository, install the requirements, and run training and evaluation directly — the collection
+stages become optional rather than mandatory.
+
+This data is held for this project's use only. It is **not shared, published, or redistributed
+anywhere outside this private repository.**
+
+## What is in this repository
+
+Session-level aggregates in [data/](data/):
 
 | File | Rows | Grain | Content |
 |---|---:|---|---|
@@ -111,24 +130,41 @@ Licensed row-level source records are **not** committed. The files in [data/](da
 | `market_daily_df.csv` | 29,362 | one row per ETF per session | CRSP daily price, return, volume, `permno` |
 | `model_daily_panel.csv` | 29,362 | one row per ETF per session | The above joined to daily news aggregates |
 
-The three session-level files contain only aggregated statistics — no story identifiers, no
-headline text, and no per-record RavenPack fields. They do not permit reconstruction of the
-licensed source records.
+Extracted source data and scoring artifacts in [data/llm_files/](data/llm_files/):
 
-> **Note on the two ETF-level files.** `market_daily_df.csv` and `model_daily_panel.csv` carry
-> CRSP daily price, return, volume, and `permno` values at their original row grain rather than as
-> aggregates. Anyone preparing this repository for distribution beyond the course should confirm
-> with the University of Michigan WRDS representative or CRSP that publishing these specific fields
-> is acceptable, and remove or further aggregate them if it is not. The reproduction path described
-> in the README depends only on `model_inputs_2015_2026.csv`.
+| File | Size | Content |
+|---|---:|---|
+| `cache/macro_news_{2015..2025}.parquet` | ~83 MB | RavenPack event records **including headline text** |
+| `cache/macro_news_all.parquet` | 82 MB | The eleven yearly files combined (1,199,890 rows) |
+| `cache/sector_prices.parquet` | 1.3 MB | CRSP daily OHLCV for the eleven sector ETFs |
+| `llm_batch_input.jsonl` | 28 MB | Gemini batch prompts, containing RavenPack headlines |
+| `llm_batch_output.jsonl` | 32 MB | Model-generated sector attribution scores |
+| `llm_monthly_input.jsonl` | 6.5 MB | Monthly digest prompts, containing RavenPack headlines |
+| `llm_monthly_output.jsonl` | 1.0 MB | Model-generated monthly themes |
+| `llm_sector_scores.parquet`, `llm_processed_ids.parquet`, `llm_monthly_themes.parquet`, `llm_sample_scores.parquet` | ~5 MB | Scoring outputs and resume state |
+| `final_engineered_m6_panel.parquet` | 12 MB | Engineered modeling panel for the V5 study |
+| `feature_sets.json` | small | Feature-set definitions for the V5 models |
+
+The files marked as containing headline text hold licensed RavenPack material at row grain. They
+are present for the efficiency reason above and are covered by the same restriction: private
+repository, no external sharing.
 
 Outputs in [outputs/](outputs/) are model metrics and figures. They contain no licensed text.
+
+> **Before making this repository public.** The licensed material under `data/llm_files/` — the
+> news caches with headline text and the LLM batch inputs built from them — must be removed from
+> the working tree **and from git history**, since a plain deletion leaves the data recoverable in
+> earlier commits. `market_daily_df.csv` and `model_daily_panel.csv` also carry CRSP fields at their
+> original row grain and should be reviewed at the same time. The reproduction path described in the
+> README depends only on `model_inputs_2015_2026.csv`.
 
 ## Obligations we observe
 
 - WRDS data is used for academic research only, consistent with the terms attached to the
   University of Michigan subscription.
-- No RavenPack or CRSP record-level data is redistributed in this repository or in the report.
+- The extracted RavenPack and CRSP records held in this private repository are used solely for this
+  project. They are not shared, published, or redistributed outside it, and no licensed headline
+  text is reproduced in the report or in any figure.
 - No credentials appear in code, notebook output, or version history.
 - The exploratory V4 and V5 root notebooks contain licensed or sensitive material in their saved
   cells and must be sanitized or removed before any public release, as noted in the README.
