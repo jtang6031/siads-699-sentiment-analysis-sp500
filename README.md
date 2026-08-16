@@ -254,35 +254,56 @@ nine long-running sectors are used when a full-period comparison is required.
 - The 2015–2019 period had 12.7% annualized volatility, compared with 19.9% in 2020–2025. A result
   that appears only in the later years may not carry into calmer markets.
 
-## Reproduce the Statistical Grid
+## How to Run This Repo
 
-### Set up a local environment
+### 1. Requirements and setup
 
-Create and activate an isolated Python environment first:
+**Python 3.11 or 3.12.** The committed results were produced on 3.11 and 3.12, and the test suite is
+verified on 3.12.10. Do not use Python 3.14: several pinned dependencies have no prebuilt wheel for
+it yet, so `pip` falls back to compiling pandas from source and the install fails unless you have a
+C++ toolchain installed.
+
+Create and activate an isolated environment, then install the dependencies:
 
 ```bash
-python -m venv venv
+# Windows PowerShell  (use the py launcher to pick the interpreter)
+py -3.12 -m venv venv
+venv\Scripts\Activate.ps1
 
 # macOS or Linux
+python3.12 -m venv venv
 source venv/bin/activate
-
-# Windows PowerShell
-venv\Scripts\Activate.ps1
 
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-### Quick code check without licensed data
+Expect the install to take a few minutes and several GB on disk, most of it `torch`. If `pip` is not
+found as a bare command, use `python -m pip` as shown above — it always resolves to the interpreter
+you are running.
+
+No credentials are needed for setup, or for step 2 and the grid rerun below. WRDS access is required
+only for the full rebuild described later.
+
+### 2. Verify the install
 
 ```bash
 python -m pytest tests/ -q
 python run_training.py --list
 ```
 
-The test suite checks the shared cleaning and evaluation code. In a public clone,
-`--list` will show that the private raw inputs for the cleaning step are missing; that is expected.
-The prepared `data/model_inputs_2015_2026.csv` file should be present.
+`pytest` should report **36 passing tests**, covering the shared cleaning and evaluation code in
+`src/`.
+
+`--list` prints each stage with its inputs and whether they are present. In a fresh clone the
+`clean` stage will show its inputs under `data/raw/` as **MISSING** — that is expected, because the
+row-level extraction files are gitignored. The prepared `data/model_inputs_2015_2026.csv` is
+committed and should show as present, which is all the grid rerun needs.
+
+> Run `run_training.py` with an explicit `--stage`. With no arguments it defaults to `--stage all`,
+> which begins with `clean` and will fail in a fresh clone for the reason above.
+
+## Reproduce the Statistical Grid
 
 ### Rerun the grid from the prepared table
 
