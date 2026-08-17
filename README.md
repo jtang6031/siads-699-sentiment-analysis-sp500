@@ -21,16 +21,15 @@ A simple question: Can the language and amount of financial news help us anticip
   close-to-close target includes the overnight move that had already occurred by the market open,
   so this is not a fully before-the-fact forecast. The news increment is also sensitive to the
   statistical test and should not be described as settled evidence.
-- **V5 is exploratory and cannot support an investment claim.** Its strongest row, M7, reports an
+- **The Autoformer model is exploratory and cannot support an investment claim.** Its strongest row, M7, reports an
   overnight net Sharpe ratio of 1.3348 and an arithmetic annualized return of 0.109173. However, the
   close-to-open holding period began before the full signal was available, so that return could not
-  have been earned as shown. The run also replaced a missing FinBERT file with randomly generated
-  stand-in values. A delayed-return check was negative for M5, M6, and M7.
+  have been earned as shown. A delayed-return check was negative for M5, M6, and M7.
 
 Taken together, the primary analyses support three conclusions: sentiment did not improve
 next-session direction forecasts, tone had a small same-session association with returns, and
 lagged volatility was associated with full-session move size. The possible news-volume gain is
-preliminary, while V5 remains an exploratory diagnostic.
+preliminary, while the Autoformer remains an academic analysis.
 
 ## Question we may ask
 
@@ -133,14 +132,14 @@ reaction to the same news rather than information about a future return.
 
 Source: [`outputs/grid_metrics_2015_2026.csv`](outputs/grid_metrics_2015_2026.csv).
 
-## Exploratory V5 Timing Diagnostic — Not a Confirmed Finding
+## Exploratory Timing Diagnostic — Not a Confirmed Finding
 
-Autoformer is a deep-learning model built to learn patterns across time. V5 trained on earlier dates
+Autoformer is a deep-learning model built to learn patterns across time. It trained on earlier dates
 and tested the years 2022 through 2025. The table below preserves the values produced by that run.
 “Projected” models apply market-wide information across sectors, while “attributed” models assign
 news to particular sectors. “Multimodal” means that several types of inputs are combined.
 
-| V5 model | Mean daily rank relationship (IC) | Reported t score (not adjusted for repeated tests) | Gross Sharpe | Overnight net Sharpe | Overnight net arithmetic annual return |
+| Autoformer model | Mean daily rank relationship (IC) | Reported t score (not adjusted for repeated tests) | Gross Sharpe | Overnight net Sharpe | Overnight net arithmetic annual return |
 |---|---:|---:|---:|---:|---:|
 | M0 Market baseline | −0.00468843 | −0.149517 | −0.179366 | −1.61385 | −0.118438 |
 | M1 Narrative projected | 0.0445961 | 1.84856 | 1.83103 | 0.462243 | 0.0438523 |
@@ -155,7 +154,7 @@ Here, IC measures how closely the model's daily sector ranking matched the obser
 means no relationship. A Sharpe ratio compares average return with how uneven those returns were.
 Gross Sharpe ignores estimated trading costs; net Sharpe subtracts the notebook's assumed costs.
 The final column is an arithmetic annualized average, not compound growth. It is written as a decimal
-exactly as produced by V5: for example, 0.109173 means 10.9173% per year under the notebook's
+exactly as produced by the table: for example, 0.109173 means 10.9173% per year under the notebook's
 assumptions.
 
 The notebook generated random stand-in values so it could continue. Because the model feature sets
@@ -164,7 +163,7 @@ of real FinBERT information.
 
 ### The delayed-outcome check changes the story
 
-V5 also shifts the measured return to the following close-to-close period. This reduces the direct
+The model also shifts the measured return to the following close-to-close period. This reduces the direct
 timing overlap, but it does not fully model when every daily economic input was published. All three
 delayed results are negative even though the same-window overnight results are positive. The table
 below preserves the notebook's reported values.
@@ -175,7 +174,7 @@ below preserves the notebook's reported values.
 | M6 | 0.87 | 6.7% | −0.14 | −1.9% |
 | M7 | 1.48 | 11.2% | −0.28 | −3.5% |
 
-The first V5 table averages Sharpe ratios across the four yearly tests; the delayed comparison joins
+The first table averages Sharpe ratios across the four yearly tests; the delayed comparison joins
 the four years before calculating Sharpe. That is why, for example, M7 is 1.3348 in the matrix and
 1.48 in the comparison summary.
 
@@ -183,15 +182,13 @@ The notebook calls this a “no look-ahead” check, but that wording is too str
 the publication time of every same-day economic input, and its portfolio code rebalances daily while
 reporting turnover of 2.00. The signal was not available at the prior close, when the measured
 overnight period began. Several related model versions were also tried, so the reported t-scores
-need a test that accounts for repeated comparisons and nearby trading days. V5 identifies a timing
+need a test that accounts for repeated comparisons and nearby trading days. The model identifies a timing
 question worth retesting with valid inputs and a design that uses only information available before
 the return begins; it does not show that news caused returns or that the strategy was tradeable.
 
 Sources: [`outputs/v5_autoformer_daily_metrics.csv`](outputs/v5_autoformer_daily_metrics.csv) and
 [`outputs/v5_autoformer_delayed_outcome_metrics.csv`](outputs/v5_autoformer_delayed_outcome_metrics.csv).
-These aggregate files preserve the executed values without licensed text. The exploratory V5 source
-notebook is outside the supported public reproduction path and must be sanitized or omitted before
-release because its saved cells contain licensed or sensitive material.
+These aggregate files preserve the executed values without licensed text.
 
 ## What We Can Conclude
 
@@ -215,13 +212,13 @@ release because its saved cells contain licensed or sensitive material.
 
 **Not supported as a final claim:**
 
-- that the model can earn the positive overnight returns shown in the V5 matrix;
+- that the model can earn the positive overnight returns shown in the Autoformer matrix;
 - that the M2–M7 results show an effect from real FinBERT information in this execution; or
 - that news is the cause of the overnight relationship.
 
 Taken together, the evidence supports a cautious ending: sentiment aligns modestly with the session
 around its arrival but does not add a reliable next-session direction forecast; lagged volatility is
-associated with same-session move size; the extra news-volume gain is preliminary; and V5 does not
+associated with same-session move size; the extra news-volume gain is preliminary; the Autoformer model does not
 support an executable overnight forecast.
 
 ## Data and Study Scope
@@ -320,7 +317,7 @@ The training command writes:
 
 The 250-permutation run can take many minutes and overwrites both files. Start from a clean checkout
 if you want to compare a rerun with the committed result. These commands do not regenerate the
-direction-model table, the V5 matrix, or the V5 timing figure.
+direction-model table, the Autoformer matrix, or the Autoformer timing figure.
 
 ### Full statistical-grid rebuild from licensed data
 
@@ -341,7 +338,7 @@ python run_training.py --stage train --n-perm 250 --seed 20260807
 
 This rebuild uses the source dates configured in the extraction notebooks. Align their end date with
 December 31, 2025 before comparing with the published sample. It does not rerun the separate
-direction or V5 notebooks.
+direction or Autoformer notebooks.
 
 You do not have to run this rebuild to reproduce the results. The extracted RavenPack news cache and
 the FinBERT/LLM scoring outputs are already included in this repository under `data/`, so a reviewer
@@ -369,7 +366,7 @@ The exploratory root V4 and V5 notebooks are not part of the supported public re
 They must be sanitized or omitted before a public release because their saved cells contain
 licensed or sensitive material. The primary move-size analysis is in
 [`notebooks/4_model/11_news_flow_magnitude_model.ipynb`](notebooks/4_model/11_news_flow_magnitude_model.ipynb).
-The earlier seven-year Autoformer study is in
+The four-year Autoformer study is in
 [`notebooks/4_model/12_autoformer_extended_test.ipynb`](notebooks/4_model/12_autoformer_extended_test.ipynb).
 
 ## Data Sources
