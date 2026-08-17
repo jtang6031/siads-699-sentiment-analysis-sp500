@@ -279,8 +279,8 @@ Expect the install to take a few minutes and several GB on disk, most of it `tor
 found as a bare command, use `python -m pip` as shown above — it always resolves to the interpreter
 you are running.
 
-No credentials are needed for setup, or for step 2 and the grid rerun below. WRDS access is required
-only for the full rebuild described later.
+No credentials are needed for setup, for step 2, or for the grid rerun in step 3. WRDS access is
+required only for the optional rebuild in step 4.
 
 ### 2. Verify the install
 
@@ -289,62 +289,164 @@ python -m pytest tests/ -q
 python run_training.py --list
 ```
 
-`pytest` should report **36 passing tests**, covering the shared cleaning and evaluation code in
-`src/`.
+`pytest` should report **36 passing tests** in about 30 seconds, covering the shared cleaning and
+evaluation code in `src/`.
 
-`--list` prints each stage with its inputs and whether they are present. In a fresh clone the
-`clean` stage will show its inputs under `data/raw/` as **MISSING** — that is expected, because the
-row-level extraction files are gitignored. The prepared `data/model_inputs_2015_2026.csv` is
-committed and should show as present, which is all the grid rerun needs.
+`--list` prints each stage with its inputs and whether they are present. In a fresh clone it should
+look like this:
 
-> Run `run_training.py` with an explicit `--stage`. With no arguments it defaults to `--stage all`,
-> which begins with `clean` and will fail in a fresh clone for the reason above.
+```text
+  clean   raw events + market panel -> model_inputs
+            in  data\raw\ravenpack_core_events_2015_2026.csv  (MISSING)
+            in  data\market_daily_df.csv  (exists)
+            in  data\raw\finbert_scores.csv  (MISSING)
+            out data\model_inputs_2015_2026.csv  (exists)
+  train   model_inputs -> grid metrics + figure
+            out outputs\grid_metrics_2015_2026.csv
+            out outputs\grid_summary_2015_2026.png
+```
 
-## Reproduce the Statistical Grid
+The two **MISSING** rows are expected. `data/raw/` is gitignored, so the row-level licensed extracts
+are not in the clone. The prepared `data/model_inputs_2015_2026.csv` is committed, and it is the only
+input step 3 needs.
 
-### Rerun the grid from the prepared table
+> Always pass an explicit `--stage` to `run_training.py`. With no arguments it defaults to
+> `--stage all`, which begins with `clean` and stops on the first MISSING input above.
 
-This path does not need WRDS credentials or raw licensed news:
+### 3. Reproduce the statistical grid
+
+This is the main reproduction path. It needs no credentials and no licensed news:
 
 ```bash
 python run_training.py --stage train --n-perm 250 --seed 20260807
 ```
 
-The training command writes:
+Expect roughly **20–25 minutes** on a laptop CPU. The run first checks itself against a signal
+planted by construction, then evaluates the six pre-registered specs:
 
-- `outputs/grid_metrics_2015_2026.csv`
-- `outputs/grid_summary_2015_2026.png`
+```text
+Harness self-test (planted signal): AUC 0.7519 (needs >= 0.65)
+  passed — splitting, fitting and scoring are sound.
 
-The 250-permutation run can take many minutes and overwrites both files. Start from a clean checkout
-if you want to compare a rerun with the committed result. These commands do not regenerate the
-direction-model table, the Autoformer matrix, or the Autoformer timing figure.
+1. RavenPack news flow               AUC=0.4902   clears perm only
+2. RavenPack tone                    AUC=0.4741   inside noise
+3. FinBERT tone                      AUC=0.5025   inside noise
+4. Trailing volatility (control)     AUC=0.5521   *** CLEARS BOTH ***
+5. Flow | vol + trailing flow        AUC=0.5604   *** CLEARS BOTH ***
+6. RavenPack news -> direction       AUC=0.5181   clears perm only
+```
 
-### Full statistical-grid rebuild from licensed data
+If the self-test fails, the grid is not run at all — that failure means the evaluation code is
+broken, not that the data lacks a signal.
 
-A complete rebuild requires a WRDS account with access to RavenPack and CRSP, internet access for
-the FinBERT model, substantial disk space, and preferably a CUDA-capable GPU for text scoring. Store
-the WRDS login in a local password file before running the collection steps:
+The command **overwrites** `outputs/grid_metrics_2015_2026.csv` and
+`outputs/grid_summary_2015_2026.png`. To compare a rerun against the committed result, copy the two
+files aside first, or restore them afterwards with
+`git checkout -- outputs/grid_metrics_2015_2026.csv outputs/grid_summary_2015_2026.png`.
+
+For a one-minute smoke test that the environment is wired correctly, lower the permutation count:
+
+```bash
+python run_training.py --stage train --n-perm 5
+```
+
+The six AUC point estimates are identical at any `--n-perm`. The confidence intervals and p-values
+are **not**, because the bootstrap and permutation draws come from a single seeded random stream, so
+changing the number of permutation draws shifts every later spec's draws. Only
+`--n-perm 250 --seed 20260807` reproduces the committed table.
+
+### 4. Rebuild the data from WRDS (optional)
+
+Only needed to regenerate `data/raw/` from source. It requires a WRDS account entitled to RavenPack
+and CRSP, internet access to download the FinBERT model, substantial disk space, and preferably a
+CUDA-capable GPU for text scoring. Budget several hours.
+
+Store the WRDS login in a local password file first — the notebooks run headless and cannot answer a
+password prompt:
 
 ```bash
 python -c "import wrds; wrds.Connection(wrds_username='YOUR_USERNAME').create_pgpass_file()"
 ```
 
+Then confirm the credentials and packages resolve before committing to a long run:
+
 ```bash
-python run_pipeline.py --check
+python run_pipeline.py --list     # the five stages and which outputs already exist
+python run_pipeline.py --check    # credentials, packages and paths only — runs nothing
+```
+
+`--check` connects to WRDS for real. A stored password that has expired fails here with
+`PAM authentication failed`; recreate the file with the command above.
+
+The five stages run in dependency order, each one a notebook executed in place:
+
+| Stage | Notebook | Produces | Needs |
+|---|---|---|---|
+| `news` | `1_extract/01_ravenpack_news_extraction.ipynb` | `data/raw/ravenpack_core_events_*.csv`, `data/news_daily_df.csv` | WRDS |
+| `prices` | `1_extract/02_crsp_sector_etf_price_extraction.ipynb` | `data/raw/crsp_sector_etf_daily_raw_*.csv`, `data/market_daily_df.csv` | WRDS |
+| `panel` | `2_prepare/03_data_quality_visual_qa.ipynb` | `data/model_daily_panel.csv` | — |
+| `scoring-input` | `2_prepare/07a_llm_scoring_input_prep.ipynb` | `data/raw/llm_scoring_input.csv`, `data/raw/llm_scoring_event_map.csv` | — |
+| `finbert` | `2_prepare/07_finbert_sentiment_scoring.ipynb` | `data/raw/finbert_scores.csv` | GPU (works on CPU, slowly) |
+
+Despite its name, `panel` is not optional — it builds `model_daily_panel.csv`. Run the full sequence:
+
+```bash
 python run_pipeline.py
 python run_training.py --stage clean
 python run_training.py --stage train --n-perm 250 --seed 20260807
 ```
 
-This rebuild uses the source dates configured in the extraction notebooks. Align their end date with
-December 31, 2025 before comparing with the published sample. It does not rerun the separate
-direction or Autoformer notebooks.
+### 5. Results the runners do not regenerate
 
-You do not have to run this rebuild to reproduce the results. The extracted RavenPack news cache and
-the FinBERT/LLM scoring outputs are already included in this repository under `data/`, so a reviewer
-can go straight to training and evaluation. See
-[Data Access and Licensing](#data-access-and-licensing) for why that data is included and the terms
-under which it is held.
+Steps 3 and 4 cover the statistical grid only. The other committed results come from notebooks that
+are run individually:
+
+| Result in this README | Produced by |
+|---|---|
+| Direction-model table (`outputs/model_comparison_all.csv`) | [`4_model/10_combined_sentiment_model.ipynb`](notebooks/4_model/10_combined_sentiment_model.ipynb) |
+| FinBERT-only comparison (`outputs/model_comparison_m0_m2.csv`) | [`4_model/09_finbert_sentiment_model.ipynb`](notebooks/4_model/09_finbert_sentiment_model.ipynb) |
+| Move-size analysis (`outputs/news_flow_magnitude_metrics.csv`) | [`4_model/11_news_flow_magnitude_model.ipynb`](notebooks/4_model/11_news_flow_magnitude_model.ipynb) |
+| Per-sector baselines (`outputs/sector_*.csv`) | [`4_model/07_all_sector_baseline_models.ipynb`](notebooks/4_model/07_all_sector_baseline_models.ipynb) |
+| Whole M0–M7 section, `fig1`–`fig3`, all of `data/llm_files/` | [`4_model/12_llm_autoformer_models.ipynb`](notebooks/4_model/12_llm_autoformer_models.ipynb) — see below |
+| `fig4_ls_portfolios.png`, `final_fig1`–`fig3` | No producer in this repo |
+
+Notebook 11 shares `src/model_lib.py` with `run_training.py`, so its move-size numbers and the
+grid's agree by construction.
+
+#### Notebook 12 carries the entire M0–M7 story
+
+[`notebooks/4_model/12_llm_autoformer_models.ipynb`](notebooks/4_model/12_llm_autoformer_models.ipynb)
+is the single most load-bearing notebook in the repo and the least reproducible. Everything in the
+[Exploratory V5 Timing Diagnostic](#exploratory-v5-timing-diagnostic--not-a-confirmed-finding)
+section traces back to it, and nothing else in the repo can regenerate any of it:
+
+- **Both V5 tables are transcribed from its printed output, not written to disk.** The eight-row
+  matrix comes from its `DAILY AUTOFORMER MATRIX (2022-2025)` cell; the delayed-outcome table comes
+  from its portfolio-simulation cell. `outputs/v5_autoformer_daily_metrics.csv` and
+  `outputs/v5_autoformer_delayed_outcome_metrics.csv` were created by hand from those tables — the
+  notebook has no `to_csv` call for either.
+- **It writes `fig1_auc_m0m7.png`, `fig2_auc_lift.png` and `fig3_movesize_auc.png` to the working
+  directory**, not to `outputs/report_figures/`. They were moved there manually after the run.
+- **It is the sole producer of every file in `data/llm_files/`** — the per-year `macro_news_*.parquet`
+  caches, the Gemini score caches, `final_engineered_m6_panel.parquet`, and `feature_sets.json`.
+
+M7 is `M3_FEATURES + LLM_FEATURES`: the ten market features, the six narrative features, the
+projected FinBERT score, and two Gemini sector-attributed features (`llm_sent_surprise`,
+`llm_sent_x_attention`). Its 0.5322 AUC in `fig1` is a seed-averaged, block-bootstrapped
+out-of-sample figure over the 2022–2025 walk-forward, against an **overnight** direction target.
+
+**Rerunning it is not a `python` command.** It is a Colab notebook: it `%pip install`s its own
+dependencies, `chdir`s to a `REPO_NAME` clone path, imports `google.colab`, pulls FRED and Yahoo
+series over the network, and needs a `GOOGLE_API_KEY` for the Gemini scoring pass. The Gemini scores
+are cached in `data/llm_files/llm_sector_scores.parquet`, so a rerun does not re-pay for scoring, but
+the notebook cannot be executed by `run_pipeline.py` and is not covered by the test suite.
+
+> **A rerun today still will not use real FinBERT data.** The notebook resolves
+> `FINBERT_PATH = DATA_DIR / "finbert_daily_df.csv"` where `DATA_DIR` is `./data/llm_files`, so it
+> looks for `data/llm_files/finbert_daily_df.csv`. The file is committed one directory up, at
+> `data/finbert_daily_df.csv`. The `.exists()` check therefore fails and the `else` branch fabricates
+> `np.random.normal(0, 0.2, ...)`, which every model from M2 up inherits through the shared feature
+> sets. This is a one-line path bug, not missing data — see [Known defects](#known-defects-in-notebook-12).
 
 ## Project Guide
 
