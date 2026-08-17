@@ -1,5 +1,7 @@
 data/raw/
-Basic_EDA_Analysis.executed.ipynb
+data/llm_files/cache/
+*_input.jsonl
+
 venv/
 myenv/
 .env

@@ -16,6 +16,25 @@ WRDS.
 Two supplementary public series (FRED and Yahoo Finance) appear only in the exploratory V5
 notebook, which is not part of the supported reproduction path.
 
+## What this repository publishes
+
+**This repository is public, and it does not contain raw WRDS extracts.** No RavenPack article text,
+and no row-level RavenPack event records, are published here. What is published is the *curated*
+layer: session-level aggregates, engineered modeling features, model outputs, and figures.
+
+The row-level licensed material is excluded by [.gitignore](.gitignore):
+
+```text
+data/raw/                  # RavenPack event extracts, CRSP daily extracts, FinBERT per-text scores
+data/llm_files/cache/      # the yearly and combined RavenPack news caches, with headline text
+*_input.jsonl              # LLM batch prompts, which embed headline text
+```
+
+Anyone reproducing the collection stages must pull that data themselves from WRDS under their own
+entitlement. See [What is in this repository](#what-is-in-this-repository) for the file-by-file
+split, and [Residual licensed identifiers](#residual-licensed-identifiers) for two categories that
+remain and are a deliberate judgment call.
+
 ## How we accessed the data
 
 Each team member used their own individual WRDS account, granted through their University of
@@ -55,11 +74,12 @@ included with this repository.
 - **Window pulled:** configured `2015-01-01` through `2026-12-31`; the reported study window ends
   `2025-12-31`.
 - **Fields used:** event timestamps, relevance, entity identifiers, and RavenPack's structured
-  sentiment scores. Headline text was used as FinBERT input but is not published.
-- **Held in this repository:** the extracted news cache under `data/llm_files/` includes row-level
-  event records with headline text. It is included so the project can be run without repeating the
-  multi-hour WRDS extraction (see [Why the extracted data is included](#why-the-extracted-data-is-included)).
-  This repository is private and the data is not shared or published anywhere else.
+  sentiment scores. Headline text was used as FinBERT and LLM input.
+- **Published here:** **nothing at row grain.** No headline text, no per-event records, no RavenPack
+  relevance or event-sentiment values at story level. Only daily aggregates computed from them —
+  counts, shares, and mean sentiment per session — appear in `data/news_daily_df.csv` and
+  `data/model_inputs_2015_2026.csv`. The row-level extract lives in gitignored `data/raw/` and
+  `data/llm_files/cache/` on team machines only.
 - **Collected in:** [notebooks/1_extract/01_ravenpack_news_extraction.ipynb](notebooks/1_extract/01_ravenpack_news_extraction.ipynb)
 
 ### 2. CRSP US Stock Database (via WRDS, `crsp` library)
@@ -72,9 +92,11 @@ included with this repository.
 - **Coverage:** 11 SPDR sector ETFs — XLK, XLV, XLF, XLC, XLY, XLI, XLP, XLE, XLU, XLB, XLRE —
   over 2015-01-01 through 2025-12-31 (29,362 daily fund observations).
 - **Fields used:** daily return, closing price, opening price, trading volume, and `permno`.
-- **Held in this repository:** the daily ETF panel is included under `data/` and
-  `data/llm_files/cache/sector_prices.parquet` for the same efficiency reason. Private repository,
-  not shared or published elsewhere.
+- **Published here:** the daily ETF panel is published in `data/market_daily_df.csv` and
+  `data/model_daily_panel.csv`, including the `permno` column — see
+  [Residual licensed identifiers](#residual-licensed-identifiers). These cover eleven exchange-traded
+  funds whose daily prices are also available from public sources; the CRSP-specific contribution is
+  the cleaning and the `permno` mapping. The raw extract under `data/raw/` is gitignored.
 - **Collected in:** [notebooks/1_extract/02_crsp_sector_etf_price_extraction.ipynb](notebooks/1_extract/02_crsp_sector_etf_price_extraction.ipynb)
 
 ### 3. FinBERT sentiment scores — derived by this project
@@ -85,11 +107,10 @@ included with this repository.
 - **What we derived:** positive / negative / neutral probabilities for each distinct headline in
   the RavenPack extract, reduced to a per-headline sentiment score and then aggregated to a daily
   series. This is the only data product this project created rather than obtained.
-- **Held in this repository:** the daily aggregate is in `data/finbert_daily_df.csv`, and the LLM
-  scoring artifacts are under `data/llm_files/`. These are included so the scoring pass — which needs
-  a GPU and several hours — does not have to be repeated. The scores derive from licensed RavenPack
-  text, so they are held under the same terms as the source: private repository, not shared or
-  published elsewhere.
+- **Published here:** the daily aggregate in `data/finbert_daily_df.csv`, and the model-generated
+  scoring outputs under `data/llm_files/`. These are scores, not text: no headline they were computed
+  from is reproduced. The per-text scores keyed to individual stories stay in gitignored
+  `data/raw/finbert_scores.csv`.
 - **Produced in:** [notebooks/2_prepare/07a_llm_scoring_input_prep.ipynb](notebooks/2_prepare/07a_llm_scoring_input_prep.ipynb),
   [notebooks/2_prepare/07_finbert_sentiment_scoring.ipynb](notebooks/2_prepare/07_finbert_sentiment_scoring.ipynb)
 
@@ -100,23 +121,51 @@ included with this repository.
 - **Yahoo Finance**, accessed via the third-party `yfinance` package, used as a price fallback.
   Yahoo Finance data is subject to Yahoo's terms of service and is **not** redistributed here.
 
-These appear only in `SIADS_699_Capstone_Features_LLM_vfinal.ipynb` and
-[notebooks/4_model/12_autoformer_extended_test.ipynb](notebooks/4_model/12_autoformer_extended_test.ipynb),
-which the README identifies as exploratory and outside the supported public reproduction path.
+These appear only in
+[notebooks/4_model/12_llm_autoformer_models.ipynb](notebooks/4_model/12_llm_autoformer_models.ipynb),
+which the README identifies as exploratory and outside the supported reproduction path.
 
-## Why the extracted data is included
+## What reproduction is still possible
 
-This repository is **private**. It deliberately includes the extracted source data and the scoring
-artifacts so the project can be reproduced without repeating the collection work.
+Excluding the row-level extracts costs less reproducibility than it might appear, because the
+curated layer is what the supported path actually consumes:
 
-Rebuilding those inputs from scratch requires an entitled WRDS account, one query per year against
-RavenPack, and a FinBERT scoring pass over roughly 600,000 distinct texts that is many hours of
-work and benefits from a CUDA-capable GPU. Including the extracts means a reviewer can clone the
-repository, install the requirements, and run training and evaluation directly — the collection
-stages become optional rather than mandatory.
+| Path | Needs WRDS? | Why |
+|---|---|---|
+| `run_training.py --stage train` | **No** | Reads only `data/model_inputs_2015_2026.csv`, which is published |
+| `run_training.py --stage clean` | Yes | Reads `data/raw/`, which was already gitignored before this repository went public |
+| `run_pipeline.py` (all five stages) | Yes | These *are* the collection stages; rebuilding `data/raw/` is their purpose |
+| Notebooks 05–11 | Mixed | The daily-aggregate notebooks run from published `data/*.csv`; those reading `data/raw/` do not |
+| Notebook 12, collection half | Yes | Reads the RavenPack news cache under `data/llm_files/cache/`, which is not published, so it falls through to its WRDS branch |
+| Notebook 12, modelling half | **No** | Resumes from the published `final_engineered_m6_panel.parquet` and `feature_sets.json`, and produces every M0–M7 table and figure from there |
 
-This data is held for this project's use only. It is **not shared, published, or redistributed
-anywhere outside this private repository.**
+In other words, the headline reproduction path in the README — install, test, rerun the statistical
+grid — works from a clean public clone with no credentials at all, and so does the entire Autoformer
+ablation provided it is started from its panel-reload cell rather than from the top. What requires
+WRDS is rebuilding the inputs, which required WRDS before as well.
+
+Rebuilding from scratch requires an entitled WRDS account, one query per year against RavenPack, and
+a FinBERT scoring pass over roughly 600,000 distinct texts that takes many hours and benefits from a
+CUDA-capable GPU.
+
+## Residual licensed identifiers
+
+Two categories of WRDS-derived identifier remain in published files. Both are deliberate, and both
+are recorded here rather than left implicit:
+
+1. **`rp_story_id` in the LLM scoring outputs.** `llm_sector_scores.parquet` (171,146 rows),
+   `llm_processed_ids.parquet` (151,524 rows) and `llm_sample_scores.parquet` (72 rows) are keyed by
+   RavenPack story ID. The *scores* are model-generated by this project; the ID is an opaque 32-hex
+   key carrying no text, no sentiment value and no metadata, and it is inert without a RavenPack
+   subscription. It is retained because dropping it would make the sector-attribution scores
+   impossible to rejoin and would silently break notebook 12's merge.
+2. **`permno` in the CRSP daily panel.** `market_daily_df.csv` and `model_daily_panel.csv` carry
+   CRSP's permanent security identifier alongside daily price, return and volume for eleven ETFs.
+
+Neither reproduces licensed *content*. If the reviewing instructor or WRDS would prefer these
+removed, the story IDs can be replaced with a salted hash applied consistently on both sides of the
+join, and `permno` can be dropped without affecting any model — no feature in
+`model_inputs_2015_2026.csv` derives from it.
 
 ## What is in this repository
 
@@ -130,44 +179,41 @@ Session-level aggregates in [data/](data/):
 | `market_daily_df.csv` | 29,362 | one row per ETF per session | CRSP daily price, return, volume, `permno` |
 | `model_daily_panel.csv` | 29,362 | one row per ETF per session | The above joined to daily news aggregates |
 
-Extracted source data and scoring artifacts in [data/llm_files/](data/llm_files/):
+Scoring artifacts and engineered features in [data/llm_files/](data/llm_files/):
 
 | File | Size | Content |
 |---|---:|---|
-| `cache/macro_news_{2015..2025}.parquet` | ~83 MB | RavenPack event records **including headline text** |
-| `cache/macro_news_all.parquet` | 82 MB | The eleven yearly files combined (1,199,890 rows) |
-| `cache/sector_prices.parquet` | 1.3 MB | CRSP daily OHLCV for the eleven sector ETFs |
-| `llm_batch_input.jsonl` | 28 MB | Gemini batch prompts, containing RavenPack headlines |
-| `llm_batch_output.jsonl` | 32 MB | Model-generated sector attribution scores |
-| `llm_monthly_input.jsonl` | 6.5 MB | Monthly digest prompts, containing RavenPack headlines |
+| `llm_batch_output.jsonl` | 32 MB | Model-generated sector attribution scores, keyed by story ID |
 | `llm_monthly_output.jsonl` | 1.0 MB | Model-generated monthly themes |
-| `llm_sector_scores.parquet`, `llm_processed_ids.parquet`, `llm_monthly_themes.parquet`, `llm_sample_scores.parquet` | ~5 MB | Scoring outputs and resume state |
+| `llm_sector_scores.parquet`, `llm_processed_ids.parquet`, `llm_sample_scores.parquet` | ~10 MB | Scoring outputs and resume state, keyed by `rp_story_id` |
+| `llm_monthly_themes.parquet` | 0.1 MB | Monthly theme labels, model-generated |
 | `final_engineered_m6_panel.parquet` | 12 MB | Engineered modeling panel for the V5 study |
 | `feature_sets.json` | small | Feature-set definitions for the V5 models |
 
-The files marked as containing headline text hold licensed RavenPack material at row grain. They
-are present for the efficiency reason above and are covered by the same restriction: private
-repository, no external sharing.
-
 Outputs in [outputs/](outputs/) are model metrics and figures. They contain no licensed text.
 
-> **Before making this repository public.** The licensed material under `data/llm_files/` — the
-> news caches with headline text and the LLM batch inputs built from them — must be removed from
-> the working tree **and from git history**, since a plain deletion leaves the data recoverable in
-> earlier commits. `market_daily_df.csv` and `model_daily_panel.csv` also carry CRSP fields at their
-> original row grain and should be reviewed at the same time. The reproduction path described in the
-> README depends only on `model_inputs_2015_2026.csv`.
+**Excluded by [.gitignore](.gitignore), not published:**
+
+| Path | Content |
+|---|---|
+| `data/raw/` | RavenPack event extracts with headline text, CRSP daily extracts, FinBERT per-text scores |
+| `data/llm_files/cache/macro_news_*.parquet` | 1,199,890 RavenPack event records with headline text, relevance, event sentiment and event taxonomy |
+| `data/llm_files/*_input.jsonl` | LLM batch prompts, which embed headline text verbatim |
+
+`data/llm_files/cache/sector_prices.parquet` (CRSP daily OHLCV) is excluded by the same `cache/`
+rule. It carries no licensed identifier, but it is regenerated by the notebook that used it, so it
+was not worth a narrower exception.
 
 ## Obligations we observe
 
 - WRDS data is used for academic research only, consistent with the terms attached to the
   University of Michigan subscription.
-- The extracted RavenPack and CRSP records held in this private repository are used solely for this
-  project. They are not shared, published, or redistributed outside it, and no licensed headline
-  text is reproduced in the report or in any figure.
+- Row-level RavenPack and CRSP extracts are **not redistributed**. They remain on team machines
+  under gitignored paths, and no licensed headline text appears in this repository, in the report,
+  or in any figure.
 - No credentials appear in code, notebook output, or version history.
-- The exploratory V4 and V5 root notebooks contain licensed or sensitive material in their saved
-  cells and must be sanitized or removed before any public release, as noted in the README.
+- Notebook saved cells are treated as published output: any cell that would print licensed headline
+  text must be cleared before commit, not merely scrolled past.
 - FinBERT is used under Apache 2.0; the model is attributed above and its weights are not
   redistributed here (they download from Hugging Face at runtime).
 

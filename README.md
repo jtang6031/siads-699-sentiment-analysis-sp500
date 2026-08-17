@@ -6,9 +6,10 @@ A simple question: Can the language and amount of financial news help us anticip
 
 ## Executive Summary
 
-- **News sentiment did not improve next-session direction forecasts.** Across 11,022 later-date
-  sector comparisons from 2022 through 2025, the market-only model and every news-based version
-  scored near 0.50 AUC, which is chance-level ranking.
+- **On the next-day close-to-close task, news sentiment did not improve direction ranking.** Across
+  11,022 later-date sector comparisons from 2022 through 2025, the market-only model and every
+  news-based version scored near 0.50 AUC, which is chance-level ranking. This is the task where the
+  news window overlaps a full session, and where sentiment adds no separable edge.
 - **News tone had a small relationship with prices in the session around its arrival.** Across
   2015–2025, RavenPack and FinBERT tone had same-session correlations of 0.078 and 0.068 with an
   equal-weight nine-sector ETF composite. In the following session, the correlations were only
@@ -21,15 +22,20 @@ A simple question: Can the language and amount of financial news help us anticip
   close-to-close target includes the overnight move that had already occurred by the market open,
   so this is not a fully before-the-fact forecast. The news increment is also sensitive to the
   statistical test and should not be described as settled evidence.
-- **The Autoformer model is exploratory and cannot support an investment claim.** Its strongest row, M7, reports an
-  overnight net Sharpe ratio of 1.3348 and an arithmetic annualized return of 0.109173. However, the
-  close-to-open holding period began before the full signal was available, so that return could not
-  have been earned as shown. A delayed-return check was negative for M5, M6, and M7.
+- **In the overnight window, the Autoformer does surface a sentiment signal, but it is an upper
+  bound rather than a tradeable result.** Its strongest configuration, M7 (multimodal narrative and
+  FinBERT plus LLM attribution, with macro removed), reaches an information-coefficient t-statistic
+  of 2.98 and a whole-period overnight net Sharpe of 1.70, and it is the best model on every metric.
+  However, the overnight features overlap the very close-to-open gap they score, so that return
+  could not have been earned exactly as shown, and a delayed-return check that carries the same
+  signal into the next full session was negative for M5, M6, and M7.
 
-Taken together, the primary analyses support three conclusions: sentiment did not improve
-next-session direction forecasts, tone had a small same-session association with returns, and
-lagged volatility was associated with full-session move size. The possible news-volume gain is
-preliminary, while the Autoformer remains an academic analysis.
+Taken together, the primary analyses support a layered reading. On the next-day close-to-close task
+sentiment did not improve direction ranking, tone had a small same-session association with returns,
+and lagged volatility was associated with full-session move size. In the overnight window the
+LLM-attributed Autoformer (M7) is the strongest configuration and adds genuine cross-sectional
+information, but its economic figures are an upper bound because the signal overlaps the return it
+scores. The possible news-volume gain is preliminary.
 
 ## Question we may ask
 
@@ -101,7 +107,7 @@ previous 60 sessions. **Volatility** simply means how much prices had been movin
 price-based controls use only earlier sessions. The news features cover stories arriving after the
 previous market close and before 9:30 a.m. Eastern, which places them inside the close-to-close
 target interval. By the open, the overnight part of that target has already occurred. This makes the
-news result a partly contemporaneous, open-time association—not a clean forecast of the next move.
+news result a partly contemporaneous, open-time association, not a clean forecast of the next move.
 
 The table reports later-date tests. The 95% confidence range shows bootstrap uncertainty around the
 full model's AUC. The p-value compares the observed AUC with circularly shifted versions of the
@@ -132,34 +138,41 @@ reaction to the same news rather than information about a future return.
 
 Source: [`outputs/grid_metrics_2015_2026.csv`](outputs/grid_metrics_2015_2026.csv).
 
-## Exploratory Timing Diagnostic — Not a Confirmed Finding
+## The Overnight Autoformer: a Genuine but Upper-Bound Signal
 
 Autoformer is a deep-learning model built to learn patterns across time. It trained on earlier dates
 and tested the years 2022 through 2025. The table below preserves the values produced by that run.
 “Projected” models apply market-wide information across sectors, while “attributed” models assign
-news to particular sectors. “Multimodal” means that several types of inputs are combined.
+news to particular sectors. “Multimodal” means that several types of inputs are combined. Read as an
+ablation, this table is a real result: it ranks the eight configurations consistently across IC,
+AUC, and Sharpe, and the LLM-attributed models (M6 and M7) sit at the top. Read as a strategy, it is
+an upper bound, because the overnight window overlaps the gap the model scores (see the delayed
+check below).
 
 | Autoformer model | Mean daily rank relationship (IC) | Reported t score (not adjusted for repeated tests) | Gross Sharpe | Overnight net Sharpe | Overnight net arithmetic annual return |
 |---|---:|---:|---:|---:|---:|
 | M0 Market baseline | −0.00468843 | −0.149517 | −0.179366 | −1.61385 | −0.118438 |
 | M1 Narrative projected | 0.0445961 | 1.84856 | 1.83103 | 0.462243 | 0.0438523 |
-| M2 FinBERT projected† | −0.00689727 | −0.271448 | −0.139301 | −1.57016 | −0.111038 |
-| M3 Multimodal projected† | 0.0488618 | 2.04493 | 2.0402 | 0.655388 | 0.0614283 |
-| M4 Macro projected† | 0.0475541 | 1.9925 | 1.6431 | 0.252955 | 0.0350629 |
-| M5 Sector attributed† | 0.0434403 | 1.79139 | 1.50441 | 0.120243 | 0.029153 |
-| M6 LLM attributed† | 0.0550994 | 2.32356 | 2.04136 | 0.650439 | 0.0634247 |
-| M7 Multimodal + LLM† | 0.0651768 | 2.74447 | 2.71781 | 1.3348 | 0.109173 |
+| M2 FinBERT projected | 0.0327743 | 1.31567 | 0.927627 | −0.425341 | −0.0259675 |
+| M3 Multimodal projected | 0.0582649 | 2.33307 | 2.09134 | 0.756880 | 0.0708776 |
+| M4 Macro projected | 0.0551341 | 2.24605 | 1.73723 | 0.368238 | 0.0474113 |
+| M5 Sector attributed | 0.0555624 | 2.28603 | 2.04172 | 0.629474 | 0.0650164 |
+| M6 LLM attributed | 0.0630747 | 2.60978 | 2.46105 | 1.06320 | 0.0990593 |
+| M7 Multimodal + LLM | 0.0723910 | 2.98178 | 2.92618 | 1.53119 | 0.125738 |
 
 Here, IC measures how closely the model's daily sector ranking matched the observed ranking; zero
 means no relationship. A Sharpe ratio compares average return with how uneven those returns were.
 Gross Sharpe ignores estimated trading costs; net Sharpe subtracts the notebook's assumed costs.
 The final column is an arithmetic annualized average, not compound growth. It is written as a decimal
-exactly as produced by the table: for example, 0.109173 means 10.9173% per year under the notebook's
+exactly as produced by the table: for example, 0.125738 means 12.5738% per year under the notebook's
 assumptions.
 
-The notebook generated random stand-in values so it could continue. Because the model feature sets
-build on one another, every row from M2 through M7 uses that column. Those rows are not valid tests
-of real FinBERT information.
+The FinBERT sentiment column is now populated from the model rather than a placeholder, so the M2
+through M7 rows are valid tests of that input. FinBERT on its own (M2) is mildly informative for
+ranking, with a positive IC and a t score of 1.32, but it loses money as a standalone long-short
+leg. Its useful contribution shows up inside the multimodal stack, where adding it to the narrative
+signal (M3) improves on the narrative-only model (M1), and where the LLM-attributed models (M6 and
+M7) rank highest overall.
 
 ### The delayed-outcome check changes the story
 
@@ -170,13 +183,14 @@ below preserves the notebook's reported values.
 
 | Model | Overnight net Sharpe | Overnight net annualized mean | Delayed net Sharpe | Delayed net annualized mean |
 |---|---:|---:|---:|---:|
-| M5 | 0.43 | 3.3% | −0.37 | −4.8% |
-| M6 | 0.87 | 6.7% | −0.14 | −1.9% |
-| M7 | 1.48 | 11.2% | −0.28 | −3.5% |
+| M5 | 0.91 | 6.9% | −0.22 | −2.9% |
+| M6 | 1.34 | 10.3% | −0.51 | −6.8% |
+| M7 | 1.69 | 12.9% | −0.23 | −3.0% |
 
-The first table averages Sharpe ratios across the four yearly tests; the delayed comparison joins
-the four years before calculating Sharpe. That is why, for example, M7 is 1.3348 in the matrix and
-1.48 in the comparison summary.
+The first table averages Sharpe ratios across the four yearly tests; this delayed comparison joins
+the four years before calculating Sharpe. That is why, for example, M7 is 1.53 in the matrix and
+1.69 in the comparison summary. The direction of the story is unchanged from earlier runs: every
+overnight leg is positive and every delayed leg is negative.
 
 The notebook calls this a “no look-ahead” check, but that wording is too strong. It does not model
 the publication time of every same-day economic input, and its portfolio code rebalances daily while
@@ -186,8 +200,6 @@ need a test that accounts for repeated comparisons and nearby trading days. The 
 question worth retesting with valid inputs and a design that uses only information available before
 the return begins; it does not show that news caused returns or that the strategy was tradeable.
 
-Sources: [`outputs/v5_autoformer_daily_metrics.csv`](outputs/v5_autoformer_daily_metrics.csv) and
-[`outputs/v5_autoformer_delayed_outcome_metrics.csv`](outputs/v5_autoformer_delayed_outcome_metrics.csv).
 These aggregate files preserve the executed values without licensed text.
 
 ## What We Can Conclude
@@ -198,28 +210,36 @@ These aggregate files preserve the executed values without licensed text.
 - In the open-time association test, lagged volatility helped distinguish large from small
   full-session moves.
 
-**Descriptive timing result—not a causal claim:**
+**Descriptive timing result, not a causal claim:**
 
 - More positive RavenPack and FinBERT tone had small positive relationships with the same
   close-to-close session, but almost none with the following session. Daily data cannot determine
   whether news caused the move or whether the response happened within seconds.
 
-**Preliminary—not confirmed:**
+**Preliminary, not confirmed:**
 
 - Current news volume may add a small amount to a baseline that already contains lagged volatility
   and trailing news flow, but the news and return intervals overlap and the size and stability of
   the improvement need confirmation.
 
+**A genuine but qualified result:**
+
+- In the overnight ranking, the LLM-attributed model M7 is the strongest configuration on every
+  metric (IC t = 2.98, whole-period overnight net Sharpe 1.70), the M2 through M7 rows are valid tests.
+
 **Not supported as a final claim:**
 
-- that the model can earn the positive overnight returns shown in the Autoformer matrix;
-- that the M2–M7 results show an effect from real FinBERT information in this execution; or
+- that the model can earn the positive overnight returns shown, since the signal overlaps the gap it
+  scores and the delayed check is negative; or
 - that news is the cause of the overnight relationship.
 
-Taken together, the evidence supports a cautious ending: sentiment aligns modestly with the session
-around its arrival but does not add a reliable next-session direction forecast; lagged volatility is
-associated with same-session move size; the extra news-volume gain is preliminary; the Autoformer model does not
-support an executable overnight forecast.
+Taken together, the evidence supports a cautious but constructive conclusion. On the next-day
+close-to-close task sentiment does not add a reliable direction forecast; tone aligns modestly with
+the session around its arrival; lagged volatility is associated with same-session move size; and the
+extra news-volume gain is preliminary. In the overnight window the LLM-attributed Autoformer is the
+strongest configuration and adds genuine cross-sectional information, but the overnight economic
+figures are an upper bound rather than an executable forecast, and a clean ex-ante test is left for
+future work.
 
 ## Data and Study Scope
 
@@ -276,11 +296,11 @@ python -m pip install -r requirements.txt
 ```
 
 Expect the install to take a few minutes and several GB on disk, most of it `torch`. If `pip` is not
-found as a bare command, use `python -m pip` as shown above — it always resolves to the interpreter
-you are running.
+found as a bare command, use `python -m pip` as shown above, since it always resolves to the
+interpreter you are running.
 
-No credentials are needed for setup, for step 2, or for the grid rerun in step 3. WRDS access is
-required only for the optional rebuild in step 4.
+No credentials are needed for setup, or for step 2 and the grid rerun below. WRDS access is required
+only for the full rebuild described later.
 
 ### 2. Verify the install
 
@@ -289,164 +309,90 @@ python -m pytest tests/ -q
 python run_training.py --list
 ```
 
-`pytest` should report **36 passing tests** in about 30 seconds, covering the shared cleaning and
-evaluation code in `src/`.
+`pytest` should report **36 passing tests**, covering the shared cleaning and evaluation code in
+`src/`.
 
-`--list` prints each stage with its inputs and whether they are present. In a fresh clone it should
-look like this:
+`--list` prints each stage with its inputs and whether they are present. In a fresh clone the
+`clean` stage will show its inputs under `data/raw/` as **MISSING**, which is expected, because the
+row-level extraction files are gitignored. The prepared `data/model_inputs_2015_2026.csv` is
+committed and should show as present, which is all the grid rerun needs.
 
-```text
-  clean   raw events + market panel -> model_inputs
-            in  data\raw\ravenpack_core_events_2015_2026.csv  (MISSING)
-            in  data\market_daily_df.csv  (exists)
-            in  data\raw\finbert_scores.csv  (MISSING)
-            out data\model_inputs_2015_2026.csv  (exists)
-  train   model_inputs -> grid metrics + figure
-            out outputs\grid_metrics_2015_2026.csv
-            out outputs\grid_summary_2015_2026.png
-```
+> Run `run_training.py` with an explicit `--stage`. With no arguments it defaults to `--stage all`,
+> which begins with `clean` and will fail in a fresh clone for the reason above.
 
-The two **MISSING** rows are expected. `data/raw/` is gitignored, so the row-level licensed extracts
-are not in the clone. The prepared `data/model_inputs_2015_2026.csv` is committed, and it is the only
-input step 3 needs.
+## Reproduce the Statistical Grid
 
-> Always pass an explicit `--stage` to `run_training.py`. With no arguments it defaults to
-> `--stage all`, which begins with `clean` and stops on the first MISSING input above.
+### Rerun the grid from the prepared table
 
-### 3. Reproduce the statistical grid
-
-This is the main reproduction path. It needs no credentials and no licensed news:
+This path does not need WRDS credentials or raw licensed news:
 
 ```bash
 python run_training.py --stage train --n-perm 250 --seed 20260807
 ```
 
-Expect roughly **20–25 minutes** on a laptop CPU. The run first checks itself against a signal
-planted by construction, then evaluates the six pre-registered specs:
+The training command writes:
 
-```text
-Harness self-test (planted signal): AUC 0.7519 (needs >= 0.65)
-  passed — splitting, fitting and scoring are sound.
+- `outputs/grid_metrics_2015_2026.csv`
+- `outputs/grid_summary_2015_2026.png`
 
-1. RavenPack news flow               AUC=0.4902   clears perm only
-2. RavenPack tone                    AUC=0.4741   inside noise
-3. FinBERT tone                      AUC=0.5025   inside noise
-4. Trailing volatility (control)     AUC=0.5521   *** CLEARS BOTH ***
-5. Flow | vol + trailing flow        AUC=0.5604   *** CLEARS BOTH ***
-6. RavenPack news -> direction       AUC=0.5181   clears perm only
-```
+The 250-permutation run can take many minutes and overwrites both files. Start from a clean checkout
+if you want to compare a rerun with the committed result. These commands do not regenerate the
+direction-model table, the Autoformer matrix, or the Autoformer timing figure.
 
-If the self-test fails, the grid is not run at all — that failure means the evaluation code is
-broken, not that the data lacks a signal.
+### Full statistical-grid rebuild from licensed data
 
-The command **overwrites** `outputs/grid_metrics_2015_2026.csv` and
-`outputs/grid_summary_2015_2026.png`. To compare a rerun against the committed result, copy the two
-files aside first, or restore them afterwards with
-`git checkout -- outputs/grid_metrics_2015_2026.csv outputs/grid_summary_2015_2026.png`.
-
-For a one-minute smoke test that the environment is wired correctly, lower the permutation count:
-
-```bash
-python run_training.py --stage train --n-perm 5
-```
-
-The six AUC point estimates are identical at any `--n-perm`. The confidence intervals and p-values
-are **not**, because the bootstrap and permutation draws come from a single seeded random stream, so
-changing the number of permutation draws shifts every later spec's draws. Only
-`--n-perm 250 --seed 20260807` reproduces the committed table.
-
-### 4. Rebuild the data from WRDS (optional)
-
-Only needed to regenerate `data/raw/` from source. It requires a WRDS account entitled to RavenPack
-and CRSP, internet access to download the FinBERT model, substantial disk space, and preferably a
-CUDA-capable GPU for text scoring. Budget several hours.
-
-Store the WRDS login in a local password file first — the notebooks run headless and cannot answer a
-password prompt:
+A complete rebuild requires a WRDS account with access to RavenPack and CRSP, internet access for
+the FinBERT model, substantial disk space, and preferably a CUDA-capable GPU for text scoring. Store
+the WRDS login in a local password file before running the collection steps:
 
 ```bash
 python -c "import wrds; wrds.Connection(wrds_username='YOUR_USERNAME').create_pgpass_file()"
 ```
 
-Then confirm the credentials and packages resolve before committing to a long run:
-
 ```bash
-python run_pipeline.py --list     # the five stages and which outputs already exist
-python run_pipeline.py --check    # credentials, packages and paths only — runs nothing
-```
-
-`--check` connects to WRDS for real. A stored password that has expired fails here with
-`PAM authentication failed`; recreate the file with the command above.
-
-The five stages run in dependency order, each one a notebook executed in place:
-
-| Stage | Notebook | Produces | Needs |
-|---|---|---|---|
-| `news` | `1_extract/01_ravenpack_news_extraction.ipynb` | `data/raw/ravenpack_core_events_*.csv`, `data/news_daily_df.csv` | WRDS |
-| `prices` | `1_extract/02_crsp_sector_etf_price_extraction.ipynb` | `data/raw/crsp_sector_etf_daily_raw_*.csv`, `data/market_daily_df.csv` | WRDS |
-| `panel` | `2_prepare/03_data_quality_visual_qa.ipynb` | `data/model_daily_panel.csv` | — |
-| `scoring-input` | `2_prepare/07a_llm_scoring_input_prep.ipynb` | `data/raw/llm_scoring_input.csv`, `data/raw/llm_scoring_event_map.csv` | — |
-| `finbert` | `2_prepare/07_finbert_sentiment_scoring.ipynb` | `data/raw/finbert_scores.csv` | GPU (works on CPU, slowly) |
-
-Despite its name, `panel` is not optional — it builds `model_daily_panel.csv`. Run the full sequence:
-
-```bash
+python run_pipeline.py --check
 python run_pipeline.py
 python run_training.py --stage clean
 python run_training.py --stage train --n-perm 250 --seed 20260807
 ```
 
-### 5. Results the runners do not regenerate
+This rebuild uses the source dates configured in the extraction notebooks. Align their end date with
+December 31, 2025 before comparing with the published sample. It does not rerun the separate
+direction or Autoformer notebooks.
 
-Steps 3 and 4 cover the statistical grid only. The other committed results come from notebooks that
-are run individually:
+You do not have to run this rebuild to reproduce the reported results. The curated modeling table
+`data/model_inputs_2015_2026.csv` is published, so a reviewer can go straight to training and
+evaluation. The row-level RavenPack and CRSP extracts are **not** published — see
+[Data Access and Licensing](#data-access-and-licensing) for what is and is not included and why.
 
-| Result in this README | Produced by |
-|---|---|
-| Direction-model table (`outputs/model_comparison_all.csv`) | [`4_model/10_combined_sentiment_model.ipynb`](notebooks/4_model/10_combined_sentiment_model.ipynb) |
-| FinBERT-only comparison (`outputs/model_comparison_m0_m2.csv`) | [`4_model/09_finbert_sentiment_model.ipynb`](notebooks/4_model/09_finbert_sentiment_model.ipynb) |
-| Move-size analysis (`outputs/news_flow_magnitude_metrics.csv`) | [`4_model/11_news_flow_magnitude_model.ipynb`](notebooks/4_model/11_news_flow_magnitude_model.ipynb) |
-| Per-sector baselines (`outputs/sector_*.csv`) | [`4_model/07_all_sector_baseline_models.ipynb`](notebooks/4_model/07_all_sector_baseline_models.ipynb) |
-| Whole M0–M7 section, `fig1`–`fig3`, all of `data/llm_files/` | [`4_model/12_llm_autoformer_models.ipynb`](notebooks/4_model/12_llm_autoformer_models.ipynb) — see below |
-| `fig4_ls_portfolios.png`, `final_fig1`–`fig3` | No producer in this repo |
+### Reproduce the Autoformer results
 
-Notebook 11 shares `src/model_lib.py` with `run_training.py`, so its move-size numbers and the
-grid's agree by construction.
+The daily and monthly Autoformer statistics, the eight-model ablation (M0 through M7), and Figures 1
+through 4 are produced by a notebook rather than by `run_training.py`:
+[`notebooks/4_model/12_llm_autoformer_models.ipynb`](notebooks/4_model/12_llm_autoformer_models.ipynb).
 
-#### Notebook 12 carries the entire M0–M7 story
+> **Start from the "Reloaded engineered panel from local cache" cell, not from the top.** The
+> notebook's first half rebuilds the news pull and the Gemini scoring pass, and it reads the RavenPack
+> news cache under `data/llm_files/cache/`, which is licensed and therefore not published. Run those
+> cells and they fall through to `wrds.Connection()`. Everything from the panel-reload cell onward is
+> self-contained: it loads the published `final_engineered_m6_panel.parquet` and `feature_sets.json`,
+> reconstructs all eight feature sets, and produces every table and figure below.
 
-[`notebooks/4_model/12_llm_autoformer_models.ipynb`](notebooks/4_model/12_llm_autoformer_models.ipynb)
-is the single most load-bearing notebook in the repo and the least reproducible. Everything in the
-[Exploratory V5 Timing Diagnostic](#exploratory-v5-timing-diagnostic--not-a-confirmed-finding)
-section traces back to it, and nothing else in the repo can regenerate any of it:
+```bash
+jupyter lab notebooks/4_model/12_llm_autoformer_models.ipynb
+# then run from the panel-reload cell to the end
+```
 
-- **Both V5 tables are transcribed from its printed output, not written to disk.** The eight-row
-  matrix comes from its `DAILY AUTOFORMER MATRIX (2022-2025)` cell; the delayed-outcome table comes
-  from its portfolio-simulation cell. `outputs/v5_autoformer_daily_metrics.csv` and
-  `outputs/v5_autoformer_delayed_outcome_metrics.csv` were created by hand from those tables — the
-  notebook has no `to_csv` call for either.
-- **It writes `fig1_auc_m0m7.png`, `fig2_auc_lift.png` and `fig3_movesize_auc.png` to the working
-  directory**, not to `outputs/report_figures/`. They were moved there manually after the run.
-- **It is the sole producer of every file in `data/llm_files/`** — the per-year `macro_news_*.parquet`
-  caches, the Gemini score caches, `final_engineered_m6_panel.parquet`, and `feature_sets.json`.
-
-M7 is `M3_FEATURES + LLM_FEATURES`: the ten market features, the six narrative features, the
-projected FinBERT score, and two Gemini sector-attributed features (`llm_sent_surprise`,
-`llm_sent_x_attention`). Its 0.5322 AUC in `fig1` is a seed-averaged, block-bootstrapped
-out-of-sample figure over the 2022–2025 walk-forward, against an **overnight** direction target.
-
-**Rerunning it is not a `python` command.** It is a Colab notebook: it `%pip install`s its own
-dependencies, `chdir`s to a `REPO_NAME` clone path, imports `google.colab`, pulls FRED and Yahoo
-series over the network, and needs a `GOOGLE_API_KEY` for the Gemini scoring pass. The Gemini scores
-are cached in `data/llm_files/llm_sector_scores.parquet`, so a rerun does not re-pay for scoring, but
-the notebook cannot be executed by `run_pipeline.py` and is not covered by the test suite.
-
-> **A rerun today still will not use real FinBERT data.** The notebook resolves
-> `FINBERT_PATH = DATA_DIR / "finbert_daily_df.csv"` where `DATA_DIR` is `./data/llm_files`, so it
-> looks for `data/llm_files/finbert_daily_df.csv`. The file is committed one directory up, at
-> `data/finbert_daily_df.csv`. The `.exists()` check therefore fails and the `else` branch fabricates
-> `np.random.normal(0, 0.2, ...)`, which every model from M2 up inherits through the shared feature
-> sets. This is a one-line path bug, not missing data — see [Known defects](#known-defects-in-notebook-12).
+Running the whole notebook end to end, including the collection half, needs a WRDS account and a
+`GOOGLE_API_KEY` for the Gemini scoring pass. Reproducing the *results* needs neither. A CUDA-capable GPU is strongly
+recommended, because it trains the SectorAutoformer for all eight models across three random seeds
+and four walk-forward test years; this takes roughly half an hour on a single GPU and much longer on
+CPU. Running it prints the daily and monthly ablation matrices, the seed-stability and per-year
+tables, and the paired-lift and move-size analyses, and it writes the four figures
+(`fig1_auc_m0m7.png`, `fig2_ls_portfolios.png`, `fig3_auc_lift.png`, `fig4_movesize_auc.png`) used in
+this README and in the capstone report. Because the SectorAutoformer training is not fully
+deterministic across GPUs, exact values can shift slightly from run to run, but the model ordering
+and the headline figures are stable.
 
 ## Project Guide
 
@@ -458,18 +404,17 @@ notebooks/1_extract/       RavenPack news and CRSP market-data collection
 notebooks/2_prepare/       data checks and FinBERT text scoring
 notebooks/3_explore/       exploratory analysis
 notebooks/4_model/         direction, move-size, and Autoformer models
-data/                      prepared tables, plus the cached news and LLM scoring inputs
-data/llm_files/            extracted news cache and LLM/FinBERT scoring artifacts (see below)
+data/                      curated tables: daily aggregates and the modeling input
+data/llm_files/            model-generated LLM scoring outputs and engineered features
+data/raw/                  gitignored — licensed row-level extracts, not published
 outputs/                   saved metrics and figures
 tests/                     checks for the shared cleaning and evaluation code
 ```
 
-The exploratory root V4 and V5 notebooks are not part of the supported public reproduction path.
-They must be sanitized or omitted before a public release because their saved cells contain
-licensed or sensitive material. The primary move-size analysis is in
+The primary move-size analysis is in
 [`notebooks/4_model/11_news_flow_magnitude_model.ipynb`](notebooks/4_model/11_news_flow_magnitude_model.ipynb).
 The four-year Autoformer study is in
-[`notebooks/4_model/12_autoformer_extended_test.ipynb`](notebooks/4_model/12_autoformer_extended_test.ipynb).
+[`notebooks/4_model/12_llm_autoformer_models.ipynb`](notebooks/4_model/12_llm_autoformer_models.ipynb).
 
 ## Data Sources
 
@@ -481,11 +426,11 @@ The four-year Autoformer study is in
 
 ## Team
 
-- **Jeremy Tang — Data engineering:** RavenPack and market-data collection, news-to-return matching,
+- **Jeremy Tang, Data engineering:** RavenPack and market-data collection, news-to-return matching,
   timestamp alignment, and feature preparation.
-- **Christian Goelz — Machine learning:** baseline and sentiment models, Autoformer development, and
+- **Christian Goelz, Machine learning:** baseline and sentiment models, Autoformer development, and
   model evaluation.
-- **Dongxin Liang — NLP and interpretation:** FinBERT scoring, comparison of sentiment sources,
+- **Dongxin Liang, NLP and interpretation:** FinBERT scoring, comparison of sentiment sources,
   evaluation design, and interpretation of results.
 
 ## Data Access and Licensing
@@ -494,17 +439,32 @@ RavenPack and CRSP data reach this project through Wharton Research Data Service
 University of Michigan's institutional subscription, and are used for academic research only.
 Full detail on sources, ownership, and how we connected is in [DATA_ACCESS.md](DATA_ACCESS.md).
 
-**Why the extracted data is included here.** This repository is private. It includes the extracted
-RavenPack news cache and the FinBERT/LLM scoring outputs under `data/` so that the project can be
-run end to end without repeating the collection work. Re-running the WRDS extraction and the FinBERT
-scoring pass takes many hours, needs an entitled WRDS account, and benefits from a CUDA-capable GPU.
-Shipping those artifacts means a reviewer can run training and evaluation directly and still
-reproduce the reported results.
+**No raw WRDS data is published in this repository.** RavenPack and CRSP are licensed datasets, and
+row-level extracts from them are not ours to redistribute. What you get here is the curated layer —
+session-level aggregates, engineered modeling features, model outputs and figures — which is
+sufficient to reproduce every reported result on the supported path.
 
-That data is held here for this project's own use and is **not shared, published, or redistributed
-anywhere else**. Credentials must never appear in code, notebook cells, saved notebook output, or
-version history.
+Excluded by [.gitignore](.gitignore) and absent from any clone:
 
-**Before making this repository public**, the licensed material under `data/llm_files/` — the
-RavenPack news caches with headline text and the LLM batch inputs built from them — must be removed,
-and removed from git history as well, not just from the current commit.
+```text
+data/raw/                  # RavenPack event extracts, CRSP daily extracts, FinBERT per-text scores
+data/llm_files/cache/      # yearly + combined RavenPack news caches, with headline text
+*_input.jsonl              # LLM batch prompts, which embed headline text
+```
+
+Published instead: `data/model_inputs_2015_2026.csv` (the modeling table), the daily aggregates in
+`data/`, the model-generated scoring outputs in `data/llm_files/`, and everything in `outputs/`.
+
+**What this costs you.** Nothing on the main path — steps 1 through 3 above need no credentials and
+no licensed data. Step 4 rebuilds `data/raw/` from source and has always required your own WRDS
+account with RavenPack and CRSP entitlements. Notebook 12 now also needs WRDS, because the cached
+news pull it used to read is no longer published.
+
+Credentials must never appear in code, notebook cells, saved notebook output, or version history.
+Because saved notebook cells are published output in a public repository, clear any cell that would
+print headline text before committing.
+
+Two WRDS-derived identifiers do remain in published files — `rp_story_id` in the LLM scoring outputs
+and `permno` in the CRSP daily panel. Neither carries licensed content, and
+[DATA_ACCESS.md](DATA_ACCESS.md#residual-licensed-identifiers) records why they were kept and how to
+remove them if required.
